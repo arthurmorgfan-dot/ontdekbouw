@@ -14,8 +14,23 @@ export default function ProjectDocument({ project, blueprint }: { project: Proje
     <ProjectHero project={project} blueprint={blueprint} />
     <nav className="blueprint-chapters" aria-label="Onderdelen van dit project"><a href="#systeem">Het systeem <span aria-hidden="true">↓</span></a><a href="#prototype">Eerste prototype <span aria-hidden="true">↓</span></a>{blueprint.research && <a href="#onderzoek">{blueprint.research.name} <span aria-hidden="true">↓</span></a>}<a href="#resultaten">Resultaten <span aria-hidden="true">↓</span></a></nav>
     <ProjectSection id="doel" number={nextNumber()} title={blueprint.hypothesis.title} wide>
-      <p className="blueprint-core-question">{blueprint.question}</p><p>{blueprint.hypothesis.introduction}</p><p className="blueprint-small-label">Werkhypothese / nog te toetsen</p><ProjectFlow steps={blueprint.hypothesis.steps} label="Werkhypothese, geen bewezen causale keten" /><p className="blueprint-note">{blueprint.hypothesis.note}</p>
+      <p className="blueprint-core-question">{blueprint.question}</p>
+      {blueprint.hypothesis.principle && <h3>{blueprint.hypothesis.principle}</h3>}
+      <p>{blueprint.hypothesis.introduction}</p>
+      {blueprint.hypothesis.metric && <div>
+        <p className="blueprint-small-label">{blueprint.hypothesis.metric.label}</p>
+        <h3>{blueprint.hypothesis.metric.definition}</h3>
+        <span className="blueprint-status">{blueprint.hypothesis.metric.status}</span>
+        <p className="blueprint-note">{blueprint.hypothesis.metric.note}</p>
+      </div>}
+      <p className="blueprint-small-label">Werkhypothese / nog te toetsen</p><ProjectFlow steps={blueprint.hypothesis.steps} label="Werkhypothese, geen bewezen causale keten" /><p className="blueprint-note">{blueprint.hypothesis.note}</p>
     </ProjectSection>
+    {blueprint.dailyRhythm && <ProjectSection id="waarom-loop" label={blueprint.dailyRhythm.label} title={blueprint.dailyRhythm.title} tone="sand" wide>
+      <p className="blueprint-core-question">{blueprint.dailyRhythm.introduction}</p>
+      <ProjectFlow steps={blueprint.dailyRhythm.steps} label="Beeld van een dagelijks ritme, geen voorschrift" />
+      <p>{blueprint.dailyRhythm.explanation}</p>
+      <p className="blueprint-note">{blueprint.dailyRhythm.note}</p>
+    </ProjectSection>}
     <ProjectSection id="systeem" number={nextNumber()} title={blueprint.system.title}><ProjectSystem system={blueprint.system} /></ProjectSection>
     {blueprint.collection && <ProjectSection id="werkbeeld" number={nextNumber()} title={blueprint.collection.title} tone="sand" wide>
       <div className="blueprint-collection"><div className="blueprint-collection-art"><Image src={blueprint.collection.image} alt={blueprint.collection.imageAlt} width={1000} height={760} sizes="(max-width: 800px) 88vw, 50vw" /></div>
