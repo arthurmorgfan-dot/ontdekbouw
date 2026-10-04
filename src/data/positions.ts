@@ -62,7 +62,7 @@ export const positions: Position[] = [
     principle: "Betaal de boer goed.\nVoed de jeugd goed.\nBouw een sterker land.",
     questions: ["Welke producten en ketens bieden werkelijk voordeel?", "Hoe verbinden we een eerlijke opbrengst aan betaalbare consumentenprijzen?", "Welke infrastructuur zou nodig zijn, en wie draagt kosten en risico’s?"],
     note: "Het gaat om een systeem om te onderzoeken, niet alleen om meer import. BOUW heeft geen telersovereenkomsten, importprogramma’s of operationele voedselinfrastructuur. LOOP en AGRIA zijn concepten, geen bewijs dat deze keten al bestaat.",
-    links: [{ label: "Onderzoek naar betaalbaar vers eten", href: "/voorstellen/vers-eten-moet-goedkoper" }, { label: "Ontdek LOOP", href: "/#loop" }, { label: "Ontdek AGRIA", href: "/#agria" }],
+    links: [{ label: "Onderzoek naar betaalbaar vers eten", href: "/voorstellen/vers-eten-moet-goedkoper" }, { label: "Ontdek LOOP", href: "/projecten/loop" }, { label: "Ontdek AGRIA", href: "/#agria" }],
   },
   {
     id: "06", title: "Warmte moet betaalbaar zijn",
