@@ -27,14 +27,14 @@ export default function ProposalCard({ proposal }: { proposal: Proposal }) {
         <p className="proposal-description">{proposal.description}</p>
         {proposal.page ? (
           <div className="proposal-details">
-            <Link className="proposal-page-link" href={proposal.href}>
-              Bekijk het voorstel <span aria-hidden="true"><Icon name="arrow-right" /></span>
+            <Link className="proposal-page-link ruler-link ruler-link-with-arrow" href={proposal.href}>
+              Bekijk het voorstel <span className="ruler-link-arrow" aria-hidden="true"><Icon name="arrow-right" /></span>
               <span className="sr-only">: {proposal.title}</span>
             </Link>
           </div>
         ) : <details className="proposal-details" id={`voorstel-${proposal.slug}`}>
-          <summary>
-            Bekijk het voorstel <span aria-hidden="true"><Icon name="arrow-right" /></span>
+          <summary className="ruler-link ruler-link-with-arrow">
+            Bekijk het voorstel <span aria-hidden="true"><span className="ruler-link-arrow"><Icon name="arrow-right" /></span></span>
             <span className="sr-only">: {proposal.title}</span>
           </summary>
           <div className="proposal-research">
