@@ -1,0 +1,28 @@
+.participation-page .participation-hero { padding: 64px max(5%, calc((100vw - 1400px) / 2)); background: var(--ink); color: var(--paper); }
+.participation-page .participation-hero .eyebrow { color: var(--gold); }
+.participation-page h1 { max-width: 1000px; font-size: clamp(38px, 5.5vw, 78px); line-height: 1.08; }
+.participation-page .participation-lead { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 46px); color: var(--gold); margin: 25px 0; }
+.participation-page .participation-hero > p:last-child { max-width: 640px; line-height: 1.8; }
+.participation-page .participation-paths, .participation-page .participation-compose { padding: 60px max(5%, calc((100vw - 1400px) / 2)); }
+.participation-page .participation-paths h2 { margin-bottom: 36px; }
+.participation-page .participation-paths article, .participation-page .participation-compose { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr); gap: 48px; }
+.participation-page .participation-paths article { border-top: 1px solid #d6d8ce; padding: 30px 0; }
+.participation-page h3 { font-family: var(--serif); font-size: 30px; font-weight: 400; }
+.participation-page p { font-size: 15px; line-height: 1.8; }
+.participation-page .participation-paths article p, .participation-page .participation-compose p { color: var(--muted); }
+.participation-page .participation-paths a { display: inline-flex; gap: 15px; align-items: center; min-height: 44px; font-size: 13px; margin-top: 14px; }
+.participation-page .participation-compose { background: #eeede6; }
+.participation-page .participation-compose > div > p:last-child { margin-top: 24px; }
+.participation-page .contribution-form, .participation-page .participation-compose > div { min-width: 0; }
+.participation-page .contribution-form fieldset > div { margin-bottom: 22px; }
+.participation-page label { display: block; margin-bottom: 9px; font-size: 13px; font-weight: 600; }
+.participation-page input, .participation-page select, .participation-page textarea { width: 100%; min-width: 0; max-width: 100%; padding: 12px; background: var(--paper); color: var(--ink); border: 1px solid #a5ad9d; border-radius: 0; font: inherit; font-size: 16px; }
+.participation-page textarea { resize: vertical; }
+.participation-page .contribution-form p { font-size: 12px; margin: 16px 0; overflow-wrap: anywhere; }
+.participation-page .contribution-form button { border: 0; cursor: pointer; white-space: normal; max-width: 100%; }
+.participation-page input:focus-visible, .participation-page select:focus-visible, .participation-page textarea:focus-visible { outline: 3px solid #a87538; outline-offset: 3px; }
+.participation-page a:hover { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 800px) { .participation-page .participation-paths article, .participation-page .participation-compose { grid-template-columns: 1fr; gap: 24px; } }
+@media (max-width: 500px) { .participation-page .participation-hero, .participation-page .participation-paths, .participation-page .participation-compose { padding: 42px 6%; } }
+
+.participation-page .contribution-form fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }

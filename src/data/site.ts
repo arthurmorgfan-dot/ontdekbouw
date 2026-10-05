@@ -8,6 +8,6 @@ export const site = {
     { label: "Onze visie", href: "/onze-visie" },
     { label: "Standpunten", href: "/standpunten" },
     { label: "Hoe we werken", href: "#werkwijze" },
-    { label: "Doe mee", href: "#doe-mee" },
+    { label: "Doe mee", href: "/doe-mee" },
   ],
 };

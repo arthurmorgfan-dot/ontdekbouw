@@ -40,6 +40,6 @@ export default function ProposalDocument({ proposal, plan }: { proposal: Proposa
       <ul className="plan-objections">{plan.objections.map((question, index) => <li key={question}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{question}</li>)}</ul>
     </PlanSection>
     <ResultsState results={plan.results} />
-    <ProposalNextStep plan={plan} />
+    <ProposalNextStep plan={plan} proposal={proposal} />
   </main>;
 }
