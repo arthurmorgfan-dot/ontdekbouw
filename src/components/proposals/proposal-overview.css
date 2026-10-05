@@ -1,0 +1,64 @@
+/* A proposal overview uses the site's existing editorial, motion and material primitives. */
+.proposal-overview-hero { padding: clamp(56px,7vw,120px) var(--page-gutter); background: var(--night); color: var(--paper); }
+.proposal-overview-hero .eyebrow, .proposal-overview-closing .eyebrow { color: var(--label-on-dark); }
+.proposal-overview-hero-grid { display: grid; grid-template-columns: minmax(0,3fr) minmax(180px,1fr); gap: clamp(40px,6vw,100px); }
+.proposal-overview .proposal-overview-hero h1 { font-size: clamp(42px,5.4vw,92px); font-weight: 300; line-height: 1.07; max-width: 1000px; overflow-wrap: anywhere; }
+.proposal-overview-lead { margin-top: 32px; max-width: 720px; font-size: clamp(17px,1.3vw,21px); color: var(--text-on-dark); }
+.proposal-overview-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 20px 32px; margin-top: 36px; }
+.proposal-overview-link { display: inline-flex; align-items: center; gap: 20px; min-height: 44px; font-size: 13px; }
+.proposal-overview-dossier { align-self: stretch; border-left: 1px solid var(--line-dark); padding-left: 28px; }
+.proposal-overview-dossier .eyebrow { margin-bottom: 16px; }
+.proposal-overview-status { font-size: 22px; margin-bottom: 20px; }
+.proposal-overview-dossier > p:not(.eyebrow):not(.proposal-overview-status) { font-size: 13px; color: var(--text-on-dark); }
+.proposal-overview-dossier-line { display: block; height: 1px; background: var(--line-dark); margin: 36px 0; }
+.proposal-overview-layers { list-style: none; padding: 0; margin: 36px 0; }
+.proposal-overview-layers li { display: grid; grid-template-columns: 48px minmax(0,1fr); gap: 24px; padding: 28px 0; border-top: 1px solid var(--line); }
+.proposal-overview-layers li > span { font-size: 26px; font-weight: 300; color: var(--muted); }
+.proposal-overview .proposal-overview-layers h3 { margin: 0 0 12px; }
+.proposal-overview-layers p { color: var(--muted); }
+.proposal-overview-box { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.3fr); gap: clamp(32px,5vw,88px); background: var(--surface); align-items: center; }
+.proposal-overview-box h2 { font-size: var(--heading); line-height: 1.14; }
+.proposal-overview-box-statement { margin: 28px 0 16px; font-size: 22px; line-height: 1.5; }
+.proposal-overview-box-copy > p:not(.eyebrow):not(.proposal-overview-box-statement) { color: var(--muted); font-size: 14px; }
+.proposal-overview-categories { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 24px; }
+.proposal-overview-categories li { padding: 14px 0; border-top: 1px solid var(--line); font-size: 14px; }
+.proposal-overview-box figure { margin: 0; min-width: 0; }
+.proposal-overview-box img { display: block; width: 100%; height: auto; }
+.proposal-overview-box figcaption { padding-top: 16px; border-top: 1px solid var(--line); font-size: 12px; line-height: 1.7; color: var(--muted); }
+.proposal-overview-box figcaption span { display: block; color: var(--ink); font-size: 14px; margin-bottom: 4px; }
+.proposal-overview-flow { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); list-style: none; padding: 0; margin: 0 0 32px; gap: 24px; }
+.proposal-overview-flow li { position: relative; border-top: 1px solid var(--line); padding: 20px 24px 0 0; min-width: 0; }
+.proposal-overview-step-label { display: block; font-size: 12px; line-height: 1.6; color: var(--muted); margin-bottom: 16px; }
+.proposal-overview-flow strong { font-size: clamp(17px,1.5vw,24px); line-height: 1.3; font-weight: 400; display: block; }
+.proposal-overview-flow .bouw-icon { position: absolute; top: 20px; right: 0; }
+.proposal-overview-stages { grid-template-columns: repeat(2,minmax(0,1fr)); margin-top: 36px; }
+.proposal-overview-metrics { margin: 36px 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 32px; }
+.proposal-overview-metrics > div { border-top: 1px solid var(--line-dark); padding: 24px 0 32px; min-width: 0; }
+.proposal-overview-metrics dt { font-size: 13px; line-height: 1.6; color: var(--label-on-dark); }
+.proposal-overview-metrics dd { margin: 16px 0 0; font-size: clamp(19px,2vw,30px); font-weight: 300; line-height: 1.4; }
+.proposal-overview-closing { background: var(--night); color: var(--paper); }
+.proposal-overview-closing h2 { max-width: 1100px; font-size: clamp(36px,4.6vw,76px); font-weight: 300; line-height: 1.12; }
+.proposal-overview-closing > p:not(.eyebrow) { margin-top: 28px; max-width: 720px; color: var(--text-on-dark); }
+.proposal-overview-closing > .proposal-overview-link { margin-top: 28px; }
+@media (max-width: 1023px) {
+  .proposal-overview-hero-grid { grid-template-columns: minmax(0,1fr); }
+  .proposal-overview-dossier { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px 32px; border-left: 0; border-top: 1px solid var(--line-dark); padding: 24px 0 0; }
+  .proposal-overview-dossier p { margin: 0; }
+  .proposal-overview-dossier-line { display: none; }
+}
+@media (max-width: 767px) {
+  .proposal-overview-status { font-size: 18px; }
+  .proposal-overview .proposal-overview-hero h1 { font-size: clamp(36px,9.4vw,56px); }
+  .proposal-overview-hero { padding-top: 44px; }
+  .proposal-overview-actions { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .proposal-overview-layers li { grid-template-columns: 32px minmax(0,1fr); gap: 16px; }
+  .proposal-overview-box { grid-template-columns: minmax(0,1fr); }
+  .proposal-overview-box figure { grid-row: 2; }
+  .proposal-overview-categories { gap: 0 16px; }
+  .proposal-overview-flow { grid-template-columns: minmax(0,1fr); gap: 24px; }
+  .proposal-overview-flow li { padding-right: 32px; }
+  .proposal-overview-flow .bouw-icon { transform: rotate(90deg); }
+  .proposal-overview-stages { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .proposal-overview-stages .bouw-icon { display: none; }
+  .proposal-overview-metrics { grid-template-columns: minmax(0,1fr); }
+}

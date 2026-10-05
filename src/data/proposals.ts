@@ -7,6 +7,21 @@ export const proposals: Proposal[] = [
   {
     id: "01",
     featured: true,
+    page: foodProposalPlan,
+    slug: "gezond-eten-als-basis",
+    category: "Voedselzekerheid",
+    title: "BOUW Basis — Gezond eten als basisvoorziening",
+    description:
+      "Gezond basisvoedsel goedkoper naar huishoudinkomen, met daarnaast een gratis basispakket op aanvraag voor ieder huishouden. BOUW onderzoekt de samenstelling, uitvoering en volledige kosten.",
+    image: "/images/proposals/voeding.svg",
+    href: "/voorstellen/gezond-eten-als-basis",
+    status: "In onderzoek",
+    researchNote:
+      "BOUW Basis is een voorstel in onderzoek. Hoe inkomensafhankelijke ondersteuning en een universeel pakket samen zouden werken, welke voeding passend is en wat de volledige publieke kosten zijn, moet nog worden onderzocht. Er is nog geen proef gestart.",
+  },
+  {
+    id: "02",
+    featured: true,
     page: affordableFoodProposalPlan,
     slug: "vers-eten-moet-goedkoper",
     category: "Betaalbaar leven",
@@ -18,21 +33,6 @@ export const proposals: Proposal[] = [
     status: "In onderzoek",
     researchNote:
       "Dit is een voorstel om te onderzoeken. Lokale productie maakt voeding niet automatisch goedkoper. Volledige kosten, alternatieven en de gevolgen voor consumentenprijzen moeten nog worden onderbouwd.",
-  },
-  {
-    id: "02",
-    featured: true,
-    page: foodProposalPlan,
-    slug: "gezond-eten-als-basis",
-    category: "Voedselzekerheid",
-    title: "Gezond eten als basis",
-    description:
-      "Geen kind zou ongezond moeten eten omdat gezond eten thuis te duur is. We onderzoeken hoe jongeren toegang kunnen krijgen tot verse, voedzame basisvoeding — gekoppeld aan lokale productie en korte voedselketens.",
-    image: "/images/proposals/voeding.svg",
-    href: "/voorstellen/gezond-eten-als-basis",
-    status: "In onderzoek",
-    researchNote:
-      "Gezond eten bereikbaar maken is onze ambitie. Hoe toegang tot basisvoeding via lokale productie kan werken, welke gevolgen dit heeft en wat het kost, moet nog worden onderzocht. Dit voorstel is nog geen bewezen aanpak.",
   },
   {
     id: "03",

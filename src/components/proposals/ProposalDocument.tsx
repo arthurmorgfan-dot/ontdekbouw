@@ -6,8 +6,10 @@ import PlanSection from "./PlanSection";
 import { PilotFramework, CostModel } from "./ResearchFramework";
 import { EvidenceState, ResultsState } from "./EvidenceAndResults";
 import ProposalNextStep from "./ProposalNextStep";
+import ProposalOverview from "./ProposalOverview";
 
 export default function ProposalDocument({ proposal, plan }: { proposal: Proposal; plan: ProposalPlan }) {
+  if (plan.overview) return <ProposalOverview proposal={proposal} plan={plan} overview={plan.overview} />;
   return <main id="main" className="proposal-document">
     <ProposalHero proposal={proposal} plan={plan} />
     <ProposalMethodology />

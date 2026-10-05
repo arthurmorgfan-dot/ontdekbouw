@@ -27,6 +27,7 @@ export type ProposalSource = {
 };
 
 export type ProposalPlan = {
+  overview?: ProposalOverviewContent;
   headings: { problem: string; concept: string; context: string; delivery: string; costs: string; evidence: string; objections: string };
   categoryListLabel: string;
   lead: string;
@@ -56,4 +57,18 @@ export type ProposalPlan = {
   results: { status: string; description: string; outcomes: { label: string; value: string; context: string; sourceId: string }[] };
   challenge: { heading: string; lead: string; prompts: string[]; availability: string };
   nextStep: { introduction: string; tasks: string[] };
+};
+
+/** Editorial overview for a proposal; all quantities remain in the research model. */
+export type ProposalOverviewContent = {
+  name: string;
+  headline: string;
+  principle: string;
+  layers: { title: string; description: string }[];
+  boxStatement: string;
+  metrics: string[];
+  mathStatement: string;
+  pilotHeadline: string;
+  stages: string[];
+  closingHeadline: string;
 };
