@@ -28,11 +28,28 @@ section[id], div[id] { scroll-margin-top: 24px; }
 .section-note:hover { text-decoration: underline; text-underline-offset: 6px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 20px; min-height: 52px; max-width: 100%; padding: 15px 27px; border: 1px solid transparent; border-radius: 2px; font-size: 12px; font-weight: 500; letter-spacing: .09em; line-height: 1.5; transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease); }
 .button-dark { background: var(--ink); color: var(--paper); }
-.button-dark:hover { background: #2c3f35; }
+.button-dark:not(.button-build):hover { background: #2c3f35; }
 .button-light { background: var(--paper); color: var(--ink); }
-.button-light:hover { background: #d8e2d2; }
+.button-light:not(.button-build):hover { background: #d8e2d2; }
 .button-outline { border-color: #ffffff70; color: var(--paper); background: #080f1038; }
-.button-outline:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.button-outline:not(.button-build):hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+/* Build Forward: a solid layer and its contrasting content share one reversible sweep. */
+.button-build { --build-fill: var(--paper); --build-ink: var(--ink); --build-duration: 360ms; --build-ease: cubic-bezier(.22,.68,.24,1); position: relative; overflow: hidden; transition: transform var(--build-duration) var(--build-ease), border-color var(--build-duration) var(--build-ease); }
+.button-build.button-light { --build-fill: var(--ink); --build-ink: var(--paper); }
+.button-build-content, .button-build-layer { display: inline-flex; align-items: center; justify-content: center; gap: 20px; }
+.button-build-layer { position: absolute; inset: 0; padding: inherit; background: var(--build-fill); color: var(--build-ink); clip-path: inset(0 100% 0 0); pointer-events: none; transition: clip-path var(--build-duration) var(--build-ease); }
+.button-build-arrow { display: inline-block; transition: transform var(--build-duration) var(--build-ease); }
+.button-build.button:focus-visible { transform: translateY(-1px); border-color: var(--gold); }
+.button-build:focus-visible .button-build-layer { clip-path: inset(0 0 0 0); }
+.button-build:focus-visible .button-build-arrow { transform: translateX(7px); }
+@media (hover: hover) and (pointer: fine) {
+  .button-build.button:hover { transform: translateY(-1px); border-color: var(--gold); }
+  .button-build:hover .button-build-layer { clip-path: inset(0 0 0 0); }
+  .button-build:hover .button-build-arrow { transform: translateX(7px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button-build.button:is(:hover, :focus-visible), .button-build:hover .button-build-arrow, .button-build:focus-visible .button-build-arrow { transform: none; }
+}
 .bouw-icon { display: inline-block; flex-shrink: 0; vertical-align: -.18em; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .skip-link { position: fixed; top: 12px; left: 12px; z-index: 100; padding: 12px 20px; background: var(--paper); color: var(--ink); transform: translateY(-160%); }
@@ -57,7 +74,7 @@ section[id], div[id] { scroll-margin-top: 24px; }
 .header-actions { display: flex; align-items: center; gap: 24px; margin-left: auto; }
 .desktop-nav + .header-actions { margin-left: 0; }
 .header .button { background: transparent; border-color: #ffffff60; color: var(--paper); min-height: 44px; padding: 10px 20px; font-size: 12px; }
-.header .button:hover { background: var(--paper); color: var(--night); }
+.header .button:not(.button-build):hover { background: var(--paper); color: var(--night); }
 .menu-toggle { display: inline-flex; align-items: center; gap: 12px; padding: 10px 0 10px 10px; min-height: 44px; border: 0; background: transparent; color: inherit; font-size: 12px; }
 .mobile-nav { position: absolute; top: 100%; left: 0; right: 0; max-height: calc(100dvh - 80px); overflow-y: auto; overscroll-behavior: contain; padding: 36px var(--page-gutter) 48px; background: var(--night); border-bottom: 1px solid var(--line-dark); }
 .mobile-nav[hidden] { display: none; }
