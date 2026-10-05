@@ -73,14 +73,16 @@ section[id], div[id] { scroll-margin-top: 24px; }
 .ruler-link::after { content: ""; position: absolute; left: 0; right: var(--underline-end, 0px); bottom: var(--underline-offset); height: 1px; background: var(--underline-color); pointer-events: none; transform: scaleX(0); transform-origin: left center; transition: transform 220ms var(--ease); }
 .ruler-link-with-arrow { --underline-end: 36px; } /* Existing 20px gap + 16px icon. */
 .ruler-link-arrow { display: inline-block; transition: transform 220ms var(--ease); }
-.ruler-link:focus-visible .ruler-link-arrow { transform: translateX(7px); }
-.ruler-link:focus-visible::after, .ruler-link[aria-current="page"]::after { transform: scaleX(1); }
+/* A label-only underline also works inside a full-width card link. */
+.ruler-link-trigger > .ruler-link { display: inline-flex; align-items: center; align-self: stretch; }
+.ruler-link:focus-visible .ruler-link-arrow, .ruler-link-trigger:focus-visible .ruler-link-arrow { transform: translateX(7px); }
+.ruler-link:focus-visible::after, .ruler-link[aria-current="page"]::after, .ruler-link-trigger:focus-visible > .ruler-link::after { transform: scaleX(1); }
 @media (hover: hover) and (pointer: fine) {
-  .ruler-link:hover::after { transform: scaleX(1); }
-  .ruler-link:hover .ruler-link-arrow { transform: translateX(7px); }
+  .ruler-link:hover::after, .ruler-link-trigger:hover > .ruler-link::after { transform: scaleX(1); }
+  .ruler-link:hover .ruler-link-arrow, .ruler-link-trigger:hover .ruler-link-arrow { transform: translateX(7px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .ruler-link:is(:hover, :focus-visible) .ruler-link-arrow { transform: none; }
+  .ruler-link:is(:hover, :focus-visible) .ruler-link-arrow, .ruler-link-trigger:is(:hover, :focus-visible) .ruler-link-arrow { transform: none; }
 }
 .header-actions { display: flex; align-items: center; gap: 24px; margin-left: auto; }
 .desktop-nav + .header-actions { margin-left: 0; }
