@@ -1,0 +1,116 @@
+import type { ProjectBlueprint } from "@/types/project";
+
+export const riseBlueprint: ProjectBlueprint = {
+  status: "In ontwikkeling",
+  category: "BOUWPROJECT / PERSOONLIJKE VOORTGANG",
+  statement: "Iedereen heeft een volgende stap. RISE helpt hem vinden.",
+  lead: "RISE onderzoekt een persoonlijke AI-gids die begint met luisteren. Van begrijpen waar je staat naar een betekenisvol doel, een realistisch plan en een volgende stap — met ruimte om onderweg bij te sturen.",
+  question: "Kan een gesprek iemand helpen een betere volgende stap te vinden — en die ook daadwerkelijk te zetten?",
+  stageNote: "RISE is een onderzoeksproject in ontwikkeling. Het is geen werkende hulpdienst, financiële instelling, kredietverstrekker, uitkeringssysteem, subsidieprogramma of autonome financierings-AI. Er zijn geen gebruikers, pilots, uitbetalingen of bewezen uitkomsten. De afbeelding is conceptueel en toont geen bestaande RISE-dienst. Overtuiging is nog geen bewijs.",
+  heroImage: "/images/projects/rise-hero.png",
+  heroImagePresentation: { position: "48% 55%", hideCaption: true },
+  hypothesis: {
+    title: "Het doel",
+    principle: "Van doel naar volgende stap.",
+    introduction: "Jouw doel. Jouw keuzes. RISE helpt met de volgende stap. RISE wil onderzoeken of langdurige persoonlijke begeleiding mensen helpt van hun huidige situatie naar een zelfgekozen doel te bewegen. Dat kan gaan om schulden, studie, werk, vakmanschap, ondernemen of een persoonlijk doel. Ook wie financieel stabiel is kan behoefte hebben aan richting. Niet iemands hele leven in één gesprek oplossen, maar samen de eerstvolgende bruikbare stap vinden.",
+    steps: ["Situatie begrijpen", "Zelfgekozen doel", "Realistisch plan", "Concrete stap", "Terugkijken en aanpassen"],
+    note: "Dit is een hypothese, geen aangetoonde werking. Een mens bepaalt zelf wat vooruitgang betekent. RISE mag geen welzijn, succes of financiering beloven.",
+  },
+  system: {
+    title: "Het gesprek",
+    introduction: "Begin bij wat iemand zegt, niet bij een formulier of vooraf bepaald traject. Bijvoorbeeld: ‘Ik wil uit mijn schulden komen.’ ‘Ik wil elektricien worden.’ ‘Ik wil een bedrijf beginnen.’ ‘Ik wil weer gaan studeren.’ Of: ‘Ik weet niet precies wat ik wil, maar zo kan het niet verder.’ Dit zijn denkvoorbeelden, geen uitspraken van bestaande RISE-gebruikers.",
+    elements: [
+      { title: "Luisteren", description: "Verkennen wat iemand bedoelt, welke omstandigheden belangrijk zijn en waar onzekerheid zit. Vragen stellen zonder te beschamen, te manipuleren of een doel op te leggen." },
+      { title: "Begrijpen", description: "De persoon controleert of RISE het goed heeft begrepen. Een vaag verlangen kan concreter worden; niet alles hoeft meteen bekend of opgelost te zijn." },
+      { title: "Verder praten", description: "Alleen met toestemming relevante context onthouden, afgesproken voortgang bespreken en opnieuw kijken wanneer omstandigheden of doelen veranderen. Hoe dit veilig en betrouwbaar kan, moet nog worden onderzocht." },
+    ],
+  },
+  designSections: [
+    {
+      id: "volgende-stap-model", title: "Van doel naar volgende stap", tone: "sand",
+      introduction: "PRATEN → BEGRIJPEN → DOEL → PLAN → VOLGENDE STAP → VOORTGANG → AANPASSEN → VERDER. Een plan is geen eindantwoord: het gesprek gaat over tijd verder, met toestemming en ruimte om te stoppen of een andere richting te kiezen.",
+      items: ["Praten", "Begrijpen", "Doel", "Plan", "Volgende stap", "Voortgang", "Aanpassen", "Verder"],
+      note: "RISE zou praktische taken kunnen helpen voorbereiden, aanbevelingen uitleggen en gezamenlijk afgesproken stappen volgen. Dit model is nog niet gebouwd of getest; contextgeheugen mag geen verborgen dossier worden.",
+    },
+    {
+      id: "routes", title: "Wat kan RISE helpen bouwen?",
+      introduction: "De routes zijn voorbeelden, geen vaste programma’s. Bij schulden kan RISE inkomsten en verplichtingen helpen ordenen, urgentie herkennen, een haalbaar budget voorbereiden en passende schuldhulp helpen zoeken. Het betaalt geen schuld automatisch af. Voor iemand die elektricien wil worden kan het opleidingen, toelating, aanvragen, praktijkroutes, kosten, gereedschap, certificering en vervoer helpen onderzoeken — met controle door passende deskundigen.",
+      items: ["Schulden", "Onderwijs", "Vakmanschap", "Werk", "Ondernemerschap", "Persoonlijke doelen"],
+      note: "Een denkvoorbeeld: ‘Ik wil een hoveniersbedrijf beginnen.’ Eerst idee, aannames, eenvoudig plan, eerste klanttest, kosten, juridische en administratieve vereisten, bewijs en volgende stap onderzoeken. Niet meteen startkapitaal verstrekken. Geen van deze voorbeelden is een bestaand traject of resultaat.",
+    },
+    {
+      id: "geld-als-hulpmiddel", title: "Wanneer geld wél helpt", tone: "dark",
+      introduction: "Kan geld slimmer worden ingezet als we eerst begrijpen wat iemand ermee kan veranderen? Niet beginnen bij hoeveel geld iemand wil, maar bij welke concrete blokkade de volgende stap verhindert. Geef mensen niet alleen middelen. Help ze bouwen wat ze ermee willen bereiken.",
+      items: ["Blokkade begrijpen", "Alternatieven afwegen", "Onderbouwing verzamelen", "Mogelijke interventie", "Verwachte verandering", "Onafhankelijke beoordeling"],
+      note: "Noodzakelijk gereedschap, een opleiding, certificering, vervoer, kinderopvang, schuldherstructurering of beperkt startkapitaal kunnen een mogelijke bottleneck zijn. Dat moet per geval worden onderzocht. RISE kan een behoefte helpen onderbouwen en een mogelijke interventie voorstellen; het kent geen geld zelfstandig toe en bepaalt niet wie het ‘verdient’. Er is geen fonds, financieringsbron of toekenningsbeleid vastgesteld.",
+    },
+    {
+      id: "zonder-geld", title: "Wanneer geld níét helpt",
+      introduction: "Kapitaal is niet altijd het antwoord. Informatie, een aanvraag, planning, tijd, begeleiding of professionele hulp kan beter passen. De juiste financiële interventie kan ook nul zijn: dat is een ontwerpmogelijkheid, geen gemeten besparing.",
+      items: ["Informatie", "Planning", "Aanvragen", "Tijd", "Opleidingsroute", "Professionele hulp", "Praktische ondersteuning"],
+      note: "Een ambitie alleen rechtvaardigt geen uitbetaling. Eerst toetsen wat de stap werkelijk blokkeert. Ondersteuning moet zelfstandigheid vergroten, niet een afhankelijkheid van RISE of financiering creëren.",
+    },
+    {
+      id: "mens-en-ai", title: "Mens + AI", tone: "sand",
+      introduction: "AI helpt begrijpen, plannen en voorbereiden; de mens houdt zeggenschap. RISE moet onzekerheid benoemen, aanbevelingen uitleggen en waar nodig naar menselijke of professionele hulp overdragen. Het stelt geen diagnose en vervangt geen noodzakelijke juridische, financiële of medische deskundigheid.",
+      items: ["Toestemming", "Uitlegbaarheid", "Menselijke zeggenschap", "Dataminimalisatie", "Inzage en correctie", "Beoordeling en bezwaar"],
+      note: "Privacy is een ontwerpvoorwaarde: welke gegevens zijn echt nodig, wat kan op het apparaat blijven, wat moet worden opgeslagen en hoe lang? Kan iemand gegevens inzien, corrigeren en verwijderen, en wie heeft toegang? Nog te bepalen is welke informatie nooit financieringsbesluiten mag beïnvloeden. Kwetsbaarheid in een gesprek mag geen financiële score worden. Er komt geen verborgen waardigheidsscore. Eventuele ingrijpende financieringsbesluiten vereisen transparante criteria, begrijpelijke redenen, privacy en beveiliging, discriminatieonderzoek, fraudebescherming, passende menselijke controle, herbeoordeling en bezwaar, en duidelijke grenzen aan automatisering. Deze waarborgen en hun toetsing zijn nog niet uitgewerkt of bewezen.",
+    },
+  ],
+  proof: {
+    title: "Wat moet RISE bewijzen?",
+    introduction: "De gesprekshypothese en een eventuele financieringshypothese vragen afzonderlijk bewijs. Geen van deze vragen is al beantwoord.",
+    questions: ["Verbetert langdurige AI-begeleiding werkelijk het bereiken van zelfgekozen doelen?", "Blijven mensen het over tijd zinvol gebruiken?", "Worden bruikbare, haalbare volgende stappen gevonden?", "Werkt gerichte financiële ondersteuning beter dan ongerichte ondersteuning, als financiering later verantwoord wordt getest?", "Zijn aanbevelingen begrijpelijk en controleerbaar?", "Kunnen vooroordelen en ongelijke behandeling voldoende worden beperkt?", "Kunnen gebruikers beslissingen betekenisvol betwisten en laten herbeoordelen?", "Kunnen privacy en zeggenschap daadwerkelijk worden beschermd?", "Hoe voorkomen we manipulatie en fraude zonder onnodige surveillance?", "Groeit zelfstandigheid of ontstaat afhankelijkheid?", "Wanneer moet AI overdragen aan een mens of deskundige?"],
+  },
+  prototype: {
+    title: "Eerste prototype",
+    introduction: "De eerste toets gaat uitsluitend over begeleiding: gesprek → doel → volgende stap → opvolging → aanpassing. Eerst onderzoeken of dat bruikbare voortgang oplevert, voordat RISE enige rol krijgt in geldverdeling. Geen geautomatiseerde financiering in de eerste proef.",
+    scope: [
+      { label: "Gespreksmodel", value: "Nog te ontwerpen en op grenzen te toetsen" },
+      { label: "Context en toestemming", value: "Nog te bepalen; minimale gegevens als uitgangspunt" },
+      { label: "Testgroep, duur en locatie", value: "Nog te bepalen; geen deelnemers of pilot" },
+      { label: "Menselijke ondersteuning", value: "Overdracht en toezicht nog te ontwikkelen" },
+      { label: "Budget en meetplan", value: "Nog te berekenen en vast te stellen" },
+      { label: "Financiering", value: "Geen onderdeel van de eerste begeleidingsproef" },
+    ],
+    prerequisites: ["Gesprek", "Zelfgekozen doel", "Volgende stap", "Opvolging", "Aanpassing", "Veiligheidstoets", "Meten en publiceren"],
+    note: "Dit is een toekomstig proefkader. Er is geen werkende gesprekspartner, inzendfunctie, gegevensopslag of geldverdeling op deze pagina. Een financieringsonderzoek kan alleen later, met eigen criteria en waarborgen, worden overwogen.",
+  },
+  measurements: {
+    title: "Wat meten we?",
+    introduction: "De persoon moet invloed hebben op wat vooruitgang betekent. Meetmethoden, toestemming, vergelijkingsbasis en grenzen moeten vooraf worden vastgesteld. Meetbaarheid mag geen verplichting worden om een opgelegd doel te volgen.",
+    items: [
+      { label: "Progressie", question: "Welke gezamenlijk afgesproken stappen worden gezet, en komt iemand dichter bij het eigen doel?", status: "Nog te meten" },
+      { label: "Bruikbaarheid", question: "Zijn aanbevelingen uitvoerbaar en begrijpt de persoon de afwegingen?", status: "Nog te meten" },
+      { label: "Continuïteit", question: "Wordt relevante context met toestemming correct onthouden en hergebruikt?", status: "Nog te meten" },
+      { label: "Zelfstandigheid", question: "Wordt iemand beter in staat om zelfstandig verder te gaan?", status: "Nog te meten" },
+      { label: "Veiligheid", question: "Ontstaan schadelijke aanbevelingen, onterechte zekerheid of fouten bij overdracht naar menselijke hulp?", status: "Nog te meten" },
+      { label: "Eerlijkheid", question: "Welke verschillen ontstaan tussen relevante groepen, en werken bezwaar en herbeoordeling betekenisvol?", status: "Nog te meten" },
+      { label: "Impact per interventie", question: "Alleen als financiering later wordt getest: wat veranderde werkelijk door de specifieke ondersteuning, vergeleken met een passende uitgangssituatie?", status: "Nog te meten" },
+    ],
+  },
+  resultsAfterCriticism: true,
+  criticism: {
+    title: "Wat kan er misgaan?",
+    introduction: "Deze risico’s zijn echte ontwerpvragen, geen bezwaren die we alvast kunnen wegredeneren. Een bouwplan wordt beter door kritiek, niet door kritiek te vermijden.",
+    risks: ["AI kan het doel verkeerd begrijpen.", "Begeleiding kan paternalistisch worden.", "Mensen kunnen hun verhaal aanpassen om financiering te krijgen.", "Vooroordelen kunnen aanbevelingen beïnvloeden.", "Privégesprekken kunnen ongepaste beoordelingsdata worden.", "Financiering kan interventies ondersteunen die niet werken.", "Mensen kunnen afhankelijk worden van RISE.", "Fraude kan ontstaan.", "Advies kan professionele of juridische grenzen overschrijden.", "Gebruikers kunnen AI te veel vertrouwen.", "Menselijke beoordelaars kunnen AI-aanbevelingen ongecontroleerd overnemen.", "Doelen kunnen veranderen terwijl RISE het oude plan blijft volgen.", "Voortgang meten kan dwingend worden.", "Eenvoudig meetbare doelen kunnen meer aandacht krijgen dan betekenisvolle doelen."],
+    invitation: "Daag RISE uit.", question: "Wat zien we over het hoofd?",
+    availability: "De aannames staan open. Een mogelijkheid om reacties in te sturen volgt later.",
+  },
+  results: {
+    statement: "Nog geen resultaten.",
+    description: "Er zijn geen RISE-gebruikers, pilots, financieringsuitkomsten, schuldenresultaten, gerealiseerde bedrijven of banen, gemeten AI-nauwkeurigheid of bewezen interventies. Hier horen later echte metingen en beperkingen — ook als begeleiding niet helpt.",
+    principle: "Mislukken mag. Verbergen niet.",
+  },
+  nextStep: {
+    title: "Eerst bewijzen dat het gesprek helpt.",
+    introduction: "Kan een gesprek iemand helpen een betere volgende stap te vinden — en die ook daadwerkelijk te zetten? Begin met het begeleiden en opvolgen van die stap, met toestemming, privacy en menselijke ondersteuning als onderdeel van het ontwerp.",
+    steps: ["Gesprekskader", "Privacy en toestemming", "Veiligheidsgrenzen", "Menselijke overdracht", "Meetplan", "Kleine begeleidingsproef", "Publiceren", "Aanpassen of stoppen"],
+    note: "Financiering volgt niet automatisch. Eerst de begeleidingslus toetsen; daarna pas onderzoeken of een gerichte interventie meerwaarde heeft en verantwoord kan worden beoordeeld. Geld is een mogelijk hulpmiddel, niet het product.",
+  },
+  relationships: [
+    { label: "Standpunt", title: "Werken moet weer iets opleveren", href: "/standpunten#standpunt-10", note: "Een richting voor meer zelfstandigheid, geen bewezen RISE-effect." },
+    { label: "Standpunt", title: "Praktisch leren is echt onderwijs", href: "/standpunten#standpunt-07", note: "Een mogelijke doelrichting; opleidingen en vereisten moeten per situatie worden onderzocht." },
+    { label: "Standpunt", title: "Pak schulden vroeg aan", href: "/standpunten#standpunt-09", note: "Schulden blijven één mogelijke route, niet de volledige RISE-missie." },
+  ],
+};

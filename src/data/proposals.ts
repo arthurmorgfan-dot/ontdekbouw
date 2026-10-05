@@ -13,7 +13,7 @@ export const proposals: Proposal[] = [
     title: "Vers eten moet goedkoper",
     description:
       "Gezond eten zou niet de luxe optie moeten zijn. BOUW onderzoekt hoe lokale productie, slimme kassen en kortere voedselketens verse voeding goedkoper kunnen maken.",
-    image: "/images/agria.svg",
+    image: "/images/grow.svg",
     href: "/voorstellen/vers-eten-moet-goedkoper",
     status: "In onderzoek",
     researchNote:

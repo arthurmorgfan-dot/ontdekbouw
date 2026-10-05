@@ -1,0 +1,9 @@
+.projects-index .projects-index-intro { padding: 64px max(5%, calc((100vw - 1400px) / 2)); background: var(--ink); color: var(--paper); }
+.projects-index .projects-index-intro .eyebrow { color: var(--gold); }
+.projects-index .projects-index-intro h1 { font-size: clamp(40px, 6vw, 80px); line-height: 1.08; max-width: 900px; }
+.projects-index .projects-index-intro > p:last-child { max-width: 650px; font-size: 15px; line-height: 1.8; margin-top: 25px; color: #dbe2d8; }
+@media (max-width: 600px) { .projects-index .projects-index-intro { padding: 42px 6%; } }
+
+.projects-index .project-discovery { padding: 0 5% 42px; text-align: right; }
+.projects-index .project-discovery a { display: inline-flex; align-items: center; gap: 16px; min-height: 44px; font-size: 12px; color: var(--muted); }
+.projects-index .project-discovery a:hover { text-decoration: underline; text-underline-offset: 4px; }

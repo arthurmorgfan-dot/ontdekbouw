@@ -1,0 +1,120 @@
+import type { ProjectBlueprint } from "@/types/project";
+
+export const growBlueprint: ProjectBlueprint = {
+  status: "In ontwikkeling",
+  category: "BOUWPROJECT / VOEDSELPRODUCTIE",
+  statement: "Dezelfde missie. Een ander systeem voor ieder klimaat.",
+  lead: "GROW onderzoekt klimaatadaptieve kassen en gecontroleerde teelt voor verse, voedzame plantvoeding nabij bevolkingscentra. De lokale omgeving is onderdeel van het ontwerp.",
+  question: "Hoe produceren we vers voedsel dicht bij steden, door de lokale omgeving als onderdeel van het ontwerp te gebruiken?",
+  stageNote: "GROW is een onderzoeksproject in ontwikkeling, geen operationeel kasbedrijf, landbouw- of energienetwerk, actieve voedselproducent, bewezen technologie of overheidsprogramma. Er is geen pilot, locatie, kasmaat, gewaskeuze, partner of klant vastgelegd. Het beeld is conceptueel; het toont geen bestaande GROW-installatie. Overtuiging is nog geen bewijs.",
+  heroImage: "/images/projects/grow-hero.png",
+  heroImagePresentation: { position: "55% 55%", hideCaption: true },
+  hypothesis: {
+    title: "Het doel",
+    principle: "Voedselproductie die past bij de plek.",
+    introduction: "GROW onderzoekt of verse vruchten, groenten en andere geschikte plantvoeding betrouwbaar nabij bevolkingscentra kunnen worden geproduceerd, in uiteenlopende klimaten. Niet iedere locatie of ieder gewas hoeft geschikt te blijken. Betrouwbaarheid, voedingswaarde, betaalbaarheid en gevolgen voor de omgeving moeten samen worden beoordeeld.",
+    steps: ["Lokale omstandigheden", "Passend teeltsysteem", "Voedzame opbrengst", "Vergelijking met alternatieven"],
+    note: "De nabijheidshypothese: minder afstand kan transporttijd, bederf en tijd tussen oogst en gebruik verminderen. Dat is nog niet aangetoond. Lokale teelt is niet automatisch goedkoper of milieuvriendelijker; import uit een efficiënte teeltregio kan beter blijven. GROW hoeft niet iedere vergelijking te winnen.",
+  },
+  system: {
+    title: "Het principe",
+    introduction: "Niet overal dezelfde kas. Overal een kas die bij de plek past. Gebruik het klimaat; bestrijd het niet blind. Het doel kan hetzelfde zijn terwijl kasvorm, ventilatie, koeling, verwarming, energievoorziening, waterbeheer en gewassen fundamenteel verschillen.",
+    elements: [
+      { title: "Omgeving als invoer", description: "Temperatuur, zonlicht, wind, luchtvochtigheid, regen en seizoenen vormen het vertrekpunt. Waar relevant horen bodem en omgevingscondities bij het onderzoek." },
+      { title: "Lokale maakbaarheid", description: "Water, energie, materialen, vaardigheden en onderhoud bepalen mede wat uitvoerbaar is. De keuze moet ook passen bij gewassen, bevolkingscentra en bestaande infrastructuur." },
+      { title: "Zelfstandig toetsbaar", description: "GROW onderzoekt productie en voorbereiding op distributie. Het kan aansluiten op gewone supermarkten en bestaande voedselsystemen; LOOP of HIVE zijn geen vereiste." },
+    ],
+  },
+  designSections: [
+    {
+      id: "klimaat", title: "Klimaat als bouwmateriaal", tone: "sand",
+      introduction: "Zon, wind, temperatuur, luchtvochtigheid en seizoenen zijn ontwerpinvoer, niet alleen obstakels. Eerst moet de plaatselijke werkelijkheid worden beschreven, inclusief extremen en nabijheid tot mensen en infrastructuur.",
+      items: ["Temperatuur", "Zonlicht", "Wind", "Luchtvochtigheid", "Regen", "Seizoenen", "Bodem / omgeving", "Water", "Energie", "Materialen", "Gewasvereisten", "Infrastructuur"],
+      note: "Nog te onderzoeken. Er is geen universele kasopzet of gekozen locatie. Omstandigheden die een systeem elders ondersteunen, kunnen hier een beperking zijn.",
+    },
+    {
+      id: "warm-droog", title: "Warm en droog",
+      introduction: "In een warm, droog scenario kan GROW onderzoeken hoe beschaduwing, luchtstromen, warmtebestendig ontwerp en geschikte gewassen samen functioneren. Dit is een onderzoeksrichting, geen opgelost woestijnlandbouwsysteem.",
+      items: ["Zonne-energie", "Passieve beschaduwing", "Gecontroleerde ventilatie", "Nachtelijke koeling", "Windpatronen", "Waterrecirculatie", "Beperken waterverlies", "Passende gewassen"],
+      note: "Verdampingskoeling vraagt een verantwoorde water- en milieubeoordeling. Regenopvang of ontzilting is alleen een onderzoeksmogelijkheid waar locatie en economie dat rechtvaardigen. Warmte betekent niet automatisch méér watergebruik: verbruik en efficiëntie moeten worden gemeten tegenover een passende teeltvergelijking. Ook mogelijke besparingen door gecontroleerde teelt zijn geen vastgesteld GROW-resultaat.",
+    },
+    {
+      id: "koud-donker", title: "Koud en donker", tone: "sand",
+      introduction: "Een noordelijk scenario kan een ander systeem vragen: warmte behouden, kortere teeltseizoenen begrijpen en gewassen kiezen die bij de energie-economie passen. Een warm-klimaatkas wordt niet ongewijzigd naar een koud gebied gekopieerd.",
+      items: ["Isolatie", "Warmtebehoud", "Seizoenszon", "Windbescherming", "Warmteterugwinning", "Efficiënte bijverwarming", "Thermische opslag", "Sneeuwbelasting", "Teeltseizoen"],
+      note: "Kunstlicht is alleen een optie wanneer de vergelijking het rechtvaardigt. Verwarming, verlichting, constructie en gewaskeuze moeten samen worden doorgerekend; betrouwbaarheid en betaalbaarheid zijn nog niet bewezen.",
+    },
+    {
+      id: "energie", title: "Energie", tone: "dark",
+      introduction: "Welk energiesysteem maakt voedselproductie hier betrouwbaar, betaalbaar en ecologisch verdedigbaar? De ambitie is zoveel praktisch mogelijk lokaal passende hernieuwbare energie, zonder één combinatie vooraf tot antwoord te maken.",
+      items: ["Zon", "Wind", "Netstroom", "Opslag", "Restwarmte", "Geothermie waar passend", "Andere koolstofarme bronnen"],
+      note: "Zon en wind garanderen geen continue werking. Opwekprofiel, piekvraag, opslag, reservevoorziening en netaansluiting moeten worden onderzocht. Hernieuwbare bijdrage en totale systeemprestaties zijn nog te meten.",
+    },
+    {
+      id: "water", title: "Water",
+      introduction: "Water is een harde ontwerpvoorwaarde. GROW moet onderzoeken waar het vandaan komt, hoe het wordt gebruikt en wat de gevolgen voor de lokale omgeving zijn. Recirculatie is een te toetsen mechanisme, geen beloofde besparing.",
+      items: ["Verbruik", "Recirculatie", "Verdamping", "Bron", "Opslag", "Behandeling", "Lokale waterdruk"],
+      note: "De vergelijking moet verliezen en behandeling meenemen. Sommige locaties of gewassen kunnen ongeschikt blijken, ook als een kas technisch mogelijk is. Geen opbrengst rechtvaardigt automatisch een onhoudbare waterbron.",
+    },
+    {
+      id: "gewassen", title: "Wat verbouwen we?", tone: "sand",
+      introduction: "Geen definitieve gewassenlijst. Niet iedere vrucht of groente hoort overal te worden geteeld. Selectie moet voortkomen uit de plaatselijke behoefte en een transparante vergelijking van de hele productieopzet.",
+      items: ["Voeding", "Lokale vraag", "Klimaat", "Energievraag", "Watervraag", "Opbrengst", "Economie", "Bestaand aanbod"],
+      note: "Import kan voor een bepaald gewas rationeler zijn. Maximale biomassa is niet hetzelfde als bruikbare voedzame productie. Een beperkte gewaskeuze volgt pas uit onderzoek.",
+    },
+  ],
+  proof: {
+    title: "Wat moet GROW bewijzen?",
+    introduction: "Dit zijn open vragen, geen antwoorden. Het model moet worden vergeleken met bestaande lokale landbouw én geïmporteerd voedsel, met expliciete afbakening van kosten en milieugevolgen.",
+    questions: ["Kan het systeem bruikbare hoeveelheden betrouwbaar produceren?", "Wat kost productie per kilogram bruikbaar voedsel?", "Hoeveel energie vraagt het volledige systeem?", "Hoeveel water vraagt het, inclusief verliezen en behandeling?", "Hoe presteert het tegenover conventionele lokale teelt?", "Hoe presteert het tegenover geïmporteerde voeding?", "Vermindert nabijheid werkelijk verspilling of logistieke kosten?", "Kunnen producenten economisch verantwoord blijven werken?", "Welke gewassen passen bij deze omstandigheden?", "Welke klimaten en locaties zijn geschikt, en welke niet?"],
+  },
+  prototype: {
+    title: "Eerste prototype",
+    introduction: "Begin met één klimaatscenario en één locatiecontext. Onderzoek een kleine gecontroleerde kas met een beperkte, nog te kiezen gewasselectie. Meet energie, water, bruikbare opbrengst en totale kosten; vergelijk met reële alternatieven. Dit is geen gestarte proef.",
+    scope: [
+      { label: "Klimaat en locatie", value: "Nog te bepalen; geen grond of regio gekozen" },
+      { label: "Kas en afmetingen", value: "Nog te ontwerpen op basis van de baseline" },
+      { label: "Gewassen", value: "Nog te onderzoeken en te selecteren" },
+      { label: "Energie en water", value: "Systeemkeuze en meetmethode nog te bepalen" },
+      { label: "Kosten, partners en planning", value: "Nog te berekenen en te bepalen" },
+    ],
+    prerequisites: ["Klimaatscenario", "Locatiecontext", "Bestaande voedselketen", "Transparante baseline", "Klein kasontwerp", "Meten", "Vergelijken"],
+    note: "Geen locatie, budget, dimensies, teeltresultaten, partners of data zijn vastgesteld. Eerst onderzoeken welke test iets kan leren; daarna pas ontwerpen en besluiten of bouwen verantwoord is.",
+  },
+  measurements: {
+    title: "Wat meten we?",
+    introduction: "Meetgrenzen, periode, voedselkwaliteit en vergelijkingsbasis moeten vooraf worden vastgelegd. Alle onderstaande uitkomsten zijn nog onbekend.",
+    items: [
+      { label: "Opbrengst", question: "Hoeveel bruikbaar voedsel ontstaat, hoe consistent is dat en hoeveel gewas gaat verloren?", status: "Nog te meten" },
+      { label: "Water", question: "Hoeveel liter per kilogram of een andere transparante eenheid is nodig, inclusief recirculatie en verliezen?", status: "Nog te meten" },
+      { label: "Energie", question: "Wat is de energie per kilogram, hernieuwbare bijdrage, piekvraag en behoefte aan opslag of reservevoorzieningen?", status: "Nog te meten" },
+      { label: "Kosten", question: "Wat zijn investering, exploitatie en kosten per eenheid bruikbaar voedsel?", status: "Nog te meten" },
+      { label: "Logistiek", question: "Wat vragen afstand tot consumenten, opslag en bederf vergeleken met bestaande aanbodroutes?", status: "Nog te meten" },
+      { label: "Voeding", question: "Welke bruikbare voedingswaarde levert het systeem, voorbij alleen totale biomassa?", status: "Nog te meten" },
+    ],
+  },
+  resultsAfterCriticism: true,
+  criticism: {
+    title: "Wat kan er misgaan?",
+    introduction: "Overtuiging is nog geen bewijs. Als GROW ergens geen zinvolle verbetering biedt, bouwen we GROW daar niet. Deze bezwaren blijven open.",
+    risks: ["Kasbouw kan te duur zijn.", "Energievraag kan de economie onderuit halen.", "Koeling kan meer vragen dan het systeem verantwoord kan leveren.", "Verwarming kan te duur of belastend zijn.", "De waterbron kan onhoudbaar zijn.", "De gewaskeuze kan verkeerd zijn.", "Import kan goedkoper of ecologisch gunstiger blijven.", "Wisselende hernieuwbare opwek kan dure opslag of reservevoorziening vragen.", "Onderhoud kan kennis of onderdelen vereisen die lokaal ontbreken.", "Extreem weer kan infrastructuur beschadigen.", "Lokale materialen kunnen niet aan eisen voldoen.", "Opbrengsten kunnen achterblijven.", "Een techniek kan in één klimaat werken en elders falen.", "Grond nabij steden kan betaalbaarheid verhinderen."],
+    invitation: "Daag GROW uit.", question: "Wat zien we over het hoofd?",
+    availability: "Een bouwplan wordt beter door kritiek, niet door kritiek te vermijden. Een mogelijkheid om reacties in te sturen volgt later.",
+  },
+  results: {
+    statement: "Nog geen resultaten.",
+    description: "GROW heeft geen kas, pilot, voedselproductie of gemeten besparing aangetoond. Hier komen later daadwerkelijke uitkomsten, vergelijkingen en beperkingen — ook wanneer de hypothese niet standhoudt.",
+    principle: "Mislukken mag. Verbergen niet.",
+  },
+  nextStep: {
+    title: "Eerst de omgeving begrijpen.",
+    introduction: "Definieer het eerste klimaat- en locatiescenario en maak een transparante baseline: wat wordt hier vandaag gegeten, waar komt het vandaan, en wat kost het aan water, energie, transport en geld? Pas daarna bepalen of GROW iets betekenisvols kan verbeteren.",
+    steps: ["Scenario", "Bestaand aanbod", "Baseline", "Gewasafweging", "Water- en energiemodel", "Kostenmodel", "Prototype", "Meten en vergelijken", "Verbeteren of stoppen"],
+    note: "GROW onderzoekt productie en voorbereiding op distributie. LOOP onderzoekt distributie en toegang; HIVE onderzoekt complete leefomgevingen. GROW kan bestaande steden, winkels en voedselketens bedienen. Een toekomstige kas kan nabij HIVE liggen, maar geen project vereist de andere. Er is geen geïntegreerd systeem of levering afgesproken.",
+  },
+  relationships: [
+    { label: "Toegang", title: "LOOP", href: "/projecten/loop", note: "Onderzoekt de stap van producent naar bestaande gemeenschappen." },
+    { label: "Leefomgeving", title: "HIVE", href: "/projecten/hive", note: "Een mogelijke nabijgelegen toepassing, geen noodzakelijke afnemer." },
+    { label: "Voorstel", title: "Vers eten moet goedkoper", href: "/voorstellen/vers-eten-moet-goedkoper", note: "Een betaalbaarheidsvraag; lokale productie is niet vooraf het antwoord." },
+  ],
+};

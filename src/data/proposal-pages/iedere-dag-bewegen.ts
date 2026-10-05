@@ -34,7 +34,7 @@ export const movementProposalPlan: ProposalPlan = {
         { title: "Gestimuleerd", description: "Kunnen begeleiding, betaalbaar aanbod en passende stimulansen deelname ondersteunen? Hoe voorkomen we dat een beloning toch druk oplevert of verschillen tussen jongeren vergroot?" },
         { title: "Verplicht", description: "Is een minimale beweegverwachting te rechtvaardigen? Wie bepaalt wat passend is, welke uitzonderingen gelden en wat gebeurt er bij niet-deelname? Hoe voorkomen we dat handhaving of straf het doel ondermijnt?" },
       ],
-      unresolved: "Geen variant is gekozen. Eventuele verplichting vraagt afzonderlijk onderzoek naar vrijheid, rechten, uitvoerbaarheid en proportionaliteit. Een pilot met een vrijwillig aanbod zou op zichzelf geen bewijs zijn voor de rechtvaardiging of werking van dwang. We stellen nu geen sancties of handhavingsregels voor.",
+      unresolved: "Geen variant is gekozen. De vrijheidstest moet juist dit eigen idee kunnen afwijzen. Eventuele verplichting vraagt een veel hogere drempel: noodzaak → bewijs → proportionaliteit → alternatieven → gevolgen voor rechten en vrijheid. Een aantrekkelijk vrijwillig aanbod is het vertrekpunt; dwang vraagt afzonderlijke, sterke rechtvaardiging. Een pilot met een vrijwillig aanbod zou op zichzelf geen bewijs zijn voor de rechtvaardiging of werking van dwang. We stellen nu geen sancties of handhavingsregels voor.",
     },
   },
   delivery: {

@@ -3,13 +3,13 @@ import { notFound } from "next/navigation";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ProjectDocument from "@/components/projects/ProjectDocument";
-import { projects } from "@/data/projects";
+import { routableProjects as projects } from "@/data/projects";
 import "./project.css";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return projects.filter(project => project.page).map(project => ({ slug: project.slug }));
+  return projects.filter(project => project.page && project.slug !== "clarke").map(project => ({ slug: project.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = projects.find(project => project.slug === slug && project.page);
   if (!project?.page) notFound();
   const title = `${project.name} — ${project.tagline} — BOUW`;
-  const description = `${project.page.question} Een BOUW-project in ontwikkeling, nog niet getest.`;
+  const description = `${project.page.question} Een BOUW-project ${project.page.status === "Extreem vroeg" ? "in een extreem vroege onderzoeksfase" : "in ontwikkeling"}, nog niet getest.`;
   return {
     title, description, alternates: { canonical: project.route },
     openGraph: { title, description, url: project.route, locale: "nl_NL", type: "article" },

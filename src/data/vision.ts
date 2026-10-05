@@ -20,7 +20,7 @@ export const visionPillars = [
   {
     id: "03", title: "Meer vrijheid door een sterke basis", introduction: "Vrijheid betekent meer als de basis niet je hele leven opeist.",
     beliefs: ["Werk moet een geloofwaardige route naar zelfstandigheid bieden.", "Kleine schulden moeten niet uitgroeien tot problemen die levens beheersen.", "Voedsel en woningen moeten overvloediger worden; we willen meer maken, niet alleen schaarste verdelen.", "Technologie moet mensen meer mogelijkheden en vrijheid geven."],
-    note: "Een sterke basis moet mensen ruimte geven om hun eigen keuzes te maken. De gevolgen van een aanpak horen bij de beoordeling.",
+    note: "BOUW bouwt mogelijkheden, geen verplichtingen. Een goed systeem geeft mensen meer keuzes over hun eigen leven — niet minder. De vrijheidstest onderzoekt onnodige dwang naast werking, kosten en gevolgen.",
   },
   {
     id: "04", title: "Proberen. Meten. Verbeteren.", introduction: "Overheid en samenleving moeten beter worden in het erkennen van onzekerheid.",
@@ -60,12 +60,12 @@ export const visionPositions: VisionPosition[] = [
     id: "03", title: "Nederland moet veel meer bouwen",
     description: "We willen meer woningen en meer ruimte voor leefbare buurten. Snellere, betaalbaardere manieren van bouwen, waaronder modulaire modellen, moeten worden ontwikkeld en getest.",
     investigation: "We presenteren geen bewezen bouwtempo of kostenbesparing. Kwaliteit, infrastructuur en leefbaarheid horen bij de toetsing.",
-    href: "/#habitary", linkLabel: "Ontdek het woonconcept HABITARY",
+    href: "/projecten/hive", linkLabel: "Ontdek het woonconcept HIVE",
   },
   {
     id: "04", title: "Bewegen moet weer normaal worden",
     description: "Sport en lichamelijke ontwikkeling verdienen een veel sterkere plek in het opgroeien. Het doel is gezondheid en mogelijkheden, met ruimte voor verschillen tussen jongeren.",
-    investigation: "De balans tussen stimulering, toegankelijkheid, verwachtingen en verplichting is nog te onderzoeken. Sportplicht is geen vastgesteld BOUW-beleid; beperkingen, keuzevrijheid en mogelijke nadelige effecten vragen expliciete aandacht.",
+    investigation: "De balans tussen stimulering, toegankelijkheid, verwachtingen en verplichting is nog te onderzoeken. Sportplicht is geen vastgesteld BOUW-beleid. De vrijheidstest stelt een hogere eis: noodzaak, bewijs, proportionaliteit, alternatieven en gevolgen voor rechten en vrijheid. Dit onderzoek kan de verplichtingsoptie ook verwerpen.",
     href: "/voorstellen/iedere-dag-bewegen", linkLabel: "Verken de open vragen rond bewegen",
   },
   {
@@ -82,7 +82,7 @@ export const visionPositions: VisionPosition[] = [
     id: "07", title: "Voorkom schulden voordat ze levens verwoesten",
     description: "Grijp eerder in. BOUW wil voorkomen dat beheersbare financiële problemen uitgroeien tot langdurige persoonlijke en maatschappelijke schade.",
     investigation: "Hoe preventie, kennis en begeleiding kunnen werken, moet worden uitgewerkt en getoetst. Er zijn nog geen resultaten van een BOUW-schuldenprogramma.",
-    href: "/#lifted", linkLabel: "Ontdek het concept LIFTED",
+    href: "/projecten/rise", linkLabel: "Ontdek het concept RISE",
   },
   {
     id: "08", title: "Nederland als knooppunt voor plantaardig voedsel", featured: true,

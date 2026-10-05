@@ -153,3 +153,28 @@
 @media (max-width: 500px) {
   .project-blueprint .blueprint-chapters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 18px; padding-left: 6%; padding-right: 6%; }
 }
+
+/* Optional planning modules; existing LOOP styles retain their defaults. */
+.project-blueprint .blueprint-plan-art { margin: 28px 0; }
+.project-blueprint .blueprint-plan-art img { display: block; width: 100%; height: auto; }
+.project-blueprint .blueprint-plan-art figcaption { font-size: 10px; line-height: 1.7; margin-top: 12px; color: var(--muted); }
+.project-blueprint .blueprint-amenities > div { padding: 24px 0; border-top: 1px solid var(--blueprint-line); }
+.project-blueprint .blueprint-amenities h3 { margin: 0 0 16px; }
+.project-blueprint .blueprint-amenities p { font-size: 14px; line-height: 1.8; color: var(--muted); }
+.project-blueprint .blueprint-scale { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 30px; list-style: none; padding: 32px 0; margin: 24px 0; border-top: 1px solid var(--blueprint-line); border-bottom: 1px solid var(--blueprint-line); }
+.project-blueprint .blueprint-scale li { min-width: 0; }
+.project-blueprint .blueprint-scale h3 { text-transform: uppercase; }
+.project-blueprint .blueprint-scale p { font-size: 13px; line-height: 1.8; color: var(--muted); }
+.project-blueprint .blueprint-scale-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; aspect-ratio: 1; width: min(100%, 150px); padding: 12px; border: 1px solid #b89460; }
+.project-blueprint .blueprint-scale-grid span { border: 1px solid #b89460; background: #d8dccc; }
+.project-blueprint .blueprint-scale-0 span { visibility: hidden; }
+.project-blueprint .blueprint-scale-0 span:first-child { visibility: visible; }
+.project-blueprint .blueprint-scale-1 span:nth-child(n+5) { visibility: hidden; }
+.project-blueprint .blueprint-scale-2 span:nth-child(n+10) { visibility: hidden; }
+@media (max-width: 800px) {
+  .project-blueprint .blueprint-scale { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+}
+@media (max-width: 400px) { .project-blueprint .blueprint-scale { grid-template-columns: 1fr; } }
+
+.project-blueprint h1.blueprint-six-letter-title { font-size: clamp(68px, 10vw, 145px); }
+@media (max-width: 800px) { .project-blueprint h1.blueprint-six-letter-title { font-size: clamp(58px, 17vw, 120px); } }

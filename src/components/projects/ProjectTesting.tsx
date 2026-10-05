@@ -2,7 +2,7 @@ import type { ProjectBlueprint } from "@/types/project";
 import { ProjectFlow } from "./ProjectSystem";
 
 export function PrototypeFramework({ prototype }: { prototype: ProjectBlueprint["prototype"] }) {
-  return <><p>{prototype.introduction}</p>
+  return <>{prototype.statement && <p className="blueprint-core-question">{prototype.statement}</p>}<p>{prototype.introduction}</p>
     {prototype.baseline && <div>
       <h3>{prototype.baseline.title}</h3><p>{prototype.baseline.introduction}</p>
       <ProjectFlow steps={prototype.baseline.steps} label="Toekomstige betaalbaarheidsbaseline, nog niet gemeten" />

@@ -25,7 +25,7 @@ export const foodProposalPlan: ProposalPlan = {
     introduction: "Het werkidee: jongeren krijgen toegang tot een afgebakende voedingsbasis die voornamelijk bestaat uit voedzame, onbewerkte plantaardige producten. Geen definitief menu, maar een pakket waarvan samenstelling, toegankelijkheid en geschiktheid nog moeten worden onderzocht.",
     categories: ["Groenten", "Fruit", "Peulvruchten", "Volkoren granen", "Noten en zaden, waar passend", "Andere voedingskundig onderbouwde basisproducten"],
     caveat: "Nog te onderzoeken: hoeveelheden, leeftijdsgrenzen, allergieën, individuele voedingsbehoeften en welke aanvullende producten nodig zijn. De precieze samenstelling staat niet vast.",
-    context: "Op termijn zou de vraag verbonden kunnen worden aan lokale en regionale productie, naar het soort concepten dat LOOP en AGRIA verkennen. Of dat praktisch, betaalbaar en voldoende schaalbaar is, moet worden onderzocht. We claimen niet dat deze projecten momenteel voeding leveren.",
+    context: "Op termijn zou de vraag verbonden kunnen worden aan lokale en regionale productie, naar het soort concepten dat LOOP en GROW verkennen. Of dat praktisch, betaalbaar en voldoende schaalbaar is, moet worden onderzocht. We claimen niet dat deze projecten momenteel voeding leveren.",
   },
   delivery: {
     flow: ["Lokale productie", "Regionale verdeling", "Toegang voor jongeren", "Meten wat er gebeurt"],
