@@ -22,7 +22,7 @@ export default function Header({ homePath = "", activeHref }: { homePath?: strin
   return <header className="header">
     <a className="wordmark" href={`${homePath}#home`} aria-label="BOUW — naar home">BOUW</a>
     <nav className="desktop-nav" aria-label="Hoofdnavigatie">{site.navigation.map(item => <Link key={item.href} href={navigationHref(item.href)} className={item.href === currentHref ? "active" : undefined} aria-current={item.href === currentHref ? "page" : undefined}>{item.label}</Link>)}</nav>
-    <div className="header-actions"><Button href="/doe-mee">Volg BOUW</Button><button ref={toggle} className="menu-toggle" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? "Sluiten" : "Menu"}<span aria-hidden="true"><Icon name={open ? "close" : "menu"} size={18} /></span></button></div>
+    <div className="header-actions"><Button href="/volg-bouw">Volg BOUW</Button><button ref={toggle} className="menu-toggle" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? "Sluiten" : "Menu"}<span aria-hidden="true"><Icon name={open ? "close" : "menu"} size={18} /></span></button></div>
     <nav id="mobile-navigation" className="mobile-nav" aria-label="Mobiele navigatie" hidden={!open}>{site.navigation.map(item => <Link key={item.href} href={navigationHref(item.href)} aria-current={item.href === currentHref ? "page" : undefined} onClick={() => setOpen(false)}>{item.label}<span aria-hidden="true"><Icon name="arrow-right" /></span></Link>)}</nav>
   </header>;
 }

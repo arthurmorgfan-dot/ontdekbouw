@@ -1,0 +1,23 @@
+.follow-page .follow-hero, .follow-page .follow-section { padding: 64px max(5%, calc((100vw - 1400px) / 2)); }
+.follow-page .follow-hero, .follow-page .follow-contribute { background: var(--ink); color: var(--paper); }
+.follow-page .follow-hero .eyebrow, .follow-page .follow-contribute .eyebrow { color: var(--gold); }
+.follow-page h1 { font-size: clamp(40px, 6vw, 80px); line-height: 1.08; }
+.follow-page h2 { max-width: 850px; }
+.follow-page p, .follow-page dd { font-size: 15px; line-height: 1.8; }
+.follow-page .follow-hero > p:last-child, .follow-page .follow-contribute > p:not(.eyebrow) { max-width: 650px; margin-top: 25px; color: #dbe2d8; }
+.follow-page .follow-topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 48px; margin: 36px 0 28px; }
+.follow-page .follow-topics > div { border-top: 1px solid #d6d8ce; padding-top: 24px; min-width: 0; }
+.follow-page dt { font-family: var(--serif); font-size: 28px; margin-bottom: 12px; }
+.follow-page dd { margin: 0; max-width: 600px; color: var(--muted); }
+.follow-page .follow-note { max-width: 700px; color: var(--muted); }
+.follow-page blockquote { margin: 30px 0 0; font-family: var(--serif); font-size: clamp(28px, 3.5vw, 46px); line-height: 1.2; letter-spacing: -.035em; }
+.follow-page .follow-channel { background: #eeede6; display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr); gap: 48px; }
+.follow-page .follow-channel > div { min-width: 0; }
+.follow-page .follow-channel p:not(.eyebrow) { color: var(--muted); }
+.follow-page .follow-channel p + p { margin-top: 18px; }
+.follow-page .follow-links { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 22px; }
+.follow-page .follow-links a { display: inline-flex; align-items: center; gap: 14px; min-height: 44px; font-size: 13px; }
+.follow-page .follow-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.follow-page .follow-contribute .button { margin-top: 25px; }
+@media (max-width: 800px) { .follow-page .follow-topics, .follow-page .follow-channel { grid-template-columns: 1fr; gap: 28px; } }
+@media (max-width: 600px) { .follow-page .follow-hero, .follow-page .follow-section { padding: 42px 6%; } }
