@@ -1,3 +1,4 @@
+import Icon from "@/components/icons/Icon";
 import Link from "next/link";
 import { clarkeProject } from "@/data/projects";
 import type { Metadata } from "next";
@@ -15,5 +16,5 @@ export const metadata: Metadata = {
 };
 
 export default function ProjectsPage() {
-  return <><a className="skip-link" href="#main">Ga naar inhoud</a><div id="home"><Header homePath="/" activeHref="#projecten" /></div><main id="main" className="projects-index"><header className="projects-index-intro"><p className="eyebrow">Van idee naar toetsbaar systeem</p><h1>Bouwplannen in ontwikkeling.</h1><p>Dit zijn de systemen die BOUW wil ontwerpen, onderzoeken en testen. Ontwikkeling is nog geen bewijs: er zijn nog geen gemeten projectresultaten.</p></header><Projects /><div className="project-discovery"><Link href={clarkeProject.route}>Nog één project. <span aria-hidden="true">→</span></Link></div></main><Footer homePath="/" /></>;
+  return <><a className="skip-link" href="#main">Ga naar inhoud</a><div id="home"><Header homePath="/" activeHref="#projecten" /></div><main id="main" className="projects-index"><header className="projects-index-intro"><p className="eyebrow">Van idee naar toetsbaar systeem</p><h1>Bouwplannen in ontwikkeling.</h1><p>Dit zijn de systemen die BOUW wil ontwerpen, onderzoeken en testen. Ontwikkeling is nog geen bewijs: er zijn nog geen gemeten projectresultaten.</p></header><Projects /><div className="project-discovery"><Link href={clarkeProject.route}>Nog één project. <span aria-hidden="true"><Icon name="arrow-right" /></span></Link></div></main><Footer homePath="/" /></>;
 }

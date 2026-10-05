@@ -225,7 +225,6 @@ section[id],div[id] {
   border-radius:50%;
   display:grid;
   place-items:center;
-  font-size:26px;
   line-height:1}
 .green {
   background:#dbecd9;
@@ -280,9 +279,7 @@ section[id],div[id] {
   height:66px;
   margin:0 auto 9px;
   background:white;
-  border-radius:50%;
-  font-family:var(--serif);
-  font-size:43px}
+  border-radius:50%}
 .step-number {
   font-size:10px;
   color:#796448;
@@ -310,8 +307,7 @@ section[id],div[id] {
   margin:0;
   font-size:11px;
   color:#5e675f}
-.methodology li:not(:last-child):after {
-  content:'→';
+.methodology .method-arrow {
   margin-left:15px;
   color:#9b8c72}
 .closing {
@@ -462,8 +458,7 @@ section[id],div[id] {
   min-height:44px;
   padding:10px 15px;
   font-size:12px}
-.menu-toggle span {
-  font-size:18px}
+
 .mobile-nav {
   display:flex;
   position:absolute;
@@ -614,7 +609,7 @@ section[id],div[id] {
   padding-top:30px;
   font-size:10px;
   gap:10px}
-.methodology li:not(:last-child):after {
+.methodology .method-arrow {
   margin-left:10px}
 .closing-content>p:not(.eyebrow) {
   font-size:14px}
@@ -840,3 +835,6 @@ section[id],div[id] {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* Shared BOUW icon geometry; fixed dimensions avoid layout shifts. */
+.bouw-icon { display: inline-block; flex-shrink: 0; vertical-align: -.18em; }

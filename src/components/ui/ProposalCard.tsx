@@ -1,3 +1,4 @@
+import Icon from "@/components/icons/Icon";
 import Link from "next/link";
 import Image from "next/image";
 import type { Proposal } from "@/types/proposal";
@@ -27,13 +28,13 @@ export default function ProposalCard({ proposal }: { proposal: Proposal }) {
         {proposal.page ? (
           <div className="proposal-details">
             <Link className="proposal-page-link" href={proposal.href}>
-              Bekijk het voorstel <span aria-hidden="true">→</span>
+              Bekijk het voorstel <span aria-hidden="true"><Icon name="arrow-right" /></span>
               <span className="sr-only">: {proposal.title}</span>
             </Link>
           </div>
         ) : <details className="proposal-details" id={`voorstel-${proposal.slug}`}>
           <summary>
-            Bekijk het voorstel <span aria-hidden="true">→</span>
+            Bekijk het voorstel <span aria-hidden="true"><Icon name="arrow-right" /></span>
             <span className="sr-only">: {proposal.title}</span>
           </summary>
           <div className="proposal-research">

@@ -1,3 +1,4 @@
+import Icon from "@/components/icons/Icon";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/layout/Header";
@@ -24,7 +25,7 @@ export default async function ParticipationPage({ searchParams }: { searchParams
   const contactEmail = configuredEmail && /^[A-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(configuredEmail) ? configuredEmail : null;
   return <><a className="skip-link" href="#main">Ga naar inhoud</a><div id="home"><Header homePath="/" activeHref="/doe-mee" /></div><main id="main" className="participation-page">
     <header className="participation-hero"><p className="eyebrow">Bouwen begint met een vraag</p><h1>BOUW vraagt je niet om het met ons eens te zijn.</h1><p className="participation-lead">Help ons uitzoeken wat werkt.</p><p>Een bouwplan wordt beter door kritiek, kennis en bewijs. Je hoeft je nergens bij aan te sluiten om iets bij te dragen.</p></header>
-    <section className="participation-paths" aria-labelledby="paths-heading"><h2 id="paths-heading">Vier manieren om bij te dragen.</h2>{contributionPaths.map((path, index) => <article key={path.id}><div><p className="eyebrow">0{index + 1}</p><h3>{path.title}</h3></div><div><p>{path.description}</p><Link href={`/doe-mee?type=${path.id}&context=${encodeURIComponent(initialContext)}#bijdrage`}>Kies {path.title.toLowerCase()} <span aria-hidden="true">→</span></Link></div></article>)}</section>
+    <section className="participation-paths" aria-labelledby="paths-heading"><h2 id="paths-heading">Vier manieren om bij te dragen.</h2>{contributionPaths.map((path, index) => <article key={path.id}><div><p className="eyebrow">0{index + 1}</p><h3>{path.title}</h3></div><div><p>{path.description}</p><Link href={`/doe-mee?type=${path.id}&context=${encodeURIComponent(initialContext)}#bijdrage`}>Kies {path.title.toLowerCase()} <span aria-hidden="true"><Icon name="arrow-right" /></span></Link></div></article>)}</section>
     <section id="bijdrage" className="participation-compose" aria-labelledby="compose-heading"><div><p className="eyebrow">Jouw bijdrage</p><h2 id="compose-heading">Wat zien we over het hoofd?</h2><p>Kies een onderwerp en beschrijf je idee, vraag, ervaring of bron. Dit is geen aanmelding voor een bestaand programma en geen belofte van samenwerking.</p></div><ContributionComposer key={`${initialType}:${initialContext}`} contactEmail={contactEmail} initialType={initialType} initialContext={initialContext} contexts={contexts} /></section>
   </main><Footer homePath="/" /></>;
 }

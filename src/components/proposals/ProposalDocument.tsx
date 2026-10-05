@@ -1,3 +1,4 @@
+import Icon from "@/components/icons/Icon";
 import type { Proposal, ProposalPlan } from "@/types/proposal";
 import ProposalHero from "./ProposalHero";
 import ProposalMethodology from "./ProposalMethodology";
@@ -28,7 +29,7 @@ export default function ProposalDocument({ proposal, plan }: { proposal: Proposa
       </div>}
     </PlanSection>
     <PlanSection id="uitvoering" label="Mogelijke uitvoering" title={plan.headings.delivery}>
-      <ol className="plan-flow" aria-label="Conceptuele uitvoering">{plan.delivery.flow.map(step => <li key={step}>{step}</li>)}</ol>
+      <ol className="plan-flow" aria-label="Conceptuele uitvoering">{plan.delivery.flow.map((step, index) => <li key={step}><span className="plan-flow-meta" aria-hidden="true">{String(index + 1).padStart(2, "0")} <Icon name="arrow-right" size={12} /></span>{step}</li>)}</ol>
       <h3>Mogelijke uitvoering</h3><ul className="plan-options">{plan.delivery.options.map(option => <li key={option}>{option}</li>)}</ul>
       <div className="plan-research-note"><h3>Nog te onderzoeken</h3><p>{plan.delivery.unresolved}</p></div>
     </PlanSection>

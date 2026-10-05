@@ -1,5 +1,6 @@
 "use client";
 
+import Icon from "@/components/icons/Icon";
 import { useSyncExternalStore, useState, type FormEvent } from "react";
 import { contributionPaths, type ContributionType } from "@/data/participation";
 
@@ -35,7 +36,7 @@ export default function ContributionComposer({ contactEmail, initialType, initia
     {type === "bron" && <div><label htmlFor="contribution-source">Bron-URL (optioneel)</label><input id="contribution-source" name="source" type="url" maxLength={500} placeholder="https://" /></div>}
     <p id="contribution-privacy">Deel alleen wat nodig is om je idee te begrijpen. Geen medische dossiers, schuldenoverzichten, identiteitsgegevens of andere gevoelige informatie. Naam en andere persoonsgegevens zijn niet nodig.</p>
     {contactEmail ? <p>Je verstuurt naar <a href={`mailto:${contactEmail}`}>{contactEmail}</a> met je eigen e-mailprogramma. Je afzenderadres wordt dan onderdeel van je e-mail. BOUW ontvangt pas iets wanneer jij die e-mail verstuurt. Werkt de conceptknop niet, mail dan rechtstreeks naar dit adres.</p> : <p>Er is nog geen gecontroleerd contactadres ingesteld. Je kunt je bijdrage hier voorbereiden en lokaal bewaren. Deze pagina verstuurt niets en BOUW ontvangt het bestand niet.</p>}
-    <button className="button button-dark" type="submit">{contactEmail ? "Open e-mailconcept →" : "Bewaar bijdrage als tekstbestand →"}</button>
+    <button className="button button-dark" type="submit">{contactEmail ? "Open e-mailconcept" : "Bewaar bijdrage als tekstbestand"}<Icon name={contactEmail ? "mail" : "download"} /></button>
     </fieldset>
     <p role="status" aria-live="polite">{notice}</p>
     <noscript><p>Deze concepthulp heeft JavaScript nodig.{contactEmail ? ` Je kunt rechtstreeks mailen naar ${contactEmail}.` : " Er is geen inzendkanaal actief."}</p></noscript>

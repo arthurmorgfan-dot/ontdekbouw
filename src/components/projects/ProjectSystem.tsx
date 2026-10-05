@@ -1,8 +1,9 @@
+import Icon from "@/components/icons/Icon";
 import Image from "next/image";
 import type { ProjectBlueprint } from "@/types/project";
 
 export function ProjectFlow({ steps, label }: { steps: string[]; label: string }) {
-  return <ol className="blueprint-flow" aria-label={label}>{steps.map(step => <li key={step}>{step}</li>)}</ol>;
+  return <ol className="blueprint-flow" aria-label={label}>{steps.map((step, index) => <li key={step}>{step}{index < steps.length - 1 && <Icon name="arrow-right" className="flow-arrow" />}</li>)}</ol>;
 }
 
 export default function ProjectSystem({ system }: { system: ProjectBlueprint["system"] }) {

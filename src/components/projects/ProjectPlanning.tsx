@@ -1,3 +1,4 @@
+import Icon from "@/components/icons/Icon";
 import Link from "next/link";
 import type { ProjectBlueprint } from "@/types/project";
 import ProjectSection from "./ProjectSection";
@@ -10,7 +11,7 @@ export default function ProjectPlanning({ planning, numbers }: { planning: NonNu
     </ProjectSection>
     <ProjectSection id="voorzieningen" number={numbers[1]} title={planning.amenities.title}>
       <p className="blueprint-core-question">{planning.amenities.question}</p><p>{planning.amenities.introduction}</p>
-      <div className="blueprint-amenities">{planning.amenities.elements.map(element => <div key={element.title}><h3>{element.title}</h3><p>{element.description}</p>{element.href && <Link className="blueprint-text-link" href={element.href}>{element.linkLabel} <span aria-hidden="true">→</span></Link>}</div>)}</div>
+      <div className="blueprint-amenities">{planning.amenities.elements.map(element => <div key={element.title}><h3>{element.title}</h3><p>{element.description}</p>{element.href && <Link className="blueprint-text-link" href={element.href}>{element.linkLabel} <span aria-hidden="true"><Icon name="arrow-right" /></span></Link>}</div>)}</div>
     </ProjectSection>
     <ProjectSection id="lokale-uitvoering" number={numbers[2]} title={planning.adaptation.title} tone="dark">
       <p>{planning.adaptation.introduction}</p><ul className="blueprint-opportunities">{planning.adaptation.factors.map(factor => <li key={factor}>{factor}</li>)}</ul><p className="blueprint-note">{planning.adaptation.note}</p>

@@ -28,7 +28,7 @@
 .project-blueprint .blueprint-section-content .blueprint-small-label, .project-blueprint .blueprint-small-label { font-size: 10px; line-height: 1.6; text-transform: uppercase; letter-spacing: .14em; color: #796448; margin: 24px 0 14px; }
 .project-blueprint .blueprint-flow { display: flex; flex-wrap: wrap; gap: 12px 20px; list-style: none; padding: 20px 0; margin: 20px 0; border-top: 1px solid var(--blueprint-line); border-bottom: 1px solid var(--blueprint-line); }
 .project-blueprint .blueprint-flow li { font-size: 13px; line-height: 1.7; }
-.project-blueprint .blueprint-flow li:not(:last-child)::after { content: '→'; margin-left: 20px; color: #9a7b4f; }
+.project-blueprint .blueprint-flow .flow-arrow { margin-left: 20px; color: #9a7b4f; }
 .project-blueprint .blueprint-section-content .blueprint-note { font-size: 12px; line-height: 1.8; color: var(--muted); margin-top: 24px; }
 .project-blueprint .blueprint-system { margin: 30px 0 0; padding: 0; list-style: none; }
 .project-blueprint .blueprint-system > li { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1.35fr); gap: 22px; padding: 24px 0; border-top: 1px solid var(--blueprint-line); }

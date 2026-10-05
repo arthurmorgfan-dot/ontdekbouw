@@ -1,3 +1,4 @@
+import Icon from "@/components/icons/Icon";
 import Link from "next/link";
 import { positionChapters } from "@/data/vision";
 
@@ -11,14 +12,14 @@ export default function VisionPositions() {
           <p className="eyebrow">{position.id} / Standpunt</p><h4 id={`position-${position.id}`}>{position.title}</h4><p>{position.description}</p>
           <blockquote>{position.principle}</blockquote>{position.paragraphs?.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
           <div className="vision-investigation"><p className="vision-small-label">Voorstellen / Nog te onderzoeken</p><p>{position.investigation}</p></div>
-          <aside className="vision-legal-note" aria-label="Onderwijsvoorwaarden"><p>{position.legalNote}</p>{position.source && <a href={position.source.href}>{position.source.title} <span aria-hidden="true">↗</span></a>}</aside>
-          {position.href && <Link href={position.href} className="vision-text-link">{position.linkLabel} <span aria-hidden="true">→</span></Link>}
+          <aside className="vision-legal-note" aria-label="Onderwijsvoorwaarden"><p>{position.legalNote}</p>{position.source && <a href={position.source.href}>{position.source.title} <span aria-hidden="true"><Icon name="external" /></span></a>}</aside>
+          {position.href && <Link href={position.href} className="vision-text-link">{position.linkLabel} <span aria-hidden="true"><Icon name="arrow-right" /></span></Link>}
         </article> :
         <details id={`standpunt-${position.id}`} key={position.id} className="vision-position">
-          <summary><span className="vision-position-number">{position.id}</span><h4>{position.title}</h4><span className="vision-disclosure-icon" aria-hidden="true">+</span></summary>
+          <summary><span className="vision-position-number">{position.id}</span><h4>{position.title}</h4><span className="vision-disclosure-icon" aria-hidden="true"><Icon name="plus" size={20} /></span></summary>
           <div className="vision-position-body"><p className="vision-small-label">Standpunt / Gewenste richting</p><p>{position.description}</p>
             {position.investigation && <div className="vision-investigation"><p className="vision-small-label">Uitwerking / Nog te onderzoeken</p><p>{position.investigation}</p></div>}
-            {position.href && <Link href={position.href} className="vision-text-link">{position.linkLabel} <span aria-hidden="true">→</span></Link>}
+            {position.href && <Link href={position.href} className="vision-text-link">{position.linkLabel} <span aria-hidden="true"><Icon name="arrow-right" /></span></Link>}
           </div>
         </details>
       )}</div>

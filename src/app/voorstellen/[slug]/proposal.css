@@ -21,7 +21,7 @@
 .proposal-document .plan-methodology li { font-size: 13px; }
 .proposal-document .plan-methodology a { display: inline-flex; align-items: center; min-height: 44px; }
 .proposal-document .plan-methodology a:hover { text-decoration: underline; text-underline-offset: 4px; }
-.proposal-document .plan-methodology li:not(:last-child)::after { content: '→'; margin-left: 16px; color: #8b7355; }
+.proposal-document .plan-methodology .method-arrow { margin-left: 16px; color: #8b7355; }
 .proposal-document .plan-section { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr); gap: clamp(32px, 6vw, 90px); padding: 70px max(5%, calc((100vw - 1400px) / 2)); border-bottom: 1px solid var(--plan-line); }
 .proposal-document .plan-section h2 { font-size: clamp(30px, 3.15vw, 46px); line-height: 1.12; }
 .proposal-document .plan-section-body { min-width: 0; }
@@ -34,9 +34,9 @@
 .proposal-document .plan-categories li, .proposal-document .plan-costs li { padding: 15px 0; border-bottom: 1px solid var(--plan-line); font-size: 14px; line-height: 1.5; }
 .proposal-document .plan-research-note { border-left: 2px solid #b89460; padding: 14px 0 14px 20px; margin-top: 24px; }
 .proposal-document .plan-research-note h3 { margin: 0 0 10px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0; }
-.proposal-document .plan-flow { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; padding: 0; margin: 0 0 28px; counter-reset: flow; }
-.proposal-document .plan-flow li { padding: 18px 20px; background: #eeede6; font-family: var(--serif); font-size: 21px; line-height: 1.3; counter-increment: flow; }
-.proposal-document .plan-flow li::before { content: '0' counter(flow) ' →'; display: block; font: 10px Arial, sans-serif; color: #796448; margin-bottom: 12px; }
+.proposal-document .plan-flow { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; padding: 0; margin: 0 0 28px; }
+.proposal-document .plan-flow li { padding: 18px 20px; background: #eeede6; font-family: var(--serif); font-size: 21px; line-height: 1.3; }
+.proposal-document .plan-flow .plan-flow-meta { display: block; font: 10px Arial, sans-serif; color: #796448; margin-bottom: 12px; }
 .proposal-document .plan-options, .proposal-document .plan-questions { padding-left: 20px; margin: 0; }
 .proposal-document .plan-options li, .proposal-document .plan-questions li { padding: 7px 0 7px 5px; font-size: 14px; line-height: 1.7; color: var(--muted); }
 .proposal-document .plan-section-dark { background: var(--ink); color: var(--paper); border-color: #ffffff25; }
@@ -64,7 +64,7 @@
 .proposal-document .plan-objections li { display: flex; align-items: baseline; gap: 20px; padding: 18px 0; border-top: 1px solid var(--plan-line); font-family: var(--serif); font-size: clamp(20px, 2vw, 26px); line-height: 1.35; }
 .proposal-document .plan-objections span { font: 10px Arial, sans-serif; color: #796448; }
 .proposal-document .plan-empty-state { display: flex; gap: 24px; border: 1px solid var(--plan-line); padding: 28px; }
-.proposal-document .plan-empty-symbol { font-family: var(--serif); font-size: 36px; color: #8b7355; }
+.proposal-document .plan-empty-symbol { color: #8b7355; }
 .proposal-document .plan-next-tasks { padding-left: 22px; margin: 24px 0; }
 .proposal-document .plan-next-tasks li { padding: 7px 0 7px 5px; font-size: 14px; line-height: 1.6; color: #dbe2d8; }
 .proposal-document .plan-actions { display: flex; align-items: start; flex-direction: column; gap: 12px; margin-top: 28px; }

@@ -1,3 +1,4 @@
+import Icon from "@/components/icons/Icon";
 import Image from "next/image";
 import Link from "next/link";
 import type { Project, ProjectBlueprint } from "@/types/project";
@@ -13,7 +14,7 @@ export default function ProjectDocument({ project, blueprint }: { project: Proje
   const nextNumber = () => String(++sectionNumber).padStart(2, "0");
   return <main id="main" className="project-blueprint">
     <ProjectHero project={project} blueprint={blueprint} />
-    <nav className="blueprint-chapters" aria-label="Onderdelen van dit project"><a href="#systeem">Het systeem <span aria-hidden="true">↓</span></a><a href="#prototype">Eerste prototype <span aria-hidden="true">↓</span></a>{blueprint.research && <a href="#onderzoek">{blueprint.research.name} <span aria-hidden="true">↓</span></a>}<a href="#resultaten">Resultaten <span aria-hidden="true">↓</span></a></nav>
+    <nav className="blueprint-chapters" aria-label="Onderdelen van dit project"><a href="#systeem">Het systeem <span aria-hidden="true"><Icon name="arrow-down" /></span></a><a href="#prototype">Eerste prototype <span aria-hidden="true"><Icon name="arrow-down" /></span></a>{blueprint.research && <a href="#onderzoek">{blueprint.research.name} <span aria-hidden="true"><Icon name="arrow-down" /></span></a>}<a href="#resultaten">Resultaten <span aria-hidden="true"><Icon name="arrow-down" /></span></a></nav>
     {blueprint.problem && <ProjectSection id="probleem" number={nextNumber()} title={blueprint.problem.title}>{blueprint.problem.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}<h3>{blueprint.problem.principle}</h3></ProjectSection>}
     <ProjectSection id="doel" number={nextNumber()} title={blueprint.hypothesis.title} wide>
       <p className="blueprint-core-question">{blueprint.question}</p>
@@ -42,7 +43,7 @@ export default function ProjectDocument({ project, blueprint }: { project: Proje
       </div>
     </ProjectSection>}
     {blueprint.context && <ProjectSection id="context" number={nextNumber()} title={blueprint.context.title} tone="dark">
-      <blockquote className="blueprint-principle">{blueprint.context.principle}</blockquote>{blueprint.context.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}<ul className="blueprint-opportunities">{blueprint.context.opportunities.map(item => <li key={item}>{item}</li>)}</ul><Link href={blueprint.context.href} className="blueprint-text-link">{blueprint.context.linkLabel} <span aria-hidden="true">→</span></Link>
+      <blockquote className="blueprint-principle">{blueprint.context.principle}</blockquote>{blueprint.context.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}<ul className="blueprint-opportunities">{blueprint.context.opportunities.map(item => <li key={item}>{item}</li>)}</ul><Link href={blueprint.context.href} className="blueprint-text-link">{blueprint.context.linkLabel} <span aria-hidden="true"><Icon name="arrow-right" /></span></Link>
     </ProjectSection>}
     {blueprint.accessPoint && <ProjectSection id="toegangspunt" number={nextNumber()} title={blueprint.accessPoint.title} tone="sand" wide>
       <p className="blueprint-core-question">{blueprint.accessPoint.question}</p><p>{blueprint.accessPoint.introduction}</p><ProjectFlow steps={blueprint.accessPoint.options} label="Mogelijke toegangsvormen, nog te vergelijken" /><p className="blueprint-note">{blueprint.accessPoint.note}</p>
@@ -56,13 +57,13 @@ export default function ProjectDocument({ project, blueprint }: { project: Proje
     {blueprint.research && <ProjectSection id="onderzoek" number={nextNumber()} title={blueprint.research.name} tone="dark" wide><ProjectResearch research={blueprint.research} /></ProjectSection>}
     {!blueprint.resultsAfterCriticism && <ProjectSection id="resultaten" number={nextNumber()} title="Resultaten" wide><ProjectResults results={blueprint.results} /></ProjectSection>}
     <ProjectSection id="kritiek" number={nextNumber()} title={blueprint.criticism.title} tone="sand"><p>{blueprint.criticism.introduction}</p><ul className="blueprint-risks">{blueprint.criticism.risks.map(risk => <li key={risk}>{risk}</li>)}</ul>
-      <aside id="uitdagen" className="blueprint-challenge" aria-labelledby="challenge-heading"><h3 id="challenge-heading">{blueprint.criticism.invitation}</h3><p className="blueprint-challenge-question">{blueprint.criticism.question}</p><Link className="blueprint-text-link" href={`/doe-mee?type=meedenken&context=${project.slug}#bijdrage`}>Deel je vraag of kritiek <span aria-hidden="true">→</span></Link></aside>
+      <aside id="uitdagen" className="blueprint-challenge" aria-labelledby="challenge-heading"><h3 id="challenge-heading">{blueprint.criticism.invitation}</h3><p className="blueprint-challenge-question">{blueprint.criticism.question}</p><Link className="blueprint-text-link" href={`/doe-mee?type=meedenken&context=${project.slug}#bijdrage`}>Deel je vraag of kritiek <span aria-hidden="true"><Icon name="arrow-right" /></span></Link></aside>
     </ProjectSection>
     {blueprint.resultsAfterCriticism && <ProjectSection id="resultaten" number={nextNumber()} title="Resultaten" wide><ProjectResults results={blueprint.results} /></ProjectSection>}
     <ProjectSection id="volgende-stap" number={nextNumber()} title={blueprint.nextStep.title} tone="dark" wide><p>{blueprint.nextStep.introduction}</p><ProjectFlow steps={blueprint.nextStep.steps} label="Volgende stappen voor het bouwmodel" />
       {blueprint.nextStep.researchSequence && <div className="blueprint-research-sequence"><p className="blueprint-small-label">Onderzoek volgt op aangetoonde waarde</p><ProjectFlow steps={blueprint.nextStep.researchSequence} label="Eerst het basissysteem toetsen, dan de aanvullende onderzoeksvraag" /></div>}
-      <p className="blueprint-note">{blueprint.nextStep.note}</p><div className="blueprint-actions"><a className="button button-light" href={`/doe-mee?type=meedenken&context=${project.slug}#bijdrage`}>{blueprint.criticism.invitation} <span aria-hidden="true">→</span></a><Link className="blueprint-text-link" href="/#projecten">Bekijk alle projecten <span aria-hidden="true">→</span></Link></div>
-      <nav className="blueprint-relationships" aria-label="Relatie met BOUW"><ul>{blueprint.relationships.map(item => <li key={item.href}><p className="blueprint-small-label">{item.label}</p><Link href={item.href}>{item.title} <span aria-hidden="true">→</span></Link>{item.note && <p className="blueprint-note">{item.note}</p>}</li>)}</ul></nav>
+      <p className="blueprint-note">{blueprint.nextStep.note}</p><div className="blueprint-actions"><a className="button button-light" href={`/doe-mee?type=meedenken&context=${project.slug}#bijdrage`}>{blueprint.criticism.invitation} <span aria-hidden="true"><Icon name="arrow-right" /></span></a><Link className="blueprint-text-link" href="/#projecten">Bekijk alle projecten <span aria-hidden="true"><Icon name="arrow-right" /></span></Link></div>
+      <nav className="blueprint-relationships" aria-label="Relatie met BOUW"><ul>{blueprint.relationships.map(item => <li key={item.href}><p className="blueprint-small-label">{item.label}</p><Link href={item.href}>{item.title} <span aria-hidden="true"><Icon name="arrow-right" /></span></Link>{item.note && <p className="blueprint-note">{item.note}</p>}</li>)}</ul></nav>
     </ProjectSection>
   </main>;
 }
