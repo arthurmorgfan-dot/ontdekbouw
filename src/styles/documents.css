@@ -1,0 +1,20 @@
+/* Reusable engineering/editorial primitives shared by proposals and project blueprints. */
+.document-section { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.4fr); gap: clamp(32px,7vw,120px); padding: var(--section-space) var(--page-gutter); border-bottom: 1px solid var(--line); }
+.document-section-heading, .document-section-body { min-width: 0; }
+.document-section h2 { font-size: var(--heading); line-height: 1.14; }
+.document-section-body > p, .document-section-body > div > p { font-size: var(--body-size); line-height: 1.85; color: var(--muted); max-width: 850px; }
+.document-section-body > p + p { margin-top: 24px; }
+.document-section-body h3 { font-size: clamp(23px,2.3vw,32px); line-height: 1.3; letter-spacing: -.025em; margin: 36px 0 20px; }
+.document-section-wide { grid-template-columns: 1fr; gap: 44px; }
+.document-section-wide .document-section-heading { max-width: 1000px; }
+.document-section-sand { background: var(--surface); }
+.document-section-dark { background: var(--night); color: var(--paper); border-color: var(--line-dark); }
+.document-section-dark .eyebrow { color: var(--label-on-dark); }
+.document-section-dark .document-section-body > p, .document-section-dark .document-section-body > div > p { color: var(--text-on-dark); }
+@media (max-width: 767px) {
+  .document-section { grid-template-columns: minmax(0,1fr); gap: 32px; }
+  .document-section-body { max-width: 760px; }
+  .document-section-heading .eyebrow { margin-bottom: 16px; }
+  .document-section h2 { font-size: clamp(30px,7.8vw,46px); }
+}
+.experiment-document .document-section > h1 { font-size: var(--display); margin: 0; letter-spacing: -.04em; }

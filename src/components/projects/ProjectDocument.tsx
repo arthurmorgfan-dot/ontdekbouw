@@ -12,7 +12,7 @@ import ProjectPlanning from "./ProjectPlanning";
 export default function ProjectDocument({ project, blueprint }: { project: Project; blueprint: ProjectBlueprint }) {
   let sectionNumber = 0;
   const nextNumber = () => String(++sectionNumber).padStart(2, "0");
-  return <main id="main" className="project-blueprint">
+  return <main id="main" className={`project-blueprint project-${project.slug}`}>
     <ProjectHero project={project} blueprint={blueprint} />
     <nav className="blueprint-chapters" aria-label="Onderdelen van dit project"><a href="#systeem">Het systeem <span aria-hidden="true"><Icon name="arrow-down" /></span></a><a href="#prototype">Eerste prototype <span aria-hidden="true"><Icon name="arrow-down" /></span></a>{blueprint.research && <a href="#onderzoek">{blueprint.research.name} <span aria-hidden="true"><Icon name="arrow-down" /></span></a>}<a href="#resultaten">Resultaten <span aria-hidden="true"><Icon name="arrow-down" /></span></a></nav>
     {blueprint.problem && <ProjectSection id="probleem" number={nextNumber()} title={blueprint.problem.title}>{blueprint.problem.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}<h3>{blueprint.problem.principle}</h3></ProjectSection>}

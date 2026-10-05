@@ -1,28 +1,58 @@
-.participation-page .participation-hero { padding: 64px max(5%, calc((100vw - 1400px) / 2)); background: var(--ink); color: var(--paper); }
+.participation-page .participation-hero { padding: var(--section-space) var(--page-gutter); background: var(--ink); color: var(--paper); }
 .participation-page .participation-hero .eyebrow { color: var(--gold); }
 .participation-page h1 { max-width: 1000px; font-size: clamp(38px, 5.5vw, 78px); line-height: 1.08; }
 .participation-page .participation-lead { font-family: var(--serif); font-size: clamp(28px, 3.5vw, 46px); color: var(--gold); margin: 25px 0; }
 .participation-page .participation-hero > p:last-child { max-width: 640px; line-height: 1.8; }
-.participation-page .participation-paths, .participation-page .participation-compose { padding: 60px max(5%, calc((100vw - 1400px) / 2)); }
+.participation-page .participation-paths, .participation-page .participation-compose { padding: var(--section-space) var(--page-gutter); }
 .participation-page .participation-paths h2 { margin-bottom: 36px; }
 .participation-page .participation-paths article, .participation-page .participation-compose { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr); gap: 48px; }
-.participation-page .participation-paths article { border-top: 1px solid #d6d8ce; padding: 30px 0; }
+.participation-page .participation-paths article { border-top: 1px solid var(--line); padding: 30px 0; }
 .participation-page h3 { font-family: var(--serif); font-size: 30px; font-weight: 400; }
-.participation-page p { font-size: 15px; line-height: 1.8; }
+.participation-page p { font-size: 16px; line-height: 1.8; }
 .participation-page .participation-paths article p, .participation-page .participation-compose p { color: var(--muted); }
-.participation-page .participation-paths a { display: inline-flex; gap: 15px; align-items: center; min-height: 44px; font-size: 13px; margin-top: 14px; }
-.participation-page .participation-compose { background: #eeede6; }
+.participation-page .participation-paths a { display: inline-flex; gap: 15px; align-items: center; min-height: 44px; font-size: 16px; margin-top: 14px; }
+.participation-page .participation-compose { background: var(--surface); }
 .participation-page .participation-compose > div > p:last-child { margin-top: 24px; }
 .participation-page .contribution-form, .participation-page .participation-compose > div { min-width: 0; }
 .participation-page .contribution-form fieldset > div { margin-bottom: 22px; }
-.participation-page label { display: block; margin-bottom: 9px; font-size: 13px; font-weight: 600; }
+.participation-page label { display: block; margin-bottom: 9px; font-size: 16px; font-weight: 600; }
 .participation-page input, .participation-page select, .participation-page textarea { width: 100%; min-width: 0; max-width: 100%; padding: 12px; background: var(--paper); color: var(--ink); border: 1px solid #a5ad9d; border-radius: 0; font: inherit; font-size: 16px; }
 .participation-page textarea { resize: vertical; }
 .participation-page .contribution-form p { font-size: 12px; margin: 16px 0; overflow-wrap: anywhere; }
 .participation-page .contribution-form button { border: 0; cursor: pointer; white-space: normal; max-width: 100%; }
-.participation-page input:focus-visible, .participation-page select:focus-visible, .participation-page textarea:focus-visible { outline: 3px solid #a87538; outline-offset: 3px; }
+.participation-page input:focus-visible, .participation-page select:focus-visible, .participation-page textarea:focus-visible { outline: 3px solid #8c7146; outline-offset: 3px; }
 .participation-page a:hover { text-decoration: underline; text-underline-offset: 4px; }
 @media (max-width: 800px) { .participation-page .participation-paths article, .participation-page .participation-compose { grid-template-columns: 1fr; gap: 24px; } }
-@media (max-width: 500px) { .participation-page .participation-hero, .participation-page .participation-paths, .participation-page .participation-compose { padding: 42px 6%; } }
+@media (max-width: 500px) { .participation-page .participation-hero, .participation-page .participation-paths, .participation-page .participation-compose { padding: var(--section-space) var(--page-gutter); } }
 
 .participation-page .contribution-form fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+
+/* Participation opens in daylight: human, direct, and free of signup theatre. */
+.participation-page .participation-hero { display: grid; grid-template-columns: 1.3fr .7fr; column-gap: 8%; row-gap: 32px; padding: var(--section-space) var(--page-gutter); background: var(--paper); color: var(--ink); }
+.participation-page .participation-hero > .eyebrow { grid-column: 1 / -1; color: var(--muted); margin: 0; }
+.participation-page h1 { grid-column: 1; grid-row: 2 / 4; font-size: clamp(36px,4.8vw,82px); font-weight: 300; max-width: 1000px; }
+.participation-page .participation-lead { grid-column: 2; grid-row: 2; margin: 0; padding-top: 24px; border-top: 1px solid var(--line); font-size: clamp(26px,2.5vw,40px); line-height: 1.3; color: var(--ink); font-weight: 300; }
+.participation-page .participation-hero > p:last-child { grid-column: 2; grid-row: 3; color: var(--muted); }
+.participation-page .participation-paths { background: var(--night); color: var(--paper); padding: var(--section-space) var(--page-gutter); }
+.participation-page .participation-paths h2 { margin-bottom: 56px; }
+.participation-page .participation-paths article { border-color: var(--line-dark); padding: 36px 0; }
+.participation-page .participation-paths article p { color: var(--text-on-dark); }
+.participation-page .participation-paths .eyebrow { color: var(--label-on-dark); }
+.participation-page .participation-paths a { min-height: 48px; font-size: 14px; }
+.participation-page .participation-compose { padding: var(--section-space) var(--page-gutter); gap: 8%; }
+.participation-page .participation-compose h2 { font-size: var(--heading); }
+.participation-page label { font-size: 14px; font-weight: 500; }
+.participation-page input, .participation-page select, .participation-page textarea { min-height: 52px; padding: 14px; border-color: #849080; }
+.participation-page .contribution-form fieldset > div { margin-bottom: 28px; }
+.participation-page .contribution-form p { font-size: 14px; line-height: 1.8; }
+.participation-page .contribution-form p a { text-decoration: underline; }
+.participation-page .contribution-form fieldset:disabled { opacity: .65; }
+@media (max-width: 767px) {
+  .participation-page .participation-hero { grid-template-columns: 1fr; gap: 28px; }
+  .participation-page .participation-hero > *, .participation-page h1, .participation-page .participation-lead, .participation-page .participation-hero > p:last-child { grid-column: auto; grid-row: auto; }
+  .participation-page h1 { font-size: clamp(36px,8.8vw,56px); }
+  .participation-page .participation-lead { margin-top: 12px; }
+  .participation-page .participation-paths article, .participation-page .participation-compose { grid-template-columns: 1fr; gap: 28px; }
+  .participation-page .participation-compose { gap: 48px; }
+  .participation-page .contribution-form button { width: 100%; padding: 16px 20px; justify-content: space-between; text-align: left; letter-spacing: .02em; font-size: 14px; }
+}

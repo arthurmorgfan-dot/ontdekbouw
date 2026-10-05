@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import VisionPillars from "@/components/vision/VisionPillars";
 import VisionPositions from "@/components/vision/VisionPositions";
 import { visionDistinctions } from "@/data/vision";
+import Landscape from "@/components/ui/Landscape";
 import "./vision.css";
 
 const title = "Onze visie — BOUW";
@@ -22,11 +23,12 @@ export default function VisionPage() {
     <div id="home"><Header homePath="/" activeHref="/onze-visie" /></div>
     <main id="main" className="vision-page">
       <section className="vision-hero" aria-labelledby="vision-heading">
+        <Landscape eager />
         <div><p className="eyebrow">Onze visie / Geen beloftes. Bouwplannen.</p><h1 id="vision-heading">Nederland hoeft problemen niet alleen te beheren.<em>We kunnen oplossingen bouwen.</em></h1>
           <p className="vision-hero-intro">BOUW kiest voor een land dat ideeën uitwerkt, onzekerheid erkent en in de praktijk onderzoekt wat werkt. Onze overtuigingen geven richting. Bewijs moet laten zien welke oplossingen die richting werkelijk dichterbij brengen.</p>
           <div className="vision-hero-links"><a href="#pijlers">Onze vier pijlers <span aria-hidden="true"><Icon name="arrow-down" /></span></a><a href="#standpunten">Onze standpunten <span aria-hidden="true"><Icon name="arrow-down" /></span></a></div>
         </div>
-        <div className="vision-positioning"><p>Niet links tegen rechts.<br />Niet optimisme tegen pessimisme.<br /><strong>Bouwen tegen stilstaan.</strong></p><span>Geen beloftes.<br />Bouwplannen.</span></div>
+        <div className="vision-positioning"><p>Niet links tegen rechts.<br />Niet optimisme tegen pessimisme.<br /><strong>Bouwen tegen stilstaan.</strong></p><span>Geen beloftes.<br />Bouwplannen.</span><p className="concept-label">Conceptbeeld / een mogelijke toekomst</p></div>
       </section>
       <section id="onderscheid" className="vision-distinction vision-section" aria-labelledby="distinction-heading">
         <div className="vision-section-heading"><p className="eyebrow">Ambitie met open ogen</p><h2 id="distinction-heading">Een overtuiging is nog geen uitkomst.</h2><p>We maken zichtbaar wat we geloven, waar we naartoe willen en wat nog onderzocht moet worden.</p></div>

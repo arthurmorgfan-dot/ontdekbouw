@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/icons/Icon";
+import Landscape from "@/components/ui/Landscape";
 import "./follow.css";
 
 const title = "Volg BOUW — BOUW";
@@ -20,9 +21,11 @@ export default function FollowPage() {
     <div id="home"><Header homePath="/" activeHref="/volg-bouw" /></div>
     <main id="main" className="follow-page">
       <header className="follow-hero">
+        <Landscape eager />
         <p className="eyebrow">Van idee naar inzicht</p>
         <h1>Volg BOUW</h1>
         <p>Volg hoe ideeën zich ontwikkelen: van voorstel naar een toetsbaar plan, en uiteindelijk naar bewijs en resultaten. Ook wanneer een idee moet veranderen.</p>
+        <span className="follow-image-caption">Conceptbeeld / de horizon van het onderzoek</span>
       </header>
       <section className="follow-section" aria-labelledby="follow-work-heading">
         <p className="eyebrow">Wat je kunt volgen</p>

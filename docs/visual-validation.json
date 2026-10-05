@@ -1,0 +1,67 @@
+{
+  "scope": "15 public pages and branded 404 state",
+  "widths": [
+    320,
+    375,
+    390,
+    430,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "routeViewportChecks": 128,
+  "accessibilityScans": 32,
+  "layoutFailures": [],
+  "automatedAccessibilityViolations": 0,
+  "browserErrors": [],
+  "interactions": [
+    "Mobile menu exposes all destinations without overflow",
+    "Escape closes menu and returns focus",
+    "Menu links navigate and close",
+    "Vision disclosures open",
+    "Standpoint research disclosures open",
+    "Context-aware contribution download contains the prepared source and message",
+    "CLARKE contribution context remains discreet",
+    "Follow page retains honest observation-only behavior",
+    "Reduced motion disables smooth scrolling",
+    "Skip link works with keyboard",
+    "All four permanent redirects remain",
+    "Unpublished results and unknown slugs stay unavailable",
+    "Five flagship projects and separate CLARKE discovery preserved",
+    "Cross-page navigation preserves homepage styling/content",
+    "JavaScript-disabled contribution fallback remains honest",
+    "Core navigation and imagery remain accessible without JavaScript"
+  ],
+  "mobileEmulation": {
+    "metrics": {
+      "metrics": {
+        "cls": 0,
+        "lcp": 60
+      },
+      "hero": {
+        "src": "http://127.0.0.1:3181/images/scenes/river-civilization-1536.webp",
+        "naturalWidth": 1000
+      },
+      "imageBytes": 643554,
+      "fontBytes": 68860,
+      "width": 390,
+      "scroll": 390,
+      "coarse": true
+    },
+    "external": [],
+    "shortLandscapeMenu": {
+      "client": 239,
+      "scroll": 488,
+      "right": 430
+    },
+    "reducedMotionTransition": "0s"
+  },
+  "manualVerification": [
+    "Real iPhone/Safari and Android browsers",
+    "VoiceOver/screen reader reading order and native disclosures",
+    "Browser zoom and text enlargement",
+    "Email draft/client delivery with a verified BOUW contact address"
+  ],
+  "limitations": "Local Chromium emulation and automated checks are not a substitute for real-device or assistive-technology testing. Local timing is not a field performance measurement."
+}

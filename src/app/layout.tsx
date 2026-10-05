@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { site } from "@/data/site";
+import localFont from "next/font/local";
 import "./globals.css";
+import "@/styles/documents.css";
+
+const bouwFont = localFont({ src: "./fonts/Manrope-Variable.ttf", variable: "--font-bouw", display: "swap", weight: "200 800" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ontdekbouw.nl"),
@@ -12,5 +16,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="nl"><body>{children}</body></html>;
+  return <html lang="nl" className={bouwFont.variable}><body>{children}</body></html>;
 }

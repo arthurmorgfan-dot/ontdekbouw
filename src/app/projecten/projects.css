@@ -1,9 +1,24 @@
-.projects-index .projects-index-intro { padding: 64px max(5%, calc((100vw - 1400px) / 2)); background: var(--ink); color: var(--paper); }
+.projects-index .projects-index-intro { padding: var(--section-space) var(--page-gutter); background: var(--ink); color: var(--paper); }
 .projects-index .projects-index-intro .eyebrow { color: var(--gold); }
 .projects-index .projects-index-intro h1 { font-size: clamp(40px, 6vw, 80px); line-height: 1.08; max-width: 900px; }
-.projects-index .projects-index-intro > p:last-child { max-width: 650px; font-size: 15px; line-height: 1.8; margin-top: 25px; color: #dbe2d8; }
-@media (max-width: 600px) { .projects-index .projects-index-intro { padding: 42px 6%; } }
+.projects-index .projects-index-intro > p:last-child { max-width: 650px; font-size: 16px; line-height: 1.8; margin-top: 25px; color: var(--text-on-dark); }
+@media (max-width: 600px) { .projects-index .projects-index-intro { padding: var(--section-space) var(--page-gutter); } }
 
 .projects-index .project-discovery { padding: 0 5% 42px; text-align: right; }
 .projects-index .project-discovery a { display: inline-flex; align-items: center; gap: 16px; min-height: 44px; font-size: 12px; color: var(--muted); }
 .projects-index .project-discovery a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.projects-index .projects-index-intro { padding: 80px var(--page-gutter) 56px; background: var(--night); }
+.projects-index .projects-index-intro h1 { max-width: 1200px; font-size: clamp(42px,6vw,110px); font-weight: 300; }
+.projects-index .project-index-navigation { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 28px; margin-top: 64px; }
+.projects-index .project-index-navigation a { display: flex; align-items: center; gap: 18px; min-height: 64px; border-top: 1px solid var(--line-dark); font-size: 13px; letter-spacing: .12em; }
+.projects-index .project-index-navigation .bouw-icon { color: var(--accent); }
+.projects-index .project-index-navigation a:hover { color: var(--gold); }
+.projects-index .project-discovery { padding: 0 var(--page-gutter) 64px; }
+.projects-index .project-discovery a { font-size: 13px; }
+@media (max-width: 767px) {
+  .projects-index .projects-index-intro { padding-top: 56px; }
+  .projects-index .projects-index-intro h1 { font-size: clamp(36px,8.8vw,60px); }
+  .projects-index .project-index-navigation { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 24px; margin-top: 40px; }
+  .projects-index .project-index-navigation a { min-height: 60px; }
+}

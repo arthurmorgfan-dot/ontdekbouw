@@ -1,6 +1,7 @@
 import Icon from "@/components/icons/Icon";
 import Link from "next/link";
-import Image from "next/image";
+import SceneImage from "@/components/ui/SceneImage";
+import { proposalArtwork } from "@/lib/visuals";
 import type { Proposal, ProposalPlan } from "@/types/proposal";
 
 export default function ProposalHero({ proposal, plan }: { proposal: Proposal; plan: ProposalPlan }) {
@@ -15,7 +16,7 @@ export default function ProposalHero({ proposal, plan }: { proposal: Proposal; p
         <p className="plan-introduction">{plan.introduction}</p>
         <a className="plan-text-link" href="#probleem">Verken het bouwplan <span aria-hidden="true"><Icon name="arrow-down" /></span></a>
       </div>
-      <div className="plan-hero-image"><Image src={proposal.image} alt="" fill sizes="(max-width: 800px) 100vw, 46vw" loading="eager" /><span>Werkidee · nog te onderzoeken</span></div>
+      <div className="plan-hero-image"><SceneImage src={proposalArtwork[proposal.slug]} sizes="(max-width: 767px) 100vw, 35vw" eager /><span>Conceptbeeld / werkidee, nog te onderzoeken</span></div>
     </section>
   );
 }

@@ -10,8 +10,8 @@ export default function ExperimentDocument({ experiment }: { experiment: Publish
   if (!isPublishableExperiment(experiment)) throw new Error("Resultaat mist gemeten uitkomsten of verifieerbare bronverwijzingen.");
   const project = routableProjects.find(item => item.slug === experiment.projectSlug)!;
   const result = experiment.completed;
-  return <main id="main" className="project-blueprint">
-    <header className="blueprint-section blueprint-wide"><p className="eyebrow">{project.name} / Experiment / Gepubliceerd</p><h1>{experiment.title}</h1><p>Gepubliceerd: {experiment.publishedAt}. Beoordeeld: {experiment.reviewedAt}.</p></header>
+  return <main id="main" className="project-blueprint experiment-document">
+    <header className="document-section document-section-wide blueprint-section blueprint-wide"><p className="eyebrow">{project.name} / Experiment / Gepubliceerd</p><h1>{experiment.title}</h1><p>Gepubliceerd: {experiment.publishedAt}. Beoordeeld: {experiment.reviewedAt}.</p></header>
     <ProjectSection id="vraag" number="01" title="Vraag"><p>{experiment.question}</p></ProjectSection>
     <ProjectSection id="hypothese" number="02" label="Verwachting vóór de test" title="Hypothese"><p>{experiment.hypothesis}</p></ProjectSection>
     <ProjectSection id="methode" number="03" title="Methode"><h3>Gepland</h3><p>{experiment.plannedMethod}</p><h3>Werkelijk uitgevoerd</h3><p>{result.actualMethod}</p></ProjectSection>
