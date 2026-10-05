@@ -44,7 +44,13 @@ section[id], div[id] { scroll-margin-top: 24px; }
 .header-principle { padding-left: 28px; border-left: 1px solid #ffffff45; color: var(--label-on-dark); font-size: 12px; letter-spacing: .06em; }
 .desktop-nav { display: flex; align-items: center; gap: 30px; margin-left: auto; }
 .desktop-nav a { display: flex; align-items: center; min-height: 44px; font-size: 12px; white-space: nowrap; }
-.desktop-nav a:hover, .desktop-nav a.active { text-decoration: underline; text-underline-offset: 7px; }
+/* Reusable ruler underline; its absolute line never affects link geometry. */
+.ruler-link { position: relative; --underline-color: var(--gold); --underline-offset: 7px; }
+.ruler-link::after { content: ""; position: absolute; left: 0; right: 0; bottom: var(--underline-offset); height: 1px; background: var(--underline-color); pointer-events: none; transform: scaleX(0); transform-origin: left center; transition: transform 220ms var(--ease); }
+.ruler-link:focus-visible::after, .ruler-link[aria-current="page"]::after { transform: scaleX(1); }
+@media (hover: hover) and (pointer: fine) {
+  .ruler-link:hover::after { transform: scaleX(1); }
+}
 .header-actions { display: flex; align-items: center; gap: 24px; margin-left: auto; }
 .desktop-nav + .header-actions { margin-left: 0; }
 .header .button { background: transparent; border-color: #ffffff60; color: var(--paper); min-height: 44px; padding: 10px 20px; font-size: 12px; }
