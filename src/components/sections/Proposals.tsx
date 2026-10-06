@@ -1,7 +1,9 @@
+import { getI18n } from "@/i18n/server";
 import { featuredProposals } from "@/data/proposals";
 import ProposalCard from "@/components/ui/ProposalCard";
 
-export default function Proposals() {
+export default async function Proposals() {
+  const { t } = await getI18n();
   return (
     <section
       id="voorstellen"
@@ -10,14 +12,10 @@ export default function Proposals() {
     >
       <div className="section-heading proposals-heading">
         <div>
-          <p className="eyebrow">Ideeën voor Nederland</p>
-          <h2 id="proposals-heading">Onze voorstellen</h2>
+          <p className="eyebrow">{t("Ideeën voor Nederland")}</p>
+          <h2 id="proposals-heading">{t("Onze voorstellen")}</h2>
         </div>
-        <p className="proposals-intro">
-          Sommige ideeën beginnen niet als beleid, maar als een vraag: kan het
-          beter? BOUW werkt voorstellen uit, onderzoekt de gevolgen en maakt
-          zichtbaar wat ervoor nodig is.
-        </p>
+        <p className="proposals-intro"> {t("Sommige ideeën beginnen niet als beleid, maar als een vraag: kan het beter? BOUW werkt voorstellen uit, onderzoekt de gevolgen en maakt zichtbaar wat ervoor nodig is.")} </p>
       </div>
       <div className="proposal-grid">
         {featuredProposals.map((proposal) => (

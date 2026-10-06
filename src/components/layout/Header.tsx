@@ -1,5 +1,8 @@
 "use client";
+import { useI18n } from "@/i18n/client";
 
+
+import LanguageControl from "./LanguageControl";
 import Icon from "@/components/icons/Icon";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +11,8 @@ import { site } from "@/data/site";
 import Button from "@/components/ui/Button";
 
 export default function Header({ homePath = "", activeHref }: { homePath?: string; activeHref?: string }) {
-  const navigationHref = (href: string) => href.startsWith("#") ? `${homePath}${href}` : href;
+  const { t, l, locale } = useI18n();
+  const navigationHref = (href: string) => href.startsWith("#") ? `${homePath}${href}` : l(href);
   const currentHref = activeHref ?? (homePath ? undefined : "#home");
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
@@ -65,10 +69,10 @@ export default function Header({ homePath = "", activeHref }: { homePath?: strin
     return () => { document.removeEventListener("keydown", escape); document.removeEventListener("pointerdown", outside); };
   }, [open]);
   return <div className="header-slot" style={headerHeight ? { height: headerHeight } : undefined}><header ref={header} className="header" data-scroll-ready={headerHeight > 0} data-hidden={hidden && !open} onFocusCapture={() => setHidden(false)}>
-    <div className="header-identity"><a className="header-logo" href={`${homePath}#home`} aria-label="BOUW — Mensen bouwen de toekomst — naar home"><Image src="/images/brand/bouw-light.png" alt="" width={1024} height={370} unoptimized /></a>
-    <span className="header-principle">Geen beloftes. Bouwplannen.</span></div>
-    <nav className="desktop-nav" aria-label="Hoofdnavigatie">{site.navigation.filter(item => ["#projecten", "/onze-visie", "/doe-mee"].includes(item.href)).map(item => <Link key={item.href} href={navigationHref(item.href)} className={item.href === currentHref ? "ruler-link active" : "ruler-link"} aria-current={item.href === currentHref ? "page" : undefined}>{item.label}</Link>)}</nav>
-    <div className="header-actions"><Button href="/volg-bouw" build>Volg BOUW</Button><button ref={toggle} className="menu-toggle" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? "Sluiten" : "Menu"}<span aria-hidden="true"><Icon name={open ? "close" : "menu"} size={18} /></span></button></div>
-    <nav id="mobile-navigation" className="mobile-nav" aria-label="Alle pagina’s" hidden={!open}><p className="eyebrow">Verken BOUW</p><div className="navigation-links">{[...site.navigation, { label: "Volg BOUW", href: "/volg-bouw" }].map(item => <Link key={item.href} href={navigationHref(item.href)} aria-current={item.href === currentHref ? "page" : undefined} onClick={() => setOpen(false)}>{item.label}<span aria-hidden="true"><Icon name="arrow-right" /></span></Link>)}</div></nav>
+    <div className="header-identity"><a className="header-logo" href={l(`${homePath}#home`)} aria-label={t("BOUW — Mensen bouwen de toekomst — naar home")}>{locale === "nl" ? <Image src="/images/brand/bouw-light.png" alt="" width={1024} height={370} unoptimized /> : <span className="wordmark">BOUW</span>}</a>
+    <span className="header-principle">{t("Geen beloftes. Bouwplannen.")}</span></div>
+    <nav className="desktop-nav" aria-label={t("Hoofdnavigatie")}>{site.navigation.filter(item => ["#projecten", "/onze-visie", "/doe-mee"].includes(item.href)).map(item => <Link key={item.href} href={l(navigationHref(item.href))} className={item.href === currentHref ? "ruler-link active" : "ruler-link"} aria-current={item.href === currentHref ? "page" : undefined}>{t(item.label)}</Link>)}</nav>
+    <div className="header-actions"><LanguageControl /><Button href={l("/volg-bouw")} build>{t("Volg BOUW")}</Button><button ref={toggle} className="menu-toggle" aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{t(open ? "Sluiten" : "Menu")}<span aria-hidden="true"><Icon name={open ? "close" : "menu"} size={18} /></span></button></div>
+    <nav id="mobile-navigation" className="mobile-nav" aria-label={t("Alle pagina’s")} hidden={!open}><p className="eyebrow">{t("Verken BOUW")}</p><div className="navigation-links">{[...site.navigation, { label: "Volg BOUW", href: "/volg-bouw" }].map(item => <Link key={item.href} href={l(navigationHref(item.href))} aria-current={item.href === currentHref ? "page" : undefined} onClick={() => setOpen(false)}>{t(item.label)}<span aria-hidden="true"><Icon name="arrow-right" /></span></Link>)}</div></nav>
   </header></div>;
 }

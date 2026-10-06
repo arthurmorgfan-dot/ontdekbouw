@@ -1,0 +1,323 @@
+{
+  "date": "2026-10-06",
+  "workspace": "/Users/raydatema/Desktop/bouw",
+  "productionBuild": "passed",
+  "lint": "passed",
+  "typescript": "passed",
+  "publicationGuard": "passed",
+  "localizationCoverage": 1982,
+  "publicRoutes": [
+    {
+      "url": "",
+      "title": "BOUW — Geen beloftes. Bouwplannen.",
+      "description": "BOUW ontwikkelt concrete ideeën, test ze in de praktijk en bouwt verder op wat werkt. Van wonen en voedsel tot werk en gezondheid."
+    },
+    {
+      "url": "/projecten",
+      "title": "Onze projecten — BOUW",
+      "description": "BOUW-projecten in ontwikkeling: systemen om te ontwerpen, onderzoeken en uiteindelijk te testen. Geen bewezen oplossingen of resultaten."
+    },
+    {
+      "url": "/projecten/loop",
+      "title": "LOOP — Vers voedsel voor iedereen — BOUW",
+      "description": "Hoe brengen we betaalbaar, vers en voedzaam voedsel naar mensen toe — zonder dat zij hoeven te verhuizen om er toegang toe te krijgen? Een BOUW-project in ontwikkeling, met een publiek onderzoeksdossier in de fase model → keukentest. Nog geen gemeten of gevalideerd resultaat."
+    },
+    {
+      "url": "/projecten/grow",
+      "title": "GROW — Voedsel dichtbij huis — BOUW",
+      "description": "Hoe produceren we vers voedsel dicht bij steden, door de lokale omgeving als onderdeel van het ontwerp te gebruiken? Een BOUW-project in ontwikkeling, nog niet getest."
+    },
+    {
+      "url": "/projecten/hive",
+      "title": "HIVE — Een complete leefomgeving, vanaf de basis gebouwd. — BOUW",
+      "description": "Hoe bouwen we betaalbare leefgebieden die vrijwel overal ter wereld kunnen worden herhaald — met wonen, voedsel, basiszorg en dagelijkse voorzieningen dichtbij? Een BOUW-project in ontwikkeling, nog niet getest."
+    },
+    {
+      "url": "/projecten/rise",
+      "title": "RISE — Van doel naar volgende stap. — BOUW",
+      "description": "Kan een gesprek iemand helpen een betere volgende stap te vinden — en die ook daadwerkelijk te zetten? Een BOUW-project in ontwikkeling, nog niet getest."
+    },
+    {
+      "url": "/projecten/mend",
+      "title": "MEND — Samenwerken met het herstel van het lichaam. — BOUW",
+      "description": "Hoe kunnen materialen, omgeving en biologie samenwerken met herstelprocessen die het lichaam al bezit? Een BOUW-project in ontwikkeling, nog niet getest."
+    },
+    {
+      "url": "/projecten/clarke",
+      "title": "CLARKE — De laatste lift die we ooit hoeven te bouwen. — BOUW",
+      "description": "Wat zou een permanente fysieke transportverbinding tussen aarde en ruimte vereisen? Een BOUW-project in een extreem vroege onderzoeksfase, nog niet getest."
+    },
+    {
+      "url": "/voorstellen/gezond-eten-als-basis",
+      "title": "BOUW Basis — Gezond eten als basisvoorziening — BOUW",
+      "description": "Wat als Nederland publieke middelen gebruikt om gezond basisvoedsel goedkoper te maken — en ervoor zorgt dat niemand zonder een goede basis hoeft te zitten? Een BOUW-voorstel in onderzoek, geen bewezen oplossing."
+    },
+    {
+      "url": "/voorstellen/vers-eten-moet-goedkoper",
+      "title": "Vers eten moet goedkoper — BOUW",
+      "description": "Waarom is vers en gezond eten vaak duurder dan sterk bewerkt voedsel — en hoeveel daarvan kunnen we daadwerkelijk veranderen? Een BOUW-voorstel in onderzoek, geen bewezen oplossing."
+    },
+    {
+      "url": "/voorstellen/iedere-dag-bewegen",
+      "title": "Iedere dag bewegen — BOUW",
+      "description": "Wat als bewegen voor jongeren net zo vanzelfsprekend wordt als onderwijs? Een BOUW-voorstel in onderzoek, geen bewezen oplossing."
+    },
+    {
+      "url": "/onze-visie",
+      "title": "Onze visie — BOUW",
+      "description": "Nederland hoeft problemen niet alleen te beheren. We kunnen oplossingen bouwen. Ontdek de vier pijlers en twaalf standpunten van BOUW."
+    },
+    {
+      "url": "/standpunten",
+      "title": "Standpunten — BOUW",
+      "description": "Waar staat BOUW voor? Ontdek de richting waarin BOUW Nederland wil bewegen, en de voorstellen die nog onderzoek en toetsing nodig hebben."
+    },
+    {
+      "url": "/doe-mee",
+      "title": "Doe mee — BOUW",
+      "description": "Help BOUW uitzoeken wat werkt. Denk mee, breng expertise mee, deel een bron of help een toekomstige pilot ontwerpen."
+    },
+    {
+      "url": "/volg-bouw",
+      "title": "Volg BOUW — BOUW",
+      "description": "Blijf betrokken bij BOUW: volg voorstellen en projecten op deze website. Onderzoek, bewijs en resultaten worden zichtbaar zodra ze er werkelijk zijn."
+    },
+    {
+      "url": "/en",
+      "title": "BOUW — No promises. Plans to build.",
+      "description": "BOUW develops concrete ideas, tests them in practice and builds on what works. From housing and food to work and health."
+    },
+    {
+      "url": "/en/projecten",
+      "title": "Our projects — BOUW",
+      "description": "BOUW projects in development: systems to design, investigate and eventually test. No proven solutions or results."
+    },
+    {
+      "url": "/en/projecten/loop",
+      "title": "LOOP — Fresh food for everyone — BOUW",
+      "description": "How do we bring affordable, fresh and nutritious food to people — without them having to move to access it? A BOUW project in development, with a public research notebook in the model → kitchen-test phase. No measured or validated result yet."
+    },
+    {
+      "url": "/en/projecten/grow",
+      "title": "GROW — Food close to home — BOUW",
+      "description": "How do we produce fresh food near cities by making the local environment part of the design? A BOUW project in development, not yet tested."
+    },
+    {
+      "url": "/en/projecten/hive",
+      "title": "HIVE — A complete living environment, built from the foundations. — BOUW",
+      "description": "How do we build affordable places to live that could be repeated almost anywhere in the world — with housing, food, primary care and everyday amenities nearby? A BOUW project in development, not yet tested."
+    },
+    {
+      "url": "/en/projecten/rise",
+      "title": "RISE — From goal to next step. — BOUW",
+      "description": "Could a conversation help someone find a better next step — and actually take it? A BOUW project in development, not yet tested."
+    },
+    {
+      "url": "/en/projecten/mend",
+      "title": "MEND — Working with the body's repair processes. — BOUW",
+      "description": "How could materials, environment and biology work with repair processes the body already possesses? A BOUW project in development, not yet tested."
+    },
+    {
+      "url": "/en/projecten/clarke",
+      "title": "CLARKE — The last lift we ever need to build. — BOUW",
+      "description": "What would a permanent physical transport connection between Earth and space require? A BOUW project at an extremely early research stage, not yet tested."
+    },
+    {
+      "url": "/en/voorstellen/gezond-eten-als-basis",
+      "title": "BOUW Basics — Healthy food as a basic provision — BOUW",
+      "description": "What if the Netherlands used public resources to make healthy staples more affordable — and ensured nobody had to go without a good foundation? A BOUW proposal under investigation, not a proven solution."
+    },
+    {
+      "url": "/en/voorstellen/vers-eten-moet-goedkoper",
+      "title": "Fresh food should cost less — BOUW",
+      "description": "Why is fresh, healthy food often more expensive than highly processed food — and how much of that could we actually change? A BOUW proposal under investigation, not a proven solution."
+    },
+    {
+      "url": "/en/voorstellen/iedere-dag-bewegen",
+      "title": "Move every day — BOUW",
+      "description": "What if movement were as natural a part of young people's lives as education? A BOUW proposal under investigation, not a proven solution."
+    },
+    {
+      "url": "/en/onze-visie",
+      "title": "Our vision — BOUW",
+      "description": "The Netherlands can do more than manage problems. We can build solutions. Explore BOUW's four pillars and twelve positions."
+    },
+    {
+      "url": "/en/standpunten",
+      "title": "Positions — BOUW",
+      "description": "What does BOUW stand for? Explore the direction BOUW wants to take the Netherlands and the proposals that still need investigation and testing."
+    },
+    {
+      "url": "/en/doe-mee",
+      "title": "Participate — BOUW",
+      "description": "Help BOUW find out what works. Think with us, contribute expertise, share a source or help design a future pilot."
+    },
+    {
+      "url": "/en/volg-bouw",
+      "title": "Follow BOUW — BOUW",
+      "description": "Stay connected with BOUW: follow proposals and projects on this website. Research, evidence and results become visible when they actually exist."
+    }
+  ],
+  "widths": [
+    1440,
+    768,
+    390,
+    320
+  ],
+  "unexpectedBrowserErrors": [],
+  "accessibility": {
+    "results": [
+      {
+        "route": "/",
+        "violations": []
+      },
+      {
+        "route": "/projecten",
+        "violations": []
+      },
+      {
+        "route": "/projecten/loop",
+        "violations": []
+      },
+      {
+        "route": "/projecten/hive",
+        "violations": []
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "violations": []
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "violations": []
+      },
+      {
+        "route": "/onze-visie",
+        "violations": []
+      },
+      {
+        "route": "/standpunten",
+        "violations": []
+      },
+      {
+        "route": "/doe-mee",
+        "violations": []
+      },
+      {
+        "route": "/volg-bouw",
+        "violations": []
+      },
+      {
+        "route": "/projecten/clarke",
+        "violations": []
+      },
+      {
+        "route": "/en",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten/loop",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten/hive",
+        "violations": []
+      },
+      {
+        "route": "/en/voorstellen/gezond-eten-als-basis",
+        "violations": []
+      },
+      {
+        "route": "/en/voorstellen/iedere-dag-bewegen",
+        "violations": []
+      },
+      {
+        "route": "/en/onze-visie",
+        "violations": []
+      },
+      {
+        "route": "/en/standpunten",
+        "violations": []
+      },
+      {
+        "route": "/en/doe-mee",
+        "violations": []
+      },
+      {
+        "route": "/en/volg-bouw",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten/clarke",
+        "violations": []
+      }
+    ],
+    "checks": [
+      "Touch disclosures",
+      "Localized required validation",
+      "Discreet CLARKE context",
+      "No-JavaScript content/fallbacks",
+      "Skip link",
+      "Scroll header",
+      "Underline/focus"
+    ]
+  },
+  "existingDutchRegression": {
+    "checks": [
+      "Mobile menu exposes all destinations without overflow",
+      "Escape closes menu and returns focus",
+      "Menu links navigate and close",
+      "Vision disclosures open",
+      "Standpoint research disclosures open",
+      "Context-aware contribution download contains the prepared source and message",
+      "CLARKE contribution context remains discreet",
+      "Follow page retains honest observation-only behavior",
+      "Reduced motion disables smooth scrolling",
+      "Skip link works with keyboard",
+      "All four permanent redirects remain",
+      "Unpublished results and unknown slugs stay unavailable",
+      "Five flagship projects and separate CLARKE discovery preserved",
+      "Cross-page navigation preserves homepage styling/content",
+      "JavaScript-disabled contribution fallback remains honest",
+      "Core navigation and imagery remain accessible without JavaScript"
+    ]
+  },
+  "contentLeakage": "No untranslated Dutch prose found on English public pages",
+  "officialAssetHashes": {
+    "dark": "2c224589d16499d6742bcd19aac23b86084fc76fdd2adc82a857dfc3dae53a6a",
+    "light": "83132c1e8df233bda264afc77a19e73fd96207ef3159f66c29db8aae3d6952a5"
+  },
+  "limitations": [
+    "Official logos include Dutch tagline; English uses existing live-text BOUW fallback.",
+    "No current light-background logo placement; black asset retained and contrast previewed.",
+    "Automated accessibility tests do not replace a human screen-reader review.",
+    "Real email delivery and external linked websites were not exercised."
+  ],
+  "deepLinks": {
+    "internalLinksAndAnchorsChecked": 980,
+    "status": "passed"
+  },
+  "extendedVisualAudit": {
+    "routeViewportChecks": 256,
+    "widths": [
+      320,
+      375,
+      390,
+      430,
+      768,
+      1024,
+      1440,
+      1920
+    ],
+    "automatedAccessibilityScans": 64,
+    "accessibilityViolations": 0,
+    "overflowOrClippedText": 0,
+    "browserErrors": [],
+    "status": "existing label size exception",
+    "exception": "Existing unchanged LOOP product-bridge blueprint-small-label is 11px in both languages. The original visual script exits nonzero because its minimum is 12px; all remaining checks passed."
+  }
+}
