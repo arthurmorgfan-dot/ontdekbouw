@@ -2,6 +2,11 @@ import type { ProjectBlueprint } from "@/types/project";
 
 export const loopBlueprint: ProjectBlueprint = {
   experimentSlug: "loop-001",
+  productExperience: {
+    href: "https://www.loopfood.nl",
+    demoHref: "https://www.loopfood.nl/demo",
+    introduction: "LOOP wordt inmiddels ook als productervaring gebouwd.",
+  },
   status: "In ontwikkeling",
   category: "BOUWPROJECT / VOEDSEL",
   statement: "Vers voedsel voor iedereen.",

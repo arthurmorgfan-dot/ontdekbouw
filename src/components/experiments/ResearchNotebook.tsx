@@ -16,12 +16,16 @@ const evidenceLevels = [
 ];
 
 /** Work-in-progress renderer, deliberately separate from the gated result document. */
-export default function ResearchNotebook({ experiment, notebook }: { experiment: Experiment; notebook: NotebookContent }) {
+export default function ResearchNotebook({ experiment, notebook, productDemoHref }: { experiment: Experiment; notebook: NotebookContent; productDemoHref?: string }) {
   const prefix = `experiment-${experiment.id}`;
   return <div className="research-notebook">
     <ProjectSection id={prefix} label={`BOUW × ${experiment.projectSlug.toUpperCase()} / EXPERIMENT ${experiment.id}`} title={experiment.title} tone="dark" wide>
       <div className="research-notebook-identity"><div><p className="blueprint-small-label">MODEL → KEUKENTEST / {notebook.candidate}</p><p className="research-notebook-stage">{notebook.stage}</p><p className="research-notebook-amount">± {money(notebook.model.amount)}</p><p className="research-notebook-unit">{notebook.model.unit} / modelhypothese / CALCULATION</p></div><div className="research-notebook-boundary"><blockquote>Dit is geen resultaat. Het is het getal dat we nu proberen kapot te maken.</blockquote><p>Geen bewezen weekkost. Geen voltooid pilotresultaat. Geen voedingsadvies of gevalideerd dieet.</p><p>{notebook.model.basis}</p></div></div>
       <p className="blueprint-note">{notebook.model.limitation}</p><div className="blueprint-actions"><Button href={`#${prefix}-iteraties`} variant="light" build>Volg de modeliteraties</Button><Link href={`#${prefix}-onbekend`} className="blueprint-text-link ruler-link-trigger"><span className="ruler-link">Wat kan het model breken?</span><span className="ruler-link-arrow" aria-hidden="true"><Icon name="arrow-right" /></span></Link></div>
+      {productDemoHref && <div className="research-notebook-product-bridge">
+        <p className="blueprint-note">BOUW onderzoekt. loop. maakt het voorstel ervaarbaar. De demo is geen operationele voedseldienst.</p>
+        <a href={productDemoHref} className="blueprint-text-link ruler-link-trigger"><span className="ruler-link">Bekijk de productdemo</span><span className="ruler-link-arrow" aria-hidden="true"><Icon name="external" /></span></a>
+      </div>}
     </ProjectSection>
     <ProjectSection id={`${prefix}-vraag`} label={`Experiment ${experiment.id} / Vraag & methode`} title="Een spreadsheet moet de keuken overleven.">
       <p>{experiment.question}</p><h3>De bredere LOOP-vraag</h3><p>Kan een LOOP-netwerk in Nederland 1.000 mensen voorzien van een afgebakend weekpakket met voedzame, overwegend plantaardige basisproducten tegen concurrerende kosten, met bestaande infrastructuur waar dat praktisch is?</p><p className="blueprint-small-label">ASSUMPTION / Rekeneenheid</p><p>{notebook.modelingUnit.explanation}</p><h3>Van model naar echte maaltijden</h3><p>{experiment.plannedMethod}</p><p className="blueprint-note">De keukentestfase is geen voedingskundige validatie of deelnemerspilot. Er worden nog geen gemeten maaltijdresultaten geclaimd.</p>
