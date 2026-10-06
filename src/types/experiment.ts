@@ -19,6 +19,7 @@ export type ExperimentArtifact = {
   sourceIds: string[];
 };
 export type ExperimentPlan = {
+  notebook?: ResearchNotebook;
   id: string; slug: string; title: string; projectSlug: string;
   question: string; hypothesis: string; plannedMethod: string;
   cost: ExperimentCost; measurements: ExperimentMeasurement[];
@@ -36,3 +37,20 @@ export type Experiment = ExperimentPlan & (
   | { status: "gepubliceerd"; completed: CompletedExperiment; publishedAt: string; reviewedAt: string }
 );
 export type PublishedExperiment = Extract<Experiment, { status: "gepubliceerd" }>;
+
+/** Public work in progress is not a published, measured result. */
+export type ResearchNotebook = {
+  stage: "MODEL" | "KEUKENTEST";
+  candidate: string;
+  model: { state: "CALCULATION"; amount: number; currency: "EUR"; unit: string; basis: string; limitation: string };
+  modelingUnit: { state: "ASSUMPTION"; people: number; explanation: string };
+  provenance: string;
+  iterations: { state: "CALCULATION"; amount: number; explanation: string; repairedWeakness?: boolean }[];
+  ingredients: string[];
+  meals: string[];
+  risks: { label: string; explanation: string; state: "UNKNOWN" }[];
+  unknowns: { label: string; state: "UNKNOWN"; explanation: string }[];
+  verdict: string;
+  notValidatedAs: string[];
+  nextSteps: string[];
+};

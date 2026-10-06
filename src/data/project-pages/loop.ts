@@ -1,12 +1,13 @@
 import type { ProjectBlueprint } from "@/types/project";
 
 export const loopBlueprint: ProjectBlueprint = {
+  experimentSlug: "loop-001",
   status: "In ontwikkeling",
   category: "BOUWPROJECT / VOEDSEL",
   statement: "Vers voedsel voor iedereen.",
   lead: "Betaalbaar, vers en voedzaam voedsel naar mensen toe brengen, waar zij al wonen. LOOP onderzoekt lokale toegang en distributie, met bestaande voorzieningen waar die werken.",
   question: "Hoe brengen we betaalbaar, vers en voedzaam voedsel naar mensen toe — zonder dat zij hoeven te verhuizen om er toegang toe te krijgen?",
-  stageNote: "LOOP is een project in ontwikkeling, geen operationeel voedselbedrijf of overheidsprogramma. Er zijn geen LOOP-knooppunten, distributienetwerken, leveranciersafspraken, pilots of gemeten resultaten. Het hero-beeld is een mogelijke sfeer, geen vastgesteld bouwplan of bestaande LOOP-locatie. LOOP bezit geen landbouw- of kassysteem en is geen investeringsproduct.",
+  stageNote: "LOOP is een project in ontwikkeling, geen operationeel voedselbedrijf of overheidsprogramma. Er zijn geen LOOP-knooppunten, distributienetwerken, leveranciersafspraken, pilots of gemeten resultaten. Het hero-beeld is een mogelijke sfeer, geen vastgesteld bouwplan of bestaande LOOP-locatie. Experiment 001 bevindt zich in de fase model → keukentest; de modelhypothese is geen gevalideerd dieet of gemeten weekkost. LOOP bezit geen landbouw- of kassysteem en is geen investeringsproduct.",
   heroImage: "/images/projects/loop-hero.png",
   heroImagePresentation: { position: "50% 55%", hideCaption: true },
   problem: {
@@ -105,8 +106,8 @@ export const loopBlueprint: ProjectBlueprint = {
     principle: "Mislukken mag. Verbergen niet.",
   },
   nextStep: {
-    title: "Eerst begrijpen wat er vandaag is.",
-    introduction: "Identificeer een geloofwaardig testgebied en stel de baseline vast: wat kost een week vers, voedzaam voedsel hier vandaag — in geld én werktijd? Pas daarna onderzoeken of een ander toegangsmodel iets verbetert. De volgende stap is geen groot LOOP-complex bouwen.",
+    title: "Eerst de keuken. Dan verder toetsen.",
+    introduction: "Experiment 001 begint met keukenmetingen van het model. Daarna volgen wetenschappelijke review en onderzoek naar inkoop en logistiek. Voor een latere toegangstest: identificeer een geloofwaardig testgebied en stel de baseline vast: wat kost een week vers, voedzaam voedsel hier vandaag — in geld én werktijd? Pas daarna onderzoeken of een ander toegangsmodel iets verbetert. De volgende stap is geen groot LOOP-complex bouwen.",
     steps: ["Testgebied onderbouwen", "Voedselpakket", "Lokale prijsbaseline", "Transparant urenmodel", "Toegangsvormen vergelijken", "Kleine test", "Meten en publiceren", "Verbeteren of stoppen"],
     note: "GROW onderzoekt productie; LOOP onderzoekt toegang en distributie. HIVE bouwt als onderzoeksrichting een betere basis voor nieuwe leefomgevingen; LOOP brengt mogelijk een deel van die basis naar mensen die al ergens wonen. Dit zijn afzonderlijke projecten, geen bestaand geïntegreerd systeem. Een toekomstige HIVE kan gewone supermarkten of andere voedselvoorzieningen gebruiken. Mensen hoeven niet naar HIVE te verhuizen om van betere voedseltoegang te profiteren.",
   },

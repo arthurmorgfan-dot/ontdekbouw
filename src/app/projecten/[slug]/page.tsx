@@ -17,7 +17,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = projects.find(project => project.slug === slug && project.page);
   if (!project?.page) notFound();
   const title = `${project.name} — ${project.tagline} — BOUW`;
-  const description = `${project.page.question} Een BOUW-project ${project.page.status === "Extreem vroeg" ? "in een extreem vroege onderzoeksfase" : "in ontwikkeling"}, nog niet getest.`;
+  const description = project.page.experimentSlug
+    ? `${project.page.question} Een BOUW-project in ontwikkeling, met een publiek onderzoeksdossier in de fase model → keukentest. Nog geen gemeten of gevalideerd resultaat.`
+    : `${project.page.question} Een BOUW-project ${project.page.status === "Extreem vroeg" ? "in een extreem vroege onderzoeksfase" : "in ontwikkeling"}, nog niet getest.`;
   return {
     title, description, alternates: { canonical: project.route },
     openGraph: { title, description, url: project.route, locale: "nl_NL", type: "article" },

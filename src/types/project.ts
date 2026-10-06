@@ -10,6 +10,7 @@ export type Project = {
 };
 
 export type ProjectBlueprint = {
+  experimentSlug?: string;
   status: "In ontwikkeling" | "Extreem vroeg";
   category: string;
   statement: string;

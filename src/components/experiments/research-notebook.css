@@ -1,0 +1,39 @@
+/* Research trail inside the existing project/editorial system; no new visual identity. */
+.research-notebook { min-width: 0; }
+.research-notebook-identity { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: clamp(32px,6vw,100px); }
+.research-notebook-stage { font-size: 16px; letter-spacing: .12em; margin-bottom: 24px; }
+.research-notebook-amount { font-size: clamp(54px,8.5vw,132px); font-weight: 300; line-height: 1.1; letter-spacing: -.04em; }
+.research-notebook-unit { margin-top: 18px; color: var(--text-on-dark); font-size: 13px; }
+.research-notebook-boundary { border-left: 1px solid var(--line-dark); padding-left: clamp(24px,3vw,48px); }
+.research-notebook-boundary blockquote { margin: 0 0 28px; font-size: clamp(25px,3vw,42px); line-height: 1.25; letter-spacing: -.025em; }
+.research-notebook-boundary p { font-size: 16px; line-height: 1.8; color: var(--text-on-dark); margin-top: 20px; }
+.research-notebook-iterations { list-style: none; margin: 40px 0; padding: 0; }
+.research-notebook-iterations li { display: grid; grid-template-columns: minmax(0,.7fr) minmax(0,1.3fr); gap: clamp(24px,6vw,100px); border-top: 1px solid var(--line); padding: 32px 0; }
+.research-notebook-label { display: block; font-size: 12px; line-height: 1.7; letter-spacing: .08em; color: var(--muted); }
+.research-notebook-price { display: block; font-size: clamp(36px,5vw,68px); line-height: 1.1; font-weight: 300; letter-spacing: -.035em; margin: 16px 0; }
+.research-notebook-next { display: block; color: var(--muted); }
+.research-notebook-iterations p { font-size: var(--body-size); line-height: 1.8; color: var(--muted); }
+.research-notebook-iterations li.research-notebook-repair { border-top: 2px solid var(--gold); padding-left: 24px; border-left: 2px solid var(--gold); }
+.research-notebook-iterations .research-notebook-repair-title { color: var(--ink); font-size: clamp(21px,2.3vw,30px); line-height: 1.35; margin-bottom: 20px; }
+.research-notebook-iterations .research-notebook-label { font-size: 12px; margin-top: 18px; }
+.research-notebook-principle { font-size: clamp(28px,3.5vw,48px); font-weight: 300; letter-spacing: -.025em; line-height: 1.2; margin: 36px 0 0; max-width: 1050px; }
+.research-notebook-ingredients { list-style: none; padding: 0; margin: 32px 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 24px; }
+.research-notebook-ingredients li { border-top: 1px solid var(--line); padding: 14px 0; font-size: 16px; line-height: 1.6; }
+.research-notebook-meals { padding-left: 20px; margin: 24px 0; }
+.research-notebook-meals li { padding: 8px 0; color: var(--muted); font-size: 16px; line-height: 1.7; }
+.research-notebook-measurements, .research-notebook-risks, .research-notebook-evidence, .research-notebook-unknowns { padding: 0; margin: 28px 0; }
+.research-notebook-measurements > div, .research-notebook-risks > div, .research-notebook-evidence > div, .research-notebook-unknowns > div { border-top: 1px solid var(--line); padding: 24px 0; }
+.research-notebook dt { font-size: 21px; line-height: 1.3; font-weight: 400; letter-spacing: -.02em; }
+.research-notebook dt .research-notebook-label { margin-top: 12px; letter-spacing: .08em; }
+.research-notebook dd { margin: 16px 0 0; color: var(--muted); font-size: 16px; line-height: 1.8; }
+.research-notebook-evidence dt { font-size: 13px; letter-spacing: .12em; }
+.research-notebook .research-notebook-verdict { max-width: 1100px; font-size: clamp(22px,2.5vw,36px); line-height: 1.5; }
+.research-notebook-not-validated { padding-left: 20px; margin: 28px 0; color: var(--text-on-dark); }
+.research-notebook-not-validated li { padding: 8px 0; font-size: 16px; line-height: 1.7; }
+@media (max-width: 767px) {
+  .research-notebook-identity, .research-notebook-iterations li { grid-template-columns: minmax(0,1fr); gap: 24px; }
+  .research-notebook-boundary { border-left: 0; border-top: 1px solid var(--line-dark); padding: 28px 0 0; }
+  .research-notebook-amount { font-size: clamp(54px,14vw,86px); }
+  .research-notebook-iterations li.research-notebook-repair { padding-left: 16px; }
+  .research-notebook-ingredients { grid-template-columns: minmax(0,1fr); }
+}

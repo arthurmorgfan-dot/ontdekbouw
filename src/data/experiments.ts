@@ -1,8 +1,15 @@
 import type { Experiment, PublishedExperiment } from "@/types/experiment";
 import { routableProjects } from "@/data/projects";
+import { loopExperiment001 } from "@/data/experiment-records/loop-001";
+import type { ResearchNotebook } from "@/types/experiment";
 
-// No experiments, pilots or results have been published. Never insert sample outcomes here.
-export const experiments: Experiment[] = [];
+// Public research notes can exist before results. Never insert sample outcomes here.
+export const experiments: Experiment[] = [loopExperiment001];
+
+/** An explicitly public in-progress notebook is never a completed/published result. */
+export function getResearchExperiment(slug: string): (Experiment & { notebook: ResearchNotebook }) | undefined {
+  return experiments.find((item): item is Experiment & { notebook: ResearchNotebook } => item.slug === slug && item.status === "lopend" && !!item.notebook);
+}
 
 /** Publication requires recorded observations and traceable evidence, not just a plan. */
 export function isPublishableExperiment(experiment: Experiment): experiment is PublishedExperiment {
@@ -25,7 +32,7 @@ export function isPublishableExperiment(experiment: Experiment): experiment is P
     && experiment.artifacts.every(item => item.kind !== "prototypebewijs" || traceable(item.sourceIds));
 }
 
-// A future /resultaten/[slug] route can use this lookup; unpublished records stay private.
+// Only verified, measured results can enter a future /resultaten/[slug] route.
 export function getPublishedExperiment(slug: string): PublishedExperiment | undefined {
   return experiments.find((experiment): experiment is PublishedExperiment => experiment.slug === slug && isPublishableExperiment(experiment));
 }

@@ -8,13 +8,17 @@ import ProjectSystem, { ProjectFlow } from "./ProjectSystem";
 import { PrototypeFramework, MeasurementFramework, ProjectResults } from "./ProjectTesting";
 import ProjectResearch from "./ProjectResearch";
 import ProjectPlanning from "./ProjectPlanning";
+import { getResearchExperiment } from "@/data/experiments";
+import ResearchNotebook from "@/components/experiments/ResearchNotebook";
 
 export default function ProjectDocument({ project, blueprint }: { project: Project; blueprint: ProjectBlueprint }) {
+  const experiment = blueprint.experimentSlug ? getResearchExperiment(blueprint.experimentSlug) : undefined;
   let sectionNumber = 0;
   const nextNumber = () => String(++sectionNumber).padStart(2, "0");
   return <main id="main" className={`project-blueprint project-${project.slug}`}>
     <ProjectHero project={project} blueprint={blueprint} />
-    <nav className="blueprint-chapters" aria-label="Onderdelen van dit project"><a href="#systeem">Het systeem <span aria-hidden="true"><Icon name="arrow-down" /></span></a><a href="#prototype">Eerste prototype <span aria-hidden="true"><Icon name="arrow-down" /></span></a>{blueprint.research && <a href="#onderzoek">{blueprint.research.name} <span aria-hidden="true"><Icon name="arrow-down" /></span></a>}<a href="#resultaten">Resultaten <span aria-hidden="true"><Icon name="arrow-down" /></span></a></nav>
+    <nav className="blueprint-chapters" aria-label="Onderdelen van dit project">{experiment && <a href={`#experiment-${experiment.id}`}>Experiment {experiment.id} <span aria-hidden="true"><Icon name="arrow-down" /></span></a>}<a href="#systeem">Het systeem <span aria-hidden="true"><Icon name="arrow-down" /></span></a><a href="#prototype">Eerste prototype <span aria-hidden="true"><Icon name="arrow-down" /></span></a>{blueprint.research && <a href="#onderzoek">{blueprint.research.name} <span aria-hidden="true"><Icon name="arrow-down" /></span></a>}<a href="#resultaten">Resultaten <span aria-hidden="true"><Icon name="arrow-down" /></span></a></nav>
+    {experiment && <ResearchNotebook experiment={experiment} notebook={experiment.notebook} />}
     {blueprint.problem && <ProjectSection id="probleem" number={nextNumber()} title={blueprint.problem.title}>{blueprint.problem.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}<h3>{blueprint.problem.principle}</h3></ProjectSection>}
     <ProjectSection id="doel" number={nextNumber()} title={blueprint.hypothesis.title} wide>
       <p className="blueprint-core-question">{blueprint.question}</p>

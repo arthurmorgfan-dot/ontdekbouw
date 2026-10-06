@@ -1,0 +1,70 @@
+import type { Experiment } from "@/types/experiment";
+
+/** Supplied research narrative; no source workbook or kitchen observations are attached. */
+export const loopExperiment001: Experiment = {
+  id: "001",
+  slug: "loop-001",
+  projectSlug: "loop",
+  title: "Hoe goedkoop kan een eenvoudig, voedzaam voedselpakket werkelijk worden?",
+  question: "Kan een eenvoudig, overwegend plantaardig weekpakket voldoende voeding bieden tegen zeer lage kosten, én bestaan uit maaltijden die mensen werkelijk kunnen koken en eten?",
+  hypothesis: "Modelhypothese: ± €18,47 per persoon per week. Dit is geen resultaat. Het is het getal dat we nu proberen kapot te maken.",
+  plannedMethod: "Van spreadsheetmodel naar echte maaltijden: porties bereiden, kookopbrengsten en restanten meten, extra ingrediënten en kosten bijhouden, en bruikbaarheid en herhaalbaarheid toetsen. Meetmethoden en publicatie van observaties moeten nog worden uitgewerkt.",
+  status: "lopend",
+  // The basket hypothesis is not the experiment budget or the cost of operating LOOP.
+  cost: { state: "onbekend" },
+  sources: [],
+  artifacts: [],
+  measurements: [
+    { id: "porties", label: "Gekookte porties", method: "Rauwe en bereide hoeveelheden vastleggen; meetprotocol nog uit te werken", state: "gepland", target: "Hoe zien de gekookte porties er werkelijk uit?" },
+    { id: "opbrengst", label: "Kookopbrengsten", method: "Bereidingsfactoren voor rijst, linzen en aardappelen meten; protocol nog uit te werken", state: "gepland", target: "Kloppen de gemodelleerde kookopbrengsten?" },
+    { id: "restanten", label: "Restanten", method: "Restanten wegen en oorzaken vastleggen; protocol nog uit te werken", state: "gepland", target: "Hoeveel voedsel blijft over?" },
+    { id: "bruikbaarheid", label: "Verzadiging en herhaalbaarheid", method: "Ervaring met koken en eten documenteren; beoordeling nog te ontwerpen", state: "gepland", target: "Zijn de maaltijden bevredigend, praktisch en herhaaldelijk te eten?" },
+    { id: "toevoegingen", label: "Extra ingrediënten en kosten", method: "Toevoegingen registreren en prijzen onderbouwen; protocol nog uit te werken", state: "gepland", target: "Welke sauzen, kruiden, toppings en kooktoevoegingen zijn nodig, en wat kosten ze?" },
+  ],
+  notebook: {
+    stage: "KEUKENTEST",
+    candidate: "Candidate 020",
+    model: {
+      state: "CALCULATION", amount: 18.47, currency: "EUR", unit: "per persoon per week",
+      basis: "Opgegeven uitkomst van iteratieve spreadsheetmodellering met gemodelleerde retailprijzen.",
+      limitation: "De bronwerkbladen, prijsdatums, exacte hoeveelheden en voedingsberekeningen zijn nog niet gekoppeld. De berekening is op deze pagina niet onafhankelijk reproduceerbaar of geverifieerd.",
+    },
+    modelingUnit: {
+      state: "ASSUMPTION", people: 1000,
+      explanation: "1.000 mensen is uitsluitend een rekeneenheid. Geen klanten, pilotdeelnemers, wachtlijst of bestaand LOOP-netwerk.",
+    },
+    provenance: "De hieronder getoonde bedragen en modelwijzigingen zijn aangeleverd als onderzoeksbeschrijving. Er zijn nog geen bronbestanden, verifieerbare prijsreferenties of gemeten keukenuitkomsten aan dit dossier toegevoegd. CALCULATION duidt hier een opgegeven modeluitkomst aan, geen door deze website gecontroleerde berekening.",
+    iterations: [
+      { state: "CALCULATION", amount: 30.62, explanation: "Vroeg voedingskundig gemodelleerd pakket met een brede supplementstrategie. Voedingskundige geschiktheid nog niet gevalideerd." },
+      { state: "CALCULATION", amount: 24.04, explanation: "Een grote kosteninefficiëntie uit het model verwijderd. Onderliggende werkbladen nog niet gekoppeld." },
+      { state: "CALCULATION", amount: 21.34, explanation: "Brede supplementstrategie vervangen door een gerichtere strategie en wijzigingen in de voeding." },
+      { state: "CALCULATION", amount: 19.98, explanation: "Ingrediëntcombinaties met lagere gemodelleerde kosten onderzocht." },
+      { state: "CALCULATION", amount: 18.98, explanation: "Energie-aannames opnieuw met elkaar in overeenstemming gebracht en de structuur verder geoptimaliseerd." },
+      { state: "CALCULATION", amount: 19.78, repairedWeakness: true, explanation: "De prijs ging bewust omhoog. Het model bevatte te weinig echte groente; diepvries­spinazie werd toegevoegd. Een zwakte zichtbaar maken en herstellen was belangrijker dan het laagste getal beschermen." },
+      { state: "CALCULATION", amount: 18.47, explanation: "Het pakket structureel herverdeeld, met behoud van de verbeterde groentehoeveelheid en sterkere gemodelleerde nutriëntenbuffers. Dit is Candidate 020, geen gevalideerd dieet." },
+    ],
+    ingredients: ["Havermout", "Volkorenbrood", "Aardappelen", "Groene en rode linzen", "Wortels", "Diepvriesspinazie", "Appels", "Sinaasappel", "Gemengde noten", "Koolzaadolie", "Zilvervliesrijst", "Verrijkte sojadrink", "Gejodeerd zout", "Gerichte B12-strategie"],
+    meals: ["Stamppot met aardappel en spinazie", "Eenvoudige maaltijden op basis van havermout", "Fruit", "Maaltijden met linzen en rijst", "Vertrouwde voeding voor sportdagen"],
+    risks: [
+      { state: "UNKNOWN", label: "Kookopbrengsten", explanation: "Bereidingsfactoren voor rijst, linzen en aardappelen vereisen echte keukenmetingen." },
+      { state: "UNKNOWN", label: "Volhouden", explanation: "Een voedingskundig spreadsheet is niet bruikbaar als mensen de maaltijden niet willen of kunnen eten. Smaak, verzadiging, bereiding en herhaalbaarheid moeten worden getoetst." },
+      { state: "UNKNOWN", label: "Extra ingrediënten", explanation: "Sauzen, kruiden, toppings en kooktoevoegingen mogen niet stilzwijgend gratis zijn. Gebruik en kosten zijn nog niet gemeten." },
+      { state: "UNKNOWN", label: "Eiwitkwaliteit", explanation: "Totale eiwithoeveelheid is gemodelleerd. Aminozuurkwaliteit en verteerbaarheid verdienen een diepere review; geschiktheid is niet aangetoond." },
+      { state: "UNKNOWN", label: "IJzer en zink", explanation: "Hoeveelheden zijn gemodelleerd; biologische beschikbaarheid is een open vraag." },
+      { state: "UNKNOWN", label: "Jodium", explanation: "De strategie is gemodelleerd en vraagt sterkere onderbouwing in de praktijk." },
+      { state: "UNKNOWN", label: "Vitamine D en B12", explanation: "Dit blijven expliciete voedingskundige beleidsvragen, inclusief geschiktheid en uitvoering. De gerichte B12-strategie is geen aanbeveling of gevalideerd supplementadvies." },
+      { state: "UNKNOWN", label: "Prijsrobuustheid", explanation: "€18,47 berust op gemodelleerde retailinputs. Werkelijke inkoop, prijsbewegingen, verspilling en logistiek kunnen het bedrag veranderen." },
+      { state: "UNKNOWN", label: "Logistiek", explanation: "€18,47 is niet de volledige kostprijs om LOOP voor 1.000 mensen te laten werken. Opslag, koeling, vervoer, handling, administratie en verliezen zijn niet als gemeten kosten vastgesteld." },
+    ],
+    unknowns: [
+      { state: "UNKNOWN", label: "Exacte hoeveelheden en nutritionele uitkomsten", explanation: "Bronwerkblad nog niet gekoppeld; geen grammen, calorieën, eiwitwaarden of doseringen gepubliceerd." },
+      { state: "UNKNOWN", label: "Bronprijzen en prijsdatums", explanation: "Geen verifieerbare prijsreferenties of leverancieroffertes gekoppeld; geen wholesaleprijs aangenomen." },
+      { state: "UNKNOWN", label: "Kookfactoren, verspilling en extra kosten", explanation: "Nog geen gepubliceerde keukenmetingen. Ontbrekende waarden zijn geen nul." },
+      { state: "UNKNOWN", label: "Deelnemers, meetdatums en steekproef", explanation: "Niet vastgesteld in dit publieke dossier. Geen pilotomvang, gemeten maaltijden of statistische betekenis geclaimd." },
+      { state: "UNKNOWN", label: "Volledige LOOP-kosten", explanation: "Inkoop, distributie en operationele kosten moeten afzonderlijk worden onderbouwd; het totale kostenmodel is onbekend." },
+    ],
+    verdict: "Het model suggereert dat een eenvoudig, overwegend plantaardig pakket mogelijk rond €18,47 per persoon per week kan uitkomen bij de huidige gemodelleerde retailinputs. Dat is een modelhypothese, geen vastgesteld voedingskundig of praktisch resultaat.",
+    notValidatedAs: ["Een compleet praktisch dieet", "Een werkelijke wekelijkse voedselkost voor een huishouden", "Een LOOP-exploitatiekost", "Een pilotresultaat voor 1.000 mensen"],
+    nextSteps: ["Keukenmetingen", "Wetenschappelijke red-teamreview", "Inkoop en logistiek onderzoeken", "Een kleine echte pilot, indien verantwoord", "Gemeten resultaten met bronnen en beperkingen"],
+  },
+};
