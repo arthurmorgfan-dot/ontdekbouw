@@ -8,11 +8,16 @@ import ProjectSystem, { ProjectFlow } from "./ProjectSystem";
 import { PrototypeFramework, MeasurementFramework, ProjectResults } from "./ProjectTesting";
 import ProjectResearch from "./ProjectResearch";
 import ProjectPlanning from "./ProjectPlanning";
+import Button from "@/components/ui/Button";
 import { getResearchExperiment } from "@/data/experiments";
 import ResearchNotebook from "@/components/experiments/ResearchNotebook";
 
 export default function ProjectDocument({ project, blueprint }: { project: Project; blueprint: ProjectBlueprint }) {
   const experiment = blueprint.experimentSlug ? getResearchExperiment(blueprint.experimentSlug) : undefined;
+  const polishEndActions = project.slug === "loop";
+  const endLinkContent = (text: string) => polishEndActions
+    ? <><span className="ruler-link">{text}</span>{" "}<span className="ruler-link-arrow" aria-hidden="true"><Icon name="arrow-right" /></span></>
+    : <>{text} <span aria-hidden="true"><Icon name="arrow-right" /></span></>;
   let sectionNumber = 0;
   const nextNumber = () => String(++sectionNumber).padStart(2, "0");
   return <main id="main" className={`project-blueprint project-${project.slug}`}>
@@ -66,8 +71,8 @@ export default function ProjectDocument({ project, blueprint }: { project: Proje
     {blueprint.resultsAfterCriticism && <ProjectSection id="resultaten" number={nextNumber()} title="Resultaten" wide><ProjectResults results={blueprint.results} /></ProjectSection>}
     <ProjectSection id="volgende-stap" number={nextNumber()} title={blueprint.nextStep.title} tone="dark" wide><p>{blueprint.nextStep.introduction}</p><ProjectFlow steps={blueprint.nextStep.steps} label="Volgende stappen voor het bouwmodel" />
       {blueprint.nextStep.researchSequence && <div className="blueprint-research-sequence"><p className="blueprint-small-label">Onderzoek volgt op aangetoonde waarde</p><ProjectFlow steps={blueprint.nextStep.researchSequence} label="Eerst het basissysteem toetsen, dan de aanvullende onderzoeksvraag" /></div>}
-      <p className="blueprint-note">{blueprint.nextStep.note}</p><div className="blueprint-actions"><a className="button button-light" href={`/doe-mee?type=meedenken&context=${project.slug}#bijdrage`}>{blueprint.criticism.invitation} <span aria-hidden="true"><Icon name="arrow-right" /></span></a><Link className="blueprint-text-link" href="/#projecten">Bekijk alle projecten <span aria-hidden="true"><Icon name="arrow-right" /></span></Link></div>
-      <nav className="blueprint-relationships" aria-label="Relatie met BOUW"><ul>{blueprint.relationships.map(item => <li key={item.href}><p className="blueprint-small-label">{item.label}</p><Link href={item.href}>{item.title} <span aria-hidden="true"><Icon name="arrow-right" /></span></Link>{item.note && <p className="blueprint-note">{item.note}</p>}</li>)}</ul></nav>
+      <p className="blueprint-note">{blueprint.nextStep.note}</p><div className="blueprint-actions">{polishEndActions ? <Button href={`/doe-mee?type=meedenken&context=${project.slug}#bijdrage`} variant="light" build>{blueprint.criticism.invitation}</Button> : <a className="button button-light" href={`/doe-mee?type=meedenken&context=${project.slug}#bijdrage`}>{blueprint.criticism.invitation} <span aria-hidden="true"><Icon name="arrow-right" /></span></a>}<Link className={`blueprint-text-link${polishEndActions ? " ruler-link-trigger" : ""}`} href="/#projecten">{endLinkContent("Bekijk alle projecten")}</Link></div>
+      <nav className="blueprint-relationships" aria-label="Relatie met BOUW"><ul>{blueprint.relationships.map(item => <li key={item.href}><p className="blueprint-small-label">{item.label}</p><Link href={item.href} className={polishEndActions ? "ruler-link-trigger" : undefined}>{endLinkContent(item.title)}</Link>{item.note && <p className="blueprint-note">{item.note}</p>}</li>)}</ul></nav>
     </ProjectSection>
   </main>;
 }
