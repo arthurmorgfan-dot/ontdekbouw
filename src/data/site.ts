@@ -3,7 +3,9 @@ export const site = {
   title: "BOUW — Geen beloftes. Bouwplannen.",
   description: "BOUW ontwikkelt concrete ideeën, test ze in de praktijk en bouwt verder op wat werkt. Van wonen en voedsel tot werk en gezondheid.",
   navigation: [
-    { label: "Home", href: "#home" },
+    { label: "BOUW", href: "#home" },
+    { label: "BOUWJAAR", href: "/bouwjaar" },
+    { label: "LOOP", href: "/projecten/loop" },
     { label: "Projecten", href: "#projecten" },
     { label: "Onze visie", href: "/onze-visie" },
     { label: "Standpunten", href: "/standpunten" },

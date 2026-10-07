@@ -31,5 +31,5 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const project = projects.find(project => project.slug === slug && project.page);
   if (!project?.page) notFound();
-  return <><a className="skip-link" href={l("#main")}>{t("Ga naar inhoud")}</a><div id="home"><Header homePath={l("/")} activeHref="#projecten" /></div><ProjectDocument project={project} blueprint={project.page} /><Footer homePath={l("/")} /></>;
+  return <><a className="skip-link" href={l("#main")}>{t("Ga naar inhoud")}</a><div id="home"><Header homePath={l("/")} activeHref={slug === "loop" ? "/projecten/loop" : "#projecten"} /></div><ProjectDocument project={project} blueprint={project.page} /><Footer homePath={l("/")} /></>;
 }

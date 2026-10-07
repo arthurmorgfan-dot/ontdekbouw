@@ -3,6 +3,8 @@ import Icon from "@/components/icons/Icon";
 import Image from "next/image";
 import Link from "next/link";
 import type { Project, ProjectBlueprint } from "@/types/project";
+import ProjectIntroduction from "./ProjectIntroduction";
+import { loopIntroduction } from "@/data/story";
 import ProjectHero from "./ProjectHero";
 import ProjectSection from "./ProjectSection";
 import ProjectSystem, { ProjectFlow } from "./ProjectSystem";
@@ -24,6 +26,7 @@ export default async function ProjectDocument({ project, blueprint }: { project:
   const nextNumber = () => String(++sectionNumber).padStart(2, "0");
   return <main id="main" className={`project-blueprint project-${project.slug}`}>
     <ProjectHero project={project} blueprint={blueprint} />
+    {project.slug === "loop" && <ProjectSection id="loop-in-het-kort" label={t("LOOP / de ambitie")} title={t("De melkboer van toen. Voor het verse eten van morgen.")} wide><ProjectIntroduction items={loopIntroduction} /><p className="blueprint-note">{t("Dit toekomstbeeld staat naast het onderzoek hieronder. Het notebook toetst een afgebakend voedselmodel; het bewijst geen verse bezorgdienst, voedingskundige validatie of volledige exploitatiekosten.")}</p></ProjectSection>}
     <nav className="blueprint-chapters" aria-label={t("Onderdelen van dit project")}>{experiment && <a href={l(`#experiment-${experiment.id}`)}>{t("Experiment")} {t(experiment.id)} <span aria-hidden="true"><Icon name="arrow-down" /></span></a>}<a href={l("#systeem")}>{t("Het systeem")} <span aria-hidden="true"><Icon name="arrow-down" /></span></a><a href={l("#prototype")}>{t("Eerste prototype")} <span aria-hidden="true"><Icon name="arrow-down" /></span></a>{blueprint.research && <a href={l("#onderzoek")}>{t(blueprint.research.name)} <span aria-hidden="true"><Icon name="arrow-down" /></span></a>}<a href={l("#resultaten")}>{t("Resultaten")} <span aria-hidden="true"><Icon name="arrow-down" /></span></a></nav>
     {experiment && <ResearchNotebook experiment={experiment} notebook={experiment.notebook} productDemoHref={blueprint.productExperience?.demoHref} />}
     {blueprint.problem && <ProjectSection id="probleem" number={nextNumber()} title={t(blueprint.problem.title)}>{blueprint.problem.paragraphs.map(paragraph => <p key={paragraph}>{t(paragraph)}</p>)}<h3>{t(blueprint.problem.principle)}</h3></ProjectSection>}

@@ -20,7 +20,7 @@ export default async function ParticipationPage({ searchParams }: { searchParams
   const { t, l } = await getI18n();
   const query = await searchParams;
   const initialType = contributionPaths.find(path => path.id === query.type)?.id ?? "meedenken";
-  const contexts = [...projects.map(project => ({ id: project.slug, title: project.name })), ...proposals.map(proposal => ({ id: proposal.slug, title: proposal.title })), ...positions.map(position => ({ id: `standpunt-${position.id}`, title: position.title }))];
+  const contexts = [{ id: "bouwjaar", title: "BOUWJAAR" }, ...projects.map(project => ({ id: project.slug, title: project.name })), ...proposals.map(proposal => ({ id: proposal.slug, title: proposal.title })), ...positions.map(position => ({ id: `standpunt-${position.id}`, title: position.title }))];
   // CLARKE is accepted as context via its own link but isn't advertised as a flagship.
   if (query.context === "clarke") contexts.push({ id: "clarke", title: "CLARKE" });
   const initialContext = contexts.find(context => context.id === query.context)?.id ?? "algemeen";

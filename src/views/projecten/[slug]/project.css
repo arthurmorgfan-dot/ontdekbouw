@@ -205,3 +205,15 @@
 .project-blueprint .blueprint-product-bridge .blueprint-text-link { margin-top: 4px; }
 .project-blueprint .research-notebook-product-bridge { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line-dark); }
 .project-blueprint .research-notebook-product-bridge .blueprint-note { margin-bottom: 4px; }
+
+.project-introduction { margin: 0; }
+.project-introduction > div { padding: 24px 0; border-top: 1px solid var(--line); }
+.project-introduction dt { font-size: 22px; line-height: 1.4; margin-bottom: 12px; }
+.project-introduction dd { margin: 0; }
+/* LOOP explains the household ambition before its unchanged research context. */
+.project-loop .blueprint-hero-copy { min-height: 720px; padding-bottom: 80px; }
+@media (max-width: 767px) {
+ .project-loop .blueprint-hero-copy { min-height: 0; padding-bottom: 180px; }
+ .project-loop .blueprint-hero-copy h1 { margin-top: 12px; }
+ .project-loop .blueprint-hero-copy .blueprint-statement { margin-top: 20px; }
+}
