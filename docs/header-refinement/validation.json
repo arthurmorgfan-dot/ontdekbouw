@@ -1,0 +1,65 @@
+{
+  "checks": [
+    {
+      "locale": "nl",
+      "width": 320,
+      "overflow": false,
+      "slot": 78
+    },
+    {
+      "locale": "nl",
+      "width": 390,
+      "overflow": false,
+      "slot": 78
+    },
+    {
+      "locale": "nl",
+      "width": 768,
+      "overflow": false,
+      "slot": 86
+    },
+    {
+      "locale": "nl",
+      "width": 1024,
+      "overflow": false,
+      "slot": 86
+    },
+    {
+      "locale": "nl",
+      "width": 1440,
+      "overflow": false,
+      "slot": 86
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "overflow": false,
+      "slot": 78
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "overflow": false,
+      "slot": 78
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "overflow": false,
+      "slot": 86
+    },
+    {
+      "locale": "en",
+      "width": 1024,
+      "overflow": false,
+      "slot": 86
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "overflow": false,
+      "slot": 86
+    }
+  ],
+  "errors": []
+}

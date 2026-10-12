@@ -1,0 +1,83 @@
+/** Header-only audit: disclosures, keyboard/touch, scrolling, viewport geometry and screenshots. */
+import { createRequire } from 'node:module';
+import { resolve } from 'node:path';
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const requireLocal = createRequire(resolve(process.argv[3] ?? '.', 'package.json'));
+const { chromium } = requireLocal('playwright');
+const AxeBuilder = requireLocal('@axe-core/playwright').default;
+const base = process.argv[2] ?? 'http://127.0.0.1:3100';
+const output = resolve(process.argv[4] ?? 'docs/header-refinement');
+await fs.mkdir(output, { recursive: true });
+const browser = await chromium.launch();
+const context = await browser.newContext({ reducedMotion: 'reduce', hasTouch: true });
+const page = await context.newPage();
+const errors = [];
+page.on('pageerror', e => errors.push(e.message));
+const checks = [];
+try {
+ for (const locale of ['nl','en']) {
+  const prefix = locale === 'en' ? '/en' : '';
+  for (const width of [320,390,768,1024,1440]) {
+   await page.setViewportSize({width,height:844});
+   await page.goto(base+(prefix||'/'));
+   await page.locator('header img').evaluateAll(es=>Promise.all(es.map(e=>e.decode())));
+   const state = await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth,slot:document.querySelector('.header-slot').getBoundingClientRect().height}));
+   assert(!state.overflow,JSON.stringify({locale,width,state}));
+   assert.equal(state.slot,width<768?78:86,'Header must preserve the previous page offset');
+   if([390,1440].includes(width)) await page.screenshot({path:`${output}/${locale}-${width===390?'mobile':'desktop'}-closed.png`});
+   checks.push({locale,width,...state});
+  }
+  const trigger=page.locator('.projects-toggle');
+  await trigger.click();
+  assert(await page.locator('#header-project-panel').isVisible());
+  const projectHrefs=await page.locator('#header-project-panel a').evaluateAll(es=>es.map(e=>e.getAttribute('href')));
+  for(const path of ['/bouwjaar','/projecten/loop','/projecten/hive','/projecten/grow','/projecten/rise','/projecten/mend','/projecten','/projecten/clarke'])assert(projectHrefs.includes(prefix+path));
+  await page.screenshot({path:`${output}/${locale}-desktop-projects.png`});
+  let audit=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
+  assert.deepEqual(audit.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[]);
+  await page.keyboard.press('Escape');
+  assert(await trigger.evaluate(e=>e===document.activeElement));
+  await trigger.press('ArrowDown');
+  assert.equal(await page.evaluate(()=>document.activeElement.getAttribute('href')),prefix+'/bouwjaar');
+  await page.keyboard.press('Escape');
+  await trigger.press('ArrowUp');
+  assert.equal(await page.evaluate(()=>document.activeElement.getAttribute('href')),prefix+'/projecten/clarke');
+  await page.keyboard.press('Tab');
+  assert(!(await page.locator('#header-project-panel').isVisible()));
+  await trigger.click();
+  await page.mouse.click(30,600);
+  assert(!(await page.locator('#header-project-panel').isVisible()));
+  await page.evaluate(()=>{document.activeElement?.blur();scrollTo(0,1200)});
+  await page.waitForTimeout(350);
+  assert.equal(await page.locator('header.header').getAttribute('data-hidden'),'true');
+  await page.evaluate(()=>scrollTo(0,1050));
+  await page.waitForTimeout(350);
+  assert.equal(await page.locator('header.header').getAttribute('data-hidden'),'false');
+  await page.evaluate(()=>scrollTo(0,0));
+  await page.setViewportSize({width:390,height:844});
+  const menu=page.locator('.menu-toggle');
+  await menu.tap();
+  assert(await page.locator('#mobile-navigation').isVisible());
+  assert.equal(await page.locator('#mobile-navigation .navigation-links a').count(),9);
+  await page.screenshot({path:`${output}/${locale}-mobile-navigation.png`});
+  await page.locator('.mobile-project-disclosure summary').tap();
+  assert(await page.locator('.mobile-project-links').isVisible());
+  await page.locator('.mobile-project-links').scrollIntoViewIfNeeded();
+  await page.screenshot({path:`${output}/${locale}-mobile-projects.png`});
+  audit=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
+  assert.deepEqual(audit.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})),[]);
+  await page.keyboard.press('Escape');
+  assert(await menu.evaluate(e=>e===document.activeElement));
+  assert(!(await page.locator('#mobile-navigation').isVisible()));
+  await menu.tap();
+  await page.locator('.mobile-project-links a[href="'+prefix+'/projecten/hive"]').tap();
+  await page.waitForURL(base+prefix+'/projecten/hive');
+  assert(!(await page.locator('#mobile-navigation').isVisible()));
+  await page.goto(base+prefix+'/projecten/loop?review=header#experiment-001');
+  await page.locator('.language-control a').filter({hasText:locale==='en'?'NL':'EN'}).click();
+  await page.waitForURL(base+(locale==='en'?'':'/en')+'/projecten/loop?review=header#experiment-001');
+ }
+ assert.deepEqual(errors,[]);
+} finally {await fs.writeFile(output+'/validation.json',JSON.stringify({checks,errors},null,2));await browser.close();}
+console.log('PASS bilingual header; fixed page offsets; project destinations; keyboard, focus, outside click, touch, scroll and language query/hash; four accessibility scans; screenshots');

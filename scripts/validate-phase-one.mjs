@@ -20,7 +20,7 @@ try {
   assert.deepEqual(await page.locator('.home-page > section').evaluateAll(es => es.map(e => e.id || e.className)), ['rediscovery-opening', 'toekomstatlas', 'generaties', 'vandaag', 'werkwijze', 'mogelijkheden', 'bouwjaar', 'loop', 'hive-chapter', 'projecten', 'doe-mee']);
   assert.equal(await page.locator('.life-sequence li').count(), 9);
   for (const id of ['home', 'main', 'visie', 'mogelijkheden', 'bouwjaar', 'loop', 'projecten', 'voorstellen', 'werkwijze', 'doe-mee', 'meebouwen', 'grow', 'hive', 'rise', 'mend']) assert.equal(await page.locator(`[id="${id}"]`).count(), 1, `Stable anchor ${prefix}#${id}`);
-  assert.deepEqual(await page.locator('.desktop-nav a').allTextContents(), ['BOUW', 'BOUWJAAR', 'LOOP', prefix ? 'Projects' : 'Projecten']);
+  assert.deepEqual(await page.locator('.desktop-nav > a').allTextContents(), [prefix ? 'The story' : 'Het verhaal', prefix ? 'Our vision' : 'Onze visie']);
   await page.goto(base + prefix + '/bouwjaar?review=1#open-vragen');
   await page.locator('.language-control a').filter({ hasText: prefix ? 'NL' : 'EN' }).click();
   await page.waitForURL(base + (prefix ? '' : '/en') + '/bouwjaar?review=1#open-vragen');
