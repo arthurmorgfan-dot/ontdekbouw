@@ -16,6 +16,10 @@ export async function InheritedChapter() {
     <div className="chapter-label"><span aria-hidden="true">01 /</span><p>{t("Wat we hebben geërfd")}</p><span>{t("Toen")}</span></div>
     <div className="inherited-heading"><h2 id="inherited-heading">{t("Ooit was dit ook")}<br /><em>{t("maar een idee.")}</em></h2><p>{t("Een dijk. Een school. Een huis. Wat vandaag vanzelfsprekend lijkt, moest ooit door iemand worden bedacht, geprobeerd en gebouwd.")}</p></div>
     <div className="inherited-composition"><figure><SceneImage src="/images/homepage/polders.webp" alt={t("Illustratief beeld van polders, water en dijken in de avondzon")} sizes="(max-width: 767px) 100vw, 60vw" /><figcaption className="image-caption">{t("Illustratief landschap / AI-gegenereerd")}</figcaption></figure><div className="inherited-margin"><span className="margin-rule" aria-hidden="true" /><p>{t("We leven verder op wat anderen begonnen.")}</p><p>{t("Vorige generaties maakten land bewoonbaar, legden verbindingen en bouwden voorzieningen. Geen volmaakte wereld. Wel een basis om op verder te bouwen.")}</p><p className="inherited-question">{t("Wat laten wij achter?")}</p></div></div>
+    <div className="generational-vision">
+      <p className="generational-inheritance">{t("Wij leven in de toekomst waar onze grootouders ooit van droomden.")}</p>
+      <p className="generational-future">{t("Wat voor wereld zullen onze kleinkinderen erven?")}</p>
+    </div>
   </section>;
 }
 
