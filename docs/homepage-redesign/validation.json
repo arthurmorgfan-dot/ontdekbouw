@@ -1,0 +1,681 @@
+{
+  "results": [
+    {
+      "locale": "nl",
+      "width": 320,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "nl",
+      "width": 390,
+      "violations": [],
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "nl",
+      "width": 768,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "nl",
+      "width": 1024,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "nl",
+      "width": 1200,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "nl",
+      "width": 1440,
+      "violations": [],
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "nl",
+      "width": 1920,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "violations": [],
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "en",
+      "width": 1024,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "en",
+      "width": 1200,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "violations": [],
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    },
+    {
+      "locale": "en",
+      "width": 1920,
+      "overflow": false,
+      "duplicateIDs": [],
+      "brokenImages": [],
+      "clippedHeadings": []
+    }
+  ],
+  "errors": [],
+  "existingRouteSuite": {
+    "report": [
+      {
+        "url": "",
+        "title": "BOUW \u2014 Geen beloftes. Bouwplannen.",
+        "description": "Concrete idee\u00ebn voor wonen, voedsel, vaardigheden en een sterkere basis voor de toekomst."
+      },
+      {
+        "url": "/bouwjaar",
+        "title": "BOUWJAAR \u2014 BOUW",
+        "description": "Een vroeg BOUW-concept voor jongeren: gezondheid, praktische vaardigheden, samenwerken en richting ontdekken. Uitvoering en financiering zijn nog open vragen."
+      },
+      {
+        "url": "/projecten",
+        "title": "Onze projecten \u2014 BOUW",
+        "description": "BOUW-projecten in ontwikkeling: systemen om te ontwerpen, onderzoeken en uiteindelijk te testen. Geen bewezen oplossingen of resultaten."
+      },
+      {
+        "url": "/projecten/loop",
+        "title": "LOOP \u2014 Vers voedsel voor iedereen \u2014 BOUW",
+        "description": "Hoe brengen we betaalbaar, vers en voedzaam voedsel naar mensen toe \u2014 zonder dat zij hoeven te verhuizen om er toegang toe te krijgen? Een BOUW-project in ontwikkeling, met een publiek onderzoeksdossier in de fase model \u2192 keukentest. Nog geen gemeten of gevalideerd resultaat."
+      },
+      {
+        "url": "/projecten/grow",
+        "title": "GROW \u2014 Voedsel dichtbij huis \u2014 BOUW",
+        "description": "Hoe produceren we vers voedsel dicht bij steden, door de lokale omgeving als onderdeel van het ontwerp te gebruiken? Een BOUW-project in ontwikkeling, nog niet getest."
+      },
+      {
+        "url": "/projecten/hive",
+        "title": "HIVE \u2014 Een complete leefomgeving, vanaf de basis gebouwd. \u2014 BOUW",
+        "description": "Hoe bouwen we betaalbare leefgebieden die vrijwel overal ter wereld kunnen worden herhaald \u2014 met wonen, voedsel, basiszorg en dagelijkse voorzieningen dichtbij? Een BOUW-project in ontwikkeling, nog niet getest."
+      },
+      {
+        "url": "/projecten/rise",
+        "title": "RISE \u2014 Van doel naar volgende stap. \u2014 BOUW",
+        "description": "Kan een gesprek iemand helpen een betere volgende stap te vinden \u2014 en die ook daadwerkelijk te zetten? Een BOUW-project in ontwikkeling, nog niet getest."
+      },
+      {
+        "url": "/projecten/mend",
+        "title": "MEND \u2014 Samenwerken met het herstel van het lichaam. \u2014 BOUW",
+        "description": "Hoe kunnen materialen, omgeving en biologie samenwerken met herstelprocessen die het lichaam al bezit? Een BOUW-project in ontwikkeling, nog niet getest."
+      },
+      {
+        "url": "/projecten/clarke",
+        "title": "CLARKE \u2014 De laatste lift die we ooit hoeven te bouwen. \u2014 BOUW",
+        "description": "Wat zou een permanente fysieke transportverbinding tussen aarde en ruimte vereisen? Een BOUW-project in een extreem vroege onderzoeksfase, nog niet getest."
+      },
+      {
+        "url": "/voorstellen/gezond-eten-als-basis",
+        "title": "BOUW Basis \u2014 Gezond eten als basisvoorziening \u2014 BOUW",
+        "description": "Wat als Nederland publieke middelen gebruikt om gezond basisvoedsel goedkoper te maken \u2014 en ervoor zorgt dat niemand zonder een goede basis hoeft te zitten? Een BOUW-voorstel in onderzoek, geen bewezen oplossing."
+      },
+      {
+        "url": "/voorstellen/vers-eten-moet-goedkoper",
+        "title": "Vers eten moet goedkoper \u2014 BOUW",
+        "description": "Waarom is vers en gezond eten vaak duurder dan sterk bewerkt voedsel \u2014 en hoeveel daarvan kunnen we daadwerkelijk veranderen? Een BOUW-voorstel in onderzoek, geen bewezen oplossing."
+      },
+      {
+        "url": "/voorstellen/iedere-dag-bewegen",
+        "title": "Iedere dag bewegen \u2014 BOUW",
+        "description": "Wat als bewegen voor jongeren net zo vanzelfsprekend wordt als onderwijs? Een BOUW-voorstel in onderzoek, geen bewezen oplossing."
+      },
+      {
+        "url": "/onze-visie",
+        "title": "Onze visie \u2014 BOUW",
+        "description": "Nederland hoeft problemen niet alleen te beheren. We kunnen oplossingen bouwen. Ontdek de vier pijlers en twaalf standpunten van BOUW."
+      },
+      {
+        "url": "/standpunten",
+        "title": "Standpunten \u2014 BOUW",
+        "description": "Waar staat BOUW voor? Ontdek de richting waarin BOUW Nederland wil bewegen, en de voorstellen die nog onderzoek en toetsing nodig hebben."
+      },
+      {
+        "url": "/doe-mee",
+        "title": "Doe mee \u2014 BOUW",
+        "description": "Help BOUW uitzoeken wat werkt. Denk mee, breng expertise mee, deel een bron of help een toekomstige pilot ontwerpen."
+      },
+      {
+        "url": "/volg-bouw",
+        "title": "Volg BOUW \u2014 BOUW",
+        "description": "Blijf betrokken bij BOUW: volg voorstellen en projecten op deze website. Onderzoek, bewijs en resultaten worden zichtbaar zodra ze er werkelijk zijn."
+      },
+      {
+        "url": "/en",
+        "title": "BOUW \u2014 No promises. Plans to build.",
+        "description": "Concrete ideas for housing, food, skills and a stronger foundation for the future."
+      },
+      {
+        "url": "/en/bouwjaar",
+        "title": "BOUWJAAR \u2014 BOUW",
+        "description": "An early BOUW concept for young people: health, practical skills, teamwork and discovering direction. Delivery and funding remain open questions."
+      },
+      {
+        "url": "/en/projecten",
+        "title": "Our projects \u2014 BOUW",
+        "description": "BOUW projects in development: systems to design, investigate and eventually test. No proven solutions or results."
+      },
+      {
+        "url": "/en/projecten/loop",
+        "title": "LOOP \u2014 Fresh food for everyone \u2014 BOUW",
+        "description": "How do we bring affordable, fresh and nutritious food to people \u2014 without them having to move to access it? A BOUW project in development, with a public research notebook in the model \u2192 kitchen-test phase. No measured or validated result yet."
+      },
+      {
+        "url": "/en/projecten/grow",
+        "title": "GROW \u2014 Food close to home \u2014 BOUW",
+        "description": "How do we produce fresh food near cities by making the local environment part of the design? A BOUW project in development, not yet tested."
+      },
+      {
+        "url": "/en/projecten/hive",
+        "title": "HIVE \u2014 A complete living environment, built from the foundations. \u2014 BOUW",
+        "description": "How do we build affordable places to live that could be repeated almost anywhere in the world \u2014 with housing, food, primary care and everyday amenities nearby? A BOUW project in development, not yet tested."
+      },
+      {
+        "url": "/en/projecten/rise",
+        "title": "RISE \u2014 From goal to next step. \u2014 BOUW",
+        "description": "Could a conversation help someone find a better next step \u2014 and actually take it? A BOUW project in development, not yet tested."
+      },
+      {
+        "url": "/en/projecten/mend",
+        "title": "MEND \u2014 Working with the body's repair processes. \u2014 BOUW",
+        "description": "How could materials, environment and biology work with repair processes the body already possesses? A BOUW project in development, not yet tested."
+      },
+      {
+        "url": "/en/projecten/clarke",
+        "title": "CLARKE \u2014 The last lift we ever need to build. \u2014 BOUW",
+        "description": "What would a permanent physical transport connection between Earth and space require? A BOUW project at an extremely early research stage, not yet tested."
+      },
+      {
+        "url": "/en/voorstellen/gezond-eten-als-basis",
+        "title": "BOUW Basics \u2014 Healthy food as a basic provision \u2014 BOUW",
+        "description": "What if the Netherlands used public resources to make healthy staples more affordable \u2014 and ensured nobody had to go without a good foundation? A BOUW proposal under investigation, not a proven solution."
+      },
+      {
+        "url": "/en/voorstellen/vers-eten-moet-goedkoper",
+        "title": "Fresh food should cost less \u2014 BOUW",
+        "description": "Why is fresh, healthy food often more expensive than highly processed food \u2014 and how much of that could we actually change? A BOUW proposal under investigation, not a proven solution."
+      },
+      {
+        "url": "/en/voorstellen/iedere-dag-bewegen",
+        "title": "Move every day \u2014 BOUW",
+        "description": "What if movement were as natural a part of young people's lives as education? A BOUW proposal under investigation, not a proven solution."
+      },
+      {
+        "url": "/en/onze-visie",
+        "title": "Our vision \u2014 BOUW",
+        "description": "The Netherlands can do more than manage problems. We can build solutions. Explore BOUW's four pillars and twelve positions."
+      },
+      {
+        "url": "/en/standpunten",
+        "title": "Positions \u2014 BOUW",
+        "description": "What does BOUW stand for? Explore the direction BOUW wants to take the Netherlands and the proposals that still need investigation and testing."
+      },
+      {
+        "url": "/en/doe-mee",
+        "title": "Participate \u2014 BOUW",
+        "description": "Help BOUW find out what works. Think with us, contribute expertise, share a source or help design a future pilot."
+      },
+      {
+        "url": "/en/volg-bouw",
+        "title": "Follow BOUW \u2014 BOUW",
+        "description": "Stay connected with BOUW: follow proposals and projects on this website. Research, evidence and results become visible when they actually exist."
+      }
+    ],
+    "errors": []
+  },
+  "existingPhaseOne": {
+    "checks": [
+      {
+        "route": "/",
+        "width": 320
+      },
+      {
+        "route": "/",
+        "width": 390
+      },
+      {
+        "route": "/",
+        "width": 768
+      },
+      {
+        "route": "/",
+        "width": 1024
+      },
+      {
+        "route": "/",
+        "width": 1100
+      },
+      {
+        "route": "/",
+        "width": 1200
+      },
+      {
+        "route": "/",
+        "width": 1440
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 320
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 390
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 768
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 1024
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 1100
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 1200
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 1440
+      },
+      {
+        "route": "/projecten",
+        "width": 320
+      },
+      {
+        "route": "/projecten",
+        "width": 390
+      },
+      {
+        "route": "/projecten",
+        "width": 768
+      },
+      {
+        "route": "/projecten",
+        "width": 1024
+      },
+      {
+        "route": "/projecten",
+        "width": 1100
+      },
+      {
+        "route": "/projecten",
+        "width": 1200
+      },
+      {
+        "route": "/projecten",
+        "width": 1440
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 320
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 390
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 768
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1024
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1100
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1200
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1440
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 320
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 390
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 768
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1024
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1100
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1200
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1440
+      },
+      {
+        "route": "/en",
+        "width": 320
+      },
+      {
+        "route": "/en",
+        "width": 390
+      },
+      {
+        "route": "/en",
+        "width": 768
+      },
+      {
+        "route": "/en",
+        "width": 1024
+      },
+      {
+        "route": "/en",
+        "width": 1100
+      },
+      {
+        "route": "/en",
+        "width": 1200
+      },
+      {
+        "route": "/en",
+        "width": 1440
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 320
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 390
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 768
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 1024
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 1100
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 1200
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 1440
+      },
+      {
+        "route": "/en/projecten",
+        "width": 320
+      },
+      {
+        "route": "/en/projecten",
+        "width": 390
+      },
+      {
+        "route": "/en/projecten",
+        "width": 768
+      },
+      {
+        "route": "/en/projecten",
+        "width": 1024
+      },
+      {
+        "route": "/en/projecten",
+        "width": 1100
+      },
+      {
+        "route": "/en/projecten",
+        "width": 1200
+      },
+      {
+        "route": "/en/projecten",
+        "width": 1440
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 320
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 390
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 768
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 1024
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 1100
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 1200
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 1440
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 320
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 390
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 768
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 1024
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 1100
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 1200
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 1440
+      }
+    ],
+    "errors": [],
+    "story": "Rediscovery narrative; nine framework themes; equivalent routes; contextual contribution; preserved anchors and notebook"
+  },
+  "existingAccessibility": {
+    "results": [
+      {
+        "route": "/",
+        "violations": []
+      },
+      {
+        "route": "/bouwjaar",
+        "violations": []
+      },
+      {
+        "route": "/projecten",
+        "violations": []
+      },
+      {
+        "route": "/projecten/loop",
+        "violations": []
+      },
+      {
+        "route": "/projecten/hive",
+        "violations": []
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "violations": []
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "violations": []
+      },
+      {
+        "route": "/onze-visie",
+        "violations": []
+      },
+      {
+        "route": "/standpunten",
+        "violations": []
+      },
+      {
+        "route": "/doe-mee",
+        "violations": []
+      },
+      {
+        "route": "/volg-bouw",
+        "violations": []
+      },
+      {
+        "route": "/projecten/clarke",
+        "violations": []
+      },
+      {
+        "route": "/en",
+        "violations": []
+      },
+      {
+        "route": "/en/bouwjaar",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten/loop",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten/hive",
+        "violations": []
+      },
+      {
+        "route": "/en/voorstellen/gezond-eten-als-basis",
+        "violations": []
+      },
+      {
+        "route": "/en/voorstellen/iedere-dag-bewegen",
+        "violations": []
+      },
+      {
+        "route": "/en/onze-visie",
+        "violations": []
+      },
+      {
+        "route": "/en/standpunten",
+        "violations": []
+      },
+      {
+        "route": "/en/doe-mee",
+        "violations": []
+      },
+      {
+        "route": "/en/volg-bouw",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten/clarke",
+        "violations": []
+      }
+    ],
+    "checks": [
+      "Touch disclosures",
+      "Localized required validation",
+      "Discreet CLARKE context",
+      "No-JavaScript content/fallbacks",
+      "Skip link",
+      "Scroll header",
+      "Underline/focus"
+    ]
+  }
+}

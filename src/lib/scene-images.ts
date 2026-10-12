@@ -189,5 +189,49 @@ export const sceneImages: Record<string, { width: number; height: number; varian
         "width": 1024
       }
     ]
+  },
+  "/images/homepage/polders.webp": {
+    "width": 1600,
+    "height": 841,
+    "variants": [
+      {
+        "src": "/images/scenes/polders-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/images/scenes/polders-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/images/scenes/polders-1200.webp",
+        "width": 1200
+      },
+      {
+        "src": "/images/scenes/polders-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/images/homepage/wonder.webp": {
+    "width": 1600,
+    "height": 1067,
+    "variants": [
+      {
+        "src": "/images/scenes/wonder-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/images/scenes/wonder-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/images/scenes/wonder-1200.webp",
+        "width": 1200
+      },
+      {
+        "src": "/images/scenes/wonder-1600.webp",
+        "width": 1600
+      }
+    ]
   }
 };

@@ -17,7 +17,7 @@ const checks = [];
 try {
  for (const prefix of ['', '/en']) {
   await page.goto(base + (prefix || '/'));
-  assert.deepEqual(await page.locator('.home-page > section').evaluateAll(es => es.map(e => e.id || e.className)), ['hero', 'mogelijkheden', 'bouwjaar', 'loop', 'hive-chapter', 'projecten', 'werkwijze', 'doe-mee']);
+  assert.deepEqual(await page.locator('.home-page > section').evaluateAll(es => es.map(e => e.id || e.className)), ['rediscovery-opening', 'generaties', 'vandaag', 'werkwijze', 'mogelijkheden', 'bouwjaar', 'loop', 'hive-chapter', 'projecten', 'doe-mee']);
   assert.equal(await page.locator('.life-sequence li').count(), 9);
   for (const id of ['home', 'main', 'visie', 'mogelijkheden', 'bouwjaar', 'loop', 'projecten', 'voorstellen', 'werkwijze', 'doe-mee', 'meebouwen', 'grow', 'hive', 'rise', 'mend']) assert.equal(await page.locator(`[id="${id}"]`).count(), 1, `Stable anchor ${prefix}#${id}`);
   assert.deepEqual(await page.locator('.desktop-nav a').allTextContents(), ['BOUW', 'BOUWJAAR', 'LOOP', prefix ? 'Projects' : 'Projecten']);
@@ -59,6 +59,6 @@ try {
   }
  }
  assert.equal(errors.length, 0, JSON.stringify(errors));
- await fs.writeFile(output + '/phase-one.json', JSON.stringify({ checks, errors, story: 'Seven ordered chapters; nine framework themes; new equivalent routes; contextual contribution; preserved anchors and notebook' }, null, 2));
+ await fs.writeFile(output + '/phase-one.json', JSON.stringify({ checks, errors, story: 'Rediscovery narrative; nine framework themes; equivalent routes; contextual contribution; preserved anchors and notebook' }, null, 2));
  console.log('PASS Phase 1 story, equivalent switching, contextual contribution, anchors, LOOP notebook and ' + checks.length + ' route/width checks');
 } finally { await browser.close(); }

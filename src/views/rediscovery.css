@@ -1,0 +1,184 @@
+/* Local homepage design phase: all rules are scoped to preserve every other page. */
+.rediscovery-shell { --section-space: clamp(80px, 9vw, 144px); }
+.rediscovery-home em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.045em; }
+.rediscovery-home h2 { font-weight: 400; letter-spacing: -.055em; }
+.rediscovery-shell .header { min-height: 88px; }
+.rediscovery-shell .header-logo, .rediscovery-shell .header-logo img { width: 174px; }
+.rediscovery-shell .header-principle { font-size: 11px; }
+.rediscovery-home .button { border-radius: 0; min-height: 56px; padding: 16px 26px; }
+.rediscovery-home .chapter-label { display: flex; align-items: baseline; gap: 20px; border-top: 1px solid currentColor; padding-top: 20px; margin-bottom: 64px; font-size: 11px; letter-spacing: .13em; text-transform: uppercase; }
+.rediscovery-home .chapter-label p { font-size: inherit; }
+.rediscovery-home .chapter-label > :last-child { margin-left: auto; }
+.rediscovery-home .chapter-label > :first-child { color: var(--muted); }
+.rediscovery-opening { position: relative; isolation: isolate; color: var(--paper); background: var(--night); min-height: min(960px, calc(100svh - 88px)); padding: 30px var(--page-gutter) 30px; display: flex; flex-direction: column; justify-content: space-between; }
+.opening-landscape { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.opening-landscape img { object-position: center 36%; }
+.rediscovery-opening::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, #080f102e, #080f1030 20%, #080f1080 48%, #080f10f5 100%); }
+.opening-topline { display: flex; justify-content: space-between; gap: 24px; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; padding-bottom: 16px; border-bottom: 1px solid #f2f0e954; }
+.opening-title { margin-top: clamp(110px, 12vw, 190px); margin-bottom: 52px; }
+.opening-note { font-size: 13px; letter-spacing: .08em; margin-bottom: 22px; }
+.rediscovery-opening h1 { font-size: clamp(56px, 7.5vw, 124px); line-height: 1.03; letter-spacing: -.065em; font-weight: 400; max-width: 1300px; text-wrap: initial; }
+.rediscovery-opening h1 em { color: #ead4b0; }
+.opening-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: end; }
+.opening-bottom > div > p { max-width: 440px; font-size: 14px; color: var(--text-on-dark); line-height: 1.7; margin-bottom: 26px; }
+.opening-philosophy { justify-self: end; text-align: right; font-size: 17px; line-height: 1.75; }
+.opening-caption { margin-top: 30px; color: var(--label-on-dark); font-size: 10px; }
+.inherited-chapter { background: var(--paper); }
+.inherited-heading { display: grid; grid-template-columns: 1.7fr 1fr; gap: 8%; align-items: end; margin-bottom: 72px; }
+.inherited-heading h2, .present-heading h2 { font-size: clamp(46px, 5.3vw, 88px); line-height: 1.08; }
+.inherited-heading > p { font-size: 18px; max-width: 390px; color: var(--muted); }
+.inherited-composition { display: grid; grid-template-columns: 1.7fr 1fr; gap: 8%; align-items: center; }
+.inherited-composition figure { position: relative; aspect-ratio: 1.5; margin: 0; overflow: hidden; }
+.inherited-composition img { object-position: right bottom; }
+.inherited-margin { max-width: 360px; }
+.margin-rule { display: block; width: 40px; height: 1px; background: var(--ink); margin-bottom: 28px; }
+.inherited-margin > p:first-of-type { font-size: 24px; line-height: 1.4; margin-bottom: 24px; letter-spacing: -.03em; }
+.inherited-margin > p:nth-of-type(2) { color: var(--muted); font-size: 15px; }
+.inherited-margin .inherited-question { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 30px; margin-top: 32px; }
+.present-chapter { background: var(--night); color: var(--paper); }
+.present-chapter .chapter-label { color: var(--label-on-dark); }
+.present-chapter .chapter-label > :first-child { color: var(--gold); }
+.present-heading { display: grid; grid-template-columns: 1.7fr 1fr; gap: 8%; align-items: start; margin-bottom: 72px; }
+.present-heading h2 em { color: var(--gold); }
+.present-heading > div > p { color: var(--text-on-dark); font-size: 17px; }
+.present-heading .present-position { font-size: 14px; color: var(--gold); margin-top: 28px; }
+.present-questions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5%; }
+.present-questions article { border-top: 1px solid #ffffff40; padding-top: 24px; }
+.present-questions article > span { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; color: var(--gold); }
+.present-questions h3 { font-size: 24px; line-height: 1.3; margin: 28px 0 18px; letter-spacing: -.03em; }
+.present-questions p { font-size: 15px; color: var(--text-on-dark); max-width: 300px; }
+.present-questions a { display: inline-flex; align-items: center; min-height: 44px; gap: 20px; margin-top: 24px; font-size: 13px; border-bottom: 1px solid #ffffff45; }
+.present-questions a:hover { color: var(--gold); }
+.present-footnote { font-size: 13px; color: var(--label-on-dark); margin-top: 48px; }
+.rediscovery-home .how-it-works { background: #dce4d9; padding-bottom: 64px; }
+.rediscovery-home .method-intro { display: grid; grid-template-columns: 1.7fr 1fr; gap: 24px 8%; margin-bottom: 56px; }
+.rediscovery-home .method-intro .eyebrow { grid-column: 1 / -1; margin-bottom: 16px; }
+.rediscovery-home .method-intro h2 { font-size: clamp(40px, 4.6vw, 76px); }
+.rediscovery-home .method-intro > p:last-child { align-self: end; font-size: 17px; }
+.rediscovery-home .steps { gap: 5%; margin-top: 0; }
+.rediscovery-home .steps li { border-top: 1px solid #829183; padding-top: 24px; }
+.rediscovery-home .steps h3 { font-size: 25px; }
+.rediscovery-home .step-number { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: 24px; margin-bottom: 28px; }
+.rediscovery-home .step-icon { display: none; }
+.rediscovery-home .methodology { margin-top: 40px; }
+.rediscovery-home .life-story { padding-top: 64px; background: #dce4d9; }
+.rediscovery-home .life-story .eyebrow { margin-bottom: 16px; }
+.rediscovery-home .story-heading { grid-template-columns: 1.7fr 1fr; }
+.rediscovery-home .story-heading h2 { font-size: clamp(32px, 3.2vw, 54px); }
+.rediscovery-home .life-sequence { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 5%; margin: 48px 0 32px; }
+.rediscovery-home .life-sequence li { border-color: #829183; }
+.rediscovery-home .life-sequence h3 { font-size: 20px; }
+.rediscovery-home .life-sequence p { font-size: 14px; }
+.rediscovery-home .life-story blockquote { border-color: #829183; font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: clamp(26px, 3vw, 42px); }
+.rediscovery-home .story-feature { position: relative; grid-template-columns: 1fr 1fr; gap: 8%; align-items: center; padding-top: 112px; padding-bottom: 112px; }
+.rediscovery-home .story-feature::before { position: absolute; top: 36px; left: var(--page-gutter); right: var(--page-gutter); font-size: 11px; letter-spacing: .15em; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); }
+.rediscovery-home #bouwjaar::before { content: '04 / BOUWJAAR'; }
+.rediscovery-home #loop::before { content: '05 / LOOP'; }
+.rediscovery-home #hive-chapter::before { content: '06 / HIVE'; }
+.rediscovery-home .story-feature-copy h2 { font-size: clamp(46px, 5.7vw, 94px); letter-spacing: -.05em; font-weight: 400; overflow-wrap: anywhere; }
+.rediscovery-home .story-feature-copy > .eyebrow { font-size: 10px; }
+.rediscovery-home .story-statement { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-size: clamp(27px, 2.9vw, 45px); line-height: 1.2; letter-spacing: -.025em; }
+.rediscovery-home .story-feature-copy > p:not(.eyebrow):not(.story-statement):not(.story-boundary) { font-size: 15px; max-width: 550px; }
+.rediscovery-home .story-feature-art { aspect-ratio: 4 / 5; }
+.rediscovery-home #bouwjaar .story-feature-art { transform: rotate(2deg); }
+.rediscovery-home .story-feature .story-boundary { border-left: 2px solid #879980; padding: 4px 0 4px 18px; font-size: 13px; }
+.rediscovery-home .story-loop { background: #e9e6dd; }
+.rediscovery-home .story-loop .story-feature-art { aspect-ratio: 1; border-radius: 50%; }
+.rediscovery-home .story-loop .image-caption { left: 50%; transform: translateX(-50%); width: 75%; bottom: 12%; text-align: center; }
+.rediscovery-home .story-hive { background: #152b27; color: var(--paper); grid-template-columns: 1.15fr 1fr; gap: 7%; }
+.rediscovery-home #hive-chapter::before { border-color: #f2f0e940; color: var(--label-on-dark); }
+.rediscovery-home .story-hive .story-feature-art { aspect-ratio: 4 / 5; }
+.rediscovery-home .story-hive .story-statement { color: var(--gold); }
+.rediscovery-home .story-hive .story-boundary { color: var(--text-on-dark); border-color: var(--gold); }
+.rediscovery-home .story-hive .button { background: var(--paper); color: var(--ink); --build-fill: var(--gold); --build-ink: var(--ink); }
+.rediscovery-home .projects-compact { background: var(--paper); color: var(--ink); padding-top: 100px; padding-bottom: 100px; }
+.rediscovery-home .projects-compact .eyebrow, .rediscovery-home .projects-compact .connected-intro { color: var(--muted); }
+.rediscovery-home .projects-compact .section-heading h2 { font-size: clamp(38px, 4.5vw, 72px); }
+.rediscovery-home .project-gateways { gap: 28px; }
+.rediscovery-home .project-gateways article { border-color: var(--line); }
+.rediscovery-home .project-gateways p { color: var(--muted); }
+.rediscovery-home .gateway-mark { color: #46634f; }
+.rediscovery-home .related-proposals { border-color: var(--line); }
+.rediscovery-home .projects-compact .projects-development { color: var(--muted); border-color: var(--line); }
+.rediscovery-home .project-gateways h3 { font-size: 22px; letter-spacing: .04em; }
+.invitation-chapter { background: var(--night); color: var(--paper); position: relative; overflow: hidden; }
+.invitation-chapter::before { content: ''; position: absolute; width: 90%; height: 600px; right: -30%; top: 35%; border-radius: 50%; background: radial-gradient(ellipse, #5d735236, transparent 65%); pointer-events: none; }
+.invitation-chapter .chapter-label { color: var(--label-on-dark); }
+.invitation-chapter .chapter-label > :first-child { color: var(--gold); }
+.invitation-philosophy { font-size: 17px; color: var(--label-on-dark); margin-bottom: 40px; }
+.invitation-chapter h2 { font-size: clamp(66px, 10vw, 166px); line-height: 1; margin-bottom: 72px; }
+.invitation-chapter h2 em { color: var(--gold); }
+.invitation-bottom { display: grid; grid-template-columns: 1.5fr 1fr; gap: 12%; position: relative; }
+.invitation-bottom > div > p { max-width: 500px; color: var(--text-on-dark); font-size: 16px; }
+.invitation-bottom .invitation-lead { color: var(--paper); font-size: 22px; margin-bottom: 18px; }
+.rediscovery-home .closing-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+.invitation-participation { border-top: 1px solid #ffffff40; padding-top: 22px; align-self: end; }
+.invitation-participation strong { font-size: 14px; font-weight: 500; }
+.invitation-participation > p { margin-top: 18px; }
+.invitation-participation .invitation-signature { color: var(--gold); font-size: 13px; margin-top: 40px; }
+@media (prefers-reduced-motion: no-preference) {
+ .opening-title { animation: opening-arrive 900ms ease-out both; }
+ .opening-landscape img { animation: opening-focus 1500ms ease-out both; }
+ @keyframes opening-arrive { from { opacity: .2; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+ @keyframes opening-focus { from { transform: scale(1.025); } to { transform: scale(1); } }
+}
+@media (max-width: 1023px) {
+ .rediscovery-shell .header-principle { display: none; }
+ .rediscovery-home .project-gateways { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+ .rediscovery-shell .header { min-height: 78px; }
+ .rediscovery-shell .header-logo, .rediscovery-shell .header-logo img { width: 132px; }
+ .rediscovery-home .chapter-label { margin-bottom: 36px; gap: 14px; font-size: 10px; }
+ .rediscovery-opening { min-height: calc(100svh - 78px); padding-top: 22px; padding-bottom: 22px; }
+ .opening-topline { font-size: 9px; }
+ .opening-topline > :last-child { display: none; }
+ .opening-title { margin: 130px 0 30px; }
+ .rediscovery-opening h1 { font-size: clamp(42px, 10.4vw, 78px); line-height: 1.08; }
+ .opening-note { font-size: 11px; margin-bottom: 20px; }
+ .opening-bottom { grid-template-columns: 1fr; gap: 28px; }
+ .opening-bottom > div > p { font-size: 14px; }
+ .opening-philosophy { justify-self: start; text-align: left; font-size: 14px; border-left: 1px solid var(--gold); padding-left: 16px; }
+ .opening-caption { font-size: 9px; margin-top: 24px; }
+ .opening-landscape img { object-position: 60% center; }
+ .inherited-heading, .inherited-composition, .present-heading, .invitation-bottom, .rediscovery-home .method-intro, .rediscovery-home .story-heading { grid-template-columns: 1fr; gap: 32px; }
+ .inherited-heading { margin-bottom: 40px; }
+ .inherited-heading > p { font-size: 16px; }
+ .inherited-composition figure { aspect-ratio: 1.15; }
+ .inherited-margin { max-width: none; }
+ .inherited-margin > p:first-of-type { font-size: 23px; }
+ .present-heading { margin-bottom: 44px; }
+ .present-heading > div > p { font-size: 16px; }
+ .present-questions { grid-template-columns: 1fr; gap: 32px; }
+ .present-questions article { display: grid; grid-template-columns: 32px 1fr; column-gap: 14px; }
+ .present-questions article > span { grid-row: 1 / 4; font-size: 19px; }
+ .present-questions h3 { font-size: 22px; margin: 0 0 12px; }
+ .present-questions p, .present-questions a { grid-column: 2; }
+ .present-questions a { justify-self: start; margin-top: 16px; }
+ .rediscovery-home .method-intro .eyebrow { margin-bottom: 0; }
+ .rediscovery-home .steps { gap: 28px; }
+ .rediscovery-home .step-number { margin-bottom: 16px; }
+ .rediscovery-home .life-sequence { grid-template-columns: 1fr; gap: 0; }
+ .rediscovery-home .life-sequence li { padding: 20px 0; }
+ .rediscovery-home .life-sequence .eyebrow { margin: 0; }
+ .rediscovery-home .life-sequence h3 { font-size: 19px; }
+ .rediscovery-home .story-feature, .rediscovery-home .story-hive { grid-template-columns: 1fr; padding-top: 100px; padding-bottom: 72px; gap: 40px; }
+ .rediscovery-home .story-feature-copy h2 { font-size: clamp(40px, 11.5vw, 70px); }
+ .rediscovery-home .story-feature-art { aspect-ratio: 4 / 3; }
+ .rediscovery-home #bouwjaar .story-feature-art { transform: none; }
+ .rediscovery-home .story-hive .story-feature-art { aspect-ratio: 4 / 3; }
+ .rediscovery-home .story-loop .story-feature-art { aspect-ratio: 1; }
+ .rediscovery-home .image-caption { font-size: 11px; left: 16px; bottom: 16px; max-width: calc(100% - 32px); }
+ .rediscovery-home .project-gateways { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; }
+ .rediscovery-home .project-gateways article { display: flex; gap: 0; padding: 24px 0 0; }
+ .rediscovery-home .gateway-mark { margin-bottom: 20px; }
+ .rediscovery-home .project-gateways a { justify-content: space-between; gap: 8px; margin-top: 20px; }
+ .rediscovery-home .projects-compact { padding-top: 72px; padding-bottom: 72px; }
+ .rediscovery-home .projects-compact .section-heading { align-items: start; gap: 20px; }
+ .rediscovery-home .project-gateways h3 { font-size: 21px; }
+ .rediscovery-home .project-gateways p { font-size: 13px; }
+ .invitation-chapter h2 { font-size: clamp(58px, 16vw, 108px); margin-bottom: 40px; }
+ .invitation-philosophy { font-size: 14px; margin-bottom: 36px; }
+ .invitation-bottom { gap: 48px; }
+ .invitation-bottom .invitation-lead { font-size: 20px; }
+}

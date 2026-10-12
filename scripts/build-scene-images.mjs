@@ -6,6 +6,7 @@ const root = resolve(import.meta.dirname, '..');
 const sources = [
   ...['loop', 'grow', 'hive', 'rise', 'mend', 'clarke'].map(name => `/images/projects/${name}-hero.png`),
   ...['river-civilization', 'food', 'movement'].map(name => `/images/future/${name}.webp`),
+  ...['polders', 'wonder'].map(name => `/images/homepage/${name}.webp`),
 ];
 const manifest = {};
 await mkdir(resolve(root, 'public/images/scenes'), { recursive: true });
