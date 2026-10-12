@@ -17,7 +17,7 @@ const checks = [];
 try {
  for (const prefix of ['', '/en']) {
   await page.goto(base + (prefix || '/'));
-  assert.deepEqual(await page.locator('.home-page > section').evaluateAll(es => es.map(e => e.id || e.className)), ['hero', 'mogelijkheden', 'bouwjaar', 'loop', 'projecten', 'werkwijze', 'doe-mee']);
+  assert.deepEqual(await page.locator('.home-page > section').evaluateAll(es => es.map(e => e.id || e.className)), ['hero', 'mogelijkheden', 'bouwjaar', 'loop', 'hive-chapter', 'projecten', 'werkwijze', 'doe-mee']);
   assert.equal(await page.locator('.life-sequence li').count(), 9);
   for (const id of ['home', 'main', 'visie', 'mogelijkheden', 'bouwjaar', 'loop', 'projecten', 'voorstellen', 'werkwijze', 'doe-mee', 'meebouwen', 'grow', 'hive', 'rise', 'mend']) assert.equal(await page.locator(`[id="${id}"]`).count(), 1, `Stable anchor ${prefix}#${id}`);
   assert.deepEqual(await page.locator('.desktop-nav a').allTextContents(), ['BOUW', 'BOUWJAAR', 'LOOP', prefix ? 'Projects' : 'Projecten']);

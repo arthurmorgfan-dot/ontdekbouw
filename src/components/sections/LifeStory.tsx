@@ -14,3 +14,20 @@ export async function LoopChapter() {
  const { t, l } = await getI18n();
  return <section id="loop" className="story-feature story-loop section" aria-labelledby="loop-heading"><figure className="story-feature-art"><SceneImage src="/images/future/food.webp" alt={t("Conceptbeeld van verse voeding voor dagelijkse maaltijden")} sizes="(max-width: 767px) 100vw, 45vw" /><figcaption className="image-caption">{t("Conceptbeeld / geen bestaande LOOP-bezorgdienst")}</figcaption></figure><div className="story-feature-copy"><p className="eyebrow">{t("Een praktische basis / voedsel")}</p><p className="story-transition">{t("Mensen krijgen meer ruimte om iets op te bouwen als de basis van het dagelijks leven, zoals voedzaam eten, beter bereikbaar wordt.")}</p><h2 id="loop-heading">LOOP</h2><p className="story-statement">{t("De melkboer van toen. Voor het verse eten van morgen.")}</p><p>{t("De ambitie: regelmatig een betaalbaar pakket vers, voedzaam eten bij je thuis. Geproduceerd zo lokaal als praktisch mogelijk, met regionale distributie en kassen dichtbij steden waar dat zinvol blijkt. Minder gedoe rond de dagelijkse maaltijd, met ruimte om zelf te kiezen wat je eet.")}</p><p className="story-boundary">{t("Dit is een toekomstbeeld, geen werkende bezorgdienst. Betaalbaarheid, productie en bezorging moeten nog worden getoetst; bestaande winkels en afhaalpunten blijven mogelijke alternatieven.")}</p><Button href={l("/projecten/loop")} build>{t("Ontdek LOOP")}</Button></div></section>;
 }
+
+export async function HiveChapter() {
+ const { t, l } = await getI18n();
+ return <section id="hive-chapter" className="story-feature story-hive section" aria-labelledby="hive-heading">
+   <figure className="story-feature-art">
+     <SceneImage src="/images/projects/hive-hero.png" alt={t("HIVE / conceptbeeld, geen gebouwd systeem")} sizes="(max-width: 767px) 100vw, 45vw" />
+     <figcaption className="image-caption">{t("Conceptbeeld / nog geen operationeel systeem.")}</figcaption>
+   </figure>
+   <div className="story-feature-copy">
+     <h2 id="hive-heading">HIVE</h2>
+     <p className="story-statement">{t("Een complete leefomgeving, vanaf de basis gebouwd.")}</p>
+     <p>{t("Wonen, voedsel, basiszorg en dagelijkse voorzieningen als één systeem. Wat we herhalen is de onderliggende basis; de uitvoering moet passen bij de plek en de mensen.")}</p>
+     <p className="story-boundary">{t("Status — In ontwikkeling. Conceptbeeld / nog geen operationeel systeem. Geen Cell, kostenmodel, prototype, pilot, partners of bewezen besparingen.")}</p>
+     <Button href={l("/projecten/hive")} build>{t("Verken HIVE")}</Button>
+   </div>
+ </section>;
+}

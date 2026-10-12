@@ -15,7 +15,7 @@
 .story-feature-copy > .eyebrow { margin-top: 0; }
 .story-feature-art { position: relative; min-width: 0; margin: 0; aspect-ratio: 4 / 5; background: var(--ink); overflow: hidden; }
 .story-feature-art img { object-position: center; }
-.story-loop { background: var(--surface); }
+.story-loop, .story-hive { background: var(--surface); }
 .connected-intro { max-width: 800px; margin-bottom: 44px; color: var(--muted); }
 .projects-compact .connected-intro { color: var(--text-on-dark); }
 .projects-compact .section-heading h2 { font-size: var(--heading); max-width: 850px; }
@@ -43,7 +43,7 @@
  .life-sequence .eyebrow { grid-row: 1 / 3; margin: 4px 0 0; }
  .life-sequence p { grid-column: 2; }
  .story-feature-art { aspect-ratio: 4 / 3; }
- .story-loop .story-feature-art { order: 2; }
+ .story-loop .story-feature-art, .story-hive .story-feature-art { order: 2; }
  .editorial-list > div { grid-template-columns: 1fr; gap: 12px; }
  .projects-compact .section-heading { align-items: start; flex-direction: column; }
  .bouwjaar-hero h1 { font-size: clamp(32px,8.8vw,60px); }
