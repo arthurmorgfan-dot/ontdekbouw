@@ -36,7 +36,7 @@ for (const route of routes) {
    const brokenImages=[...document.querySelectorAll('img')].filter(e=>e.complete&&e.naturalWidth===0).map(e=>e.src);
    return {viewport:innerWidth,scrollWidth:document.documentElement.scrollWidth,overflow,clippedText,tiny,brokenImages,h1:document.querySelectorAll('h1').length,main:document.querySelectorAll('main').length,canonical:document.querySelector('link[rel=canonical]')?.href,lang:document.documentElement.lang};
   });
-  const expectedCanonical = new URL(route==='/'?'/':route, 'https://ontdekbouw.nl').href.replace(/\/$/, '');
+  const expectedCanonical = new URL(route==='/'?'/':route, 'https://www.ontdekbouw.nl').href.replace(/\/$/, '');
   if(route!=='/pagina-bestaat-niet' && state.canonical?.replace(/\/$/, '')!==expectedCanonical) throw new Error('Incorrect canonical: '+route);
   if(state.lang!=='nl') throw new Error('Missing Dutch language: '+route);
   report.checks.push({route,width,status:response.status(),...state});

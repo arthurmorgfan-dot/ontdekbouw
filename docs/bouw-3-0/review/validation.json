@@ -1,0 +1,231 @@
+{
+  "content": [
+    {
+      "path": "/",
+      "retained": true
+    },
+    {
+      "path": "/bouwjaar",
+      "retained": true
+    },
+    {
+      "path": "/projecten",
+      "retained": true
+    },
+    {
+      "path": "/projecten/loop",
+      "retained": true
+    },
+    {
+      "path": "/projecten/grow",
+      "retained": true
+    },
+    {
+      "path": "/projecten/hive",
+      "retained": true
+    },
+    {
+      "path": "/projecten/rise",
+      "retained": true
+    },
+    {
+      "path": "/projecten/mend",
+      "retained": true
+    },
+    {
+      "path": "/projecten/clarke",
+      "retained": true
+    },
+    {
+      "path": "/voorstellen/gezond-eten-als-basis",
+      "retained": true
+    },
+    {
+      "path": "/voorstellen/vers-eten-moet-goedkoper",
+      "retained": true
+    },
+    {
+      "path": "/voorstellen/iedere-dag-bewegen",
+      "retained": true
+    },
+    {
+      "path": "/onze-visie",
+      "retained": true
+    },
+    {
+      "path": "/standpunten",
+      "retained": true
+    },
+    {
+      "path": "/doe-mee",
+      "retained": true
+    },
+    {
+      "path": "/volg-bouw",
+      "retained": true
+    },
+    {
+      "path": "/en",
+      "retained": true
+    },
+    {
+      "path": "/en/bouwjaar",
+      "retained": true
+    },
+    {
+      "path": "/en/projecten",
+      "retained": true
+    },
+    {
+      "path": "/en/projecten/loop",
+      "retained": true
+    },
+    {
+      "path": "/en/projecten/grow",
+      "retained": true
+    },
+    {
+      "path": "/en/projecten/hive",
+      "retained": true
+    },
+    {
+      "path": "/en/projecten/rise",
+      "retained": true
+    },
+    {
+      "path": "/en/projecten/mend",
+      "retained": true
+    },
+    {
+      "path": "/en/projecten/clarke",
+      "retained": true
+    },
+    {
+      "path": "/en/voorstellen/gezond-eten-als-basis",
+      "retained": true
+    },
+    {
+      "path": "/en/voorstellen/vers-eten-moet-goedkoper",
+      "retained": true
+    },
+    {
+      "path": "/en/voorstellen/iedere-dag-bewegen",
+      "retained": true
+    },
+    {
+      "path": "/en/onze-visie",
+      "retained": true
+    },
+    {
+      "path": "/en/standpunten",
+      "retained": true
+    },
+    {
+      "path": "/en/doe-mee",
+      "retained": true
+    },
+    {
+      "path": "/en/volg-bouw",
+      "retained": true
+    }
+  ],
+  "social": [
+    {
+      "url": "/",
+      "image": "https://www.ontdekbouw.nl/og-image.jpg",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "url": "/bouwjaar",
+      "image": "https://www.ontdekbouw.nl/social/bouwjaar-nl.jpg",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "url": "/projecten/loop",
+      "image": "https://www.ontdekbouw.nl/social/loop-nl.jpg",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "url": "/projecten/hive",
+      "image": "https://www.ontdekbouw.nl/social/hive-nl.jpg",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "url": "/en",
+      "image": "https://www.ontdekbouw.nl/og-image.jpg",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "url": "/en/bouwjaar",
+      "image": "https://www.ontdekbouw.nl/social/bouwjaar-en.jpg",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "url": "/en/projecten/loop",
+      "image": "https://www.ontdekbouw.nl/social/loop-en.jpg",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "url": "/en/projecten/hive",
+      "image": "https://www.ontdekbouw.nl/social/hive-en.jpg",
+      "status": 200,
+      "width": 1200,
+      "height": 630
+    }
+  ],
+  "screenshots": [
+    "nl-home-mobile.png",
+    "nl-home-desktop.png",
+    "nl-bouwjaar-mobile.png",
+    "nl-bouwjaar-desktop.png",
+    "nl-loop-mobile.png",
+    "nl-loop-desktop.png",
+    "nl-hive-mobile.png",
+    "nl-hive-desktop.png",
+    "nl-projects-mobile.png",
+    "nl-projects-desktop.png",
+    "en-home-mobile.png",
+    "en-home-desktop.png",
+    "en-bouwjaar-mobile.png",
+    "en-bouwjaar-desktop.png",
+    "en-loop-mobile.png",
+    "en-loop-desktop.png",
+    "en-hive-mobile.png",
+    "en-hive-desktop.png",
+    "en-projects-mobile.png",
+    "en-projects-desktop.png"
+  ],
+  "os": [
+    {
+      "locale": "nl",
+      "independentRoomSettings": true,
+      "lightingAndExterior": true,
+      "noLiveEnergyData": true,
+      "resetAndNoPersistence": true,
+      "allPanelsAxe": true
+    },
+    {
+      "locale": "en",
+      "independentRoomSettings": true,
+      "lightingAndExterior": true,
+      "noLiveEnergyData": true,
+      "resetAndNoPersistence": true,
+      "allPanelsAxe": true
+    }
+  ],
+  "errors": []
+}

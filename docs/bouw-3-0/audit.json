@@ -1,0 +1,162 @@
+{
+  "baseCommit": "59e949a1ae5c3c81d551f4a7c966555a011771e2",
+  "branch": "design/bouw-3-0",
+  "files": [
+    {
+      "path": "src/data/story.ts",
+      "sha256": "5d3e22de58f07d218c2802ce6d6e39d6f1d91c885fe5ad61121092e609575d3f"
+    },
+    {
+      "path": "src/data/vision.ts",
+      "sha256": "55bbc01c9936e0afe7fa9d675404b061978db6e42500cc07218e0536ad1160f2"
+    },
+    {
+      "path": "src/data/proposal-pages/gezond-eten-als-basis.ts",
+      "sha256": "1ca934f4090022c987d6e629b0fcd19be8accde91c96a550c6cf1391dc8ad060"
+    },
+    {
+      "path": "src/data/proposal-pages/iedere-dag-bewegen.ts",
+      "sha256": "d9e6a2dcae40c438c338834fff5669b1ff0c000bcbb277b40e46ba84d38079af"
+    },
+    {
+      "path": "src/data/proposal-pages/bouw-basis.ts",
+      "sha256": "57bfd545130f90ea7c3df0cb49d77250d2f1ec91a1cd58011d5105b55e506bff"
+    },
+    {
+      "path": "src/data/proposal-pages/vers-eten-moet-goedkoper.ts",
+      "sha256": "605e469b5124662d46a128b3716632461580e5feb9586d16913da51779425bbd"
+    },
+    {
+      "path": "src/data/positions.ts",
+      "sha256": "ab45e416ab81132f9487d2201246744caea7b7fe5cf5baebeeca23f2a44f9b68"
+    },
+    {
+      "path": "src/data/experiments.ts",
+      "sha256": "644cfc1335f538c72307b13c0d4bd7fc1c090563a4e50e7bb6c6357e77cec51e"
+    },
+    {
+      "path": "src/data/site.ts",
+      "sha256": "2c73e7ffe0f05dbfade52027557427779534d812ebead28104204ff937a76db5"
+    },
+    {
+      "path": "src/data/participation.ts",
+      "sha256": "173128ba0f059a1c4a3cc67299f676b315d7d5b3702ac4ed5eb093b3bfa2c04b"
+    },
+    {
+      "path": "src/app/(dutch)/page.tsx",
+      "sha256": "5e8e52bd61ef65bcc2d48c03122528ed46609d952b511a1221d117a0b92ca075"
+    },
+    {
+      "path": "src/data/experiment-records/loop-001.ts",
+      "sha256": "a0c8161ac2110c78173c573685241656a85a9d4abf20117be42ad8bcde0fc97c"
+    },
+    {
+      "path": "src/app/(dutch)/volg-bouw/page.tsx",
+      "sha256": "3ec334f05384f262b8230e7068f322451bdc7d2baa50e0a345185edfa7ed7753"
+    },
+    {
+      "path": "src/data/project-pages/mend.ts",
+      "sha256": "2e2d7413b19a3411f26c3eeca722bb995ccc7d314aea6fc4526c2d848ffc6520"
+    },
+    {
+      "path": "src/data/project-pages/grow.ts",
+      "sha256": "f7e65b0d507e8d7635d9cdf57aaa185baf71d5e7bb2e7230f3bf7e530d418c4e"
+    },
+    {
+      "path": "src/data/project-pages/hive.ts",
+      "sha256": "a7621d119a6d7c0756aceb0a102dcf4e4b1eaf759f0313934b6f00df5ca5fabe"
+    },
+    {
+      "path": "src/data/project-pages/loop.ts",
+      "sha256": "2e9233b662cdf7aefb71d0aec241b79c9b31037282cf1b3d974793b29bad29f6"
+    },
+    {
+      "path": "src/data/project-pages/clarke.ts",
+      "sha256": "a4b5eb079bdfe4cc22a204775b78cc54fb103252d841efb0e098bbcffc51c491"
+    },
+    {
+      "path": "src/data/project-pages/rise.ts",
+      "sha256": "315b0d5a9e3f5bde612d1f9e02b6d8fb211ad7659c251a4b3bf1fef6b9b827f6"
+    },
+    {
+      "path": "src/data/projects.ts",
+      "sha256": "fefc3ab5c8fab062da0af2ed6560cd104c78c0fddf0668fbf6a3b5eb3225d384"
+    },
+    {
+      "path": "src/data/proposals.ts",
+      "sha256": "8ab70b90b6bff54ab0e42e4d7638dbb861caac9bbe85d8cc278f23e877bd7641"
+    },
+    {
+      "path": "src/app/(dutch)/voorstellen/[slug]/page.tsx",
+      "sha256": "a9b948eb10f62ad9eb9a281c208d77eb62bd7d263dce90c52c55ba21c8f18184"
+    },
+    {
+      "path": "src/app/(dutch)/doe-mee/page.tsx",
+      "sha256": "89dda519c11dbf2eb480345d6b52045df513732cc30f508ab17e6cb44e3e2478"
+    },
+    {
+      "path": "src/app/(dutch)/standpunten/page.tsx",
+      "sha256": "efe365bdd36df0bcb1e2a6559062029f83eae03b32bf316717209f2e843beb61"
+    },
+    {
+      "path": "src/app/(dutch)/onze-visie/page.tsx",
+      "sha256": "bcf48fd5c480510b51d220c7a55890cd572c7cd3437c4cb330d8c5af350d8d00"
+    },
+    {
+      "path": "src/app/en/page.tsx",
+      "sha256": "5e8e52bd61ef65bcc2d48c03122528ed46609d952b511a1221d117a0b92ca075"
+    },
+    {
+      "path": "src/app/(dutch)/projecten/[slug]/page.tsx",
+      "sha256": "72c453c8cac1d1227e98f92c73106c7306540c1cd6e12f2e4c0d5a38b0faf89f"
+    },
+    {
+      "path": "src/app/(dutch)/projecten/page.tsx",
+      "sha256": "5cb7d78468a3f5c591ff79ab6d192ae11e10378edac1ce363afbe465cf5c2337"
+    },
+    {
+      "path": "src/app/en/volg-bouw/page.tsx",
+      "sha256": "3ec334f05384f262b8230e7068f322451bdc7d2baa50e0a345185edfa7ed7753"
+    },
+    {
+      "path": "src/app/(dutch)/projecten/clarke/page.tsx",
+      "sha256": "f1c852bc19adabe7d9c9b81919b20f9960617635fce142642d714b869c712ca5"
+    },
+    {
+      "path": "src/app/en/onze-visie/page.tsx",
+      "sha256": "bcf48fd5c480510b51d220c7a55890cd572c7cd3437c4cb330d8c5af350d8d00"
+    },
+    {
+      "path": "src/app/(dutch)/bouwjaar/page.tsx",
+      "sha256": "a1eefa49e45a454c53cca7965d75751cbfa47f3933e634fddb711fb21dfe8eb0"
+    },
+    {
+      "path": "src/app/en/bouwjaar/page.tsx",
+      "sha256": "a1eefa49e45a454c53cca7965d75751cbfa47f3933e634fddb711fb21dfe8eb0"
+    },
+    {
+      "path": "src/app/en/doe-mee/page.tsx",
+      "sha256": "89dda519c11dbf2eb480345d6b52045df513732cc30f508ab17e6cb44e3e2478"
+    },
+    {
+      "path": "src/app/en/projecten/[slug]/page.tsx",
+      "sha256": "72c453c8cac1d1227e98f92c73106c7306540c1cd6e12f2e4c0d5a38b0faf89f"
+    },
+    {
+      "path": "src/app/en/projecten/page.tsx",
+      "sha256": "5cb7d78468a3f5c591ff79ab6d192ae11e10378edac1ce363afbe465cf5c2337"
+    },
+    {
+      "path": "src/app/en/standpunten/page.tsx",
+      "sha256": "efe365bdd36df0bcb1e2a6559062029f83eae03b32bf316717209f2e843beb61"
+    },
+    {
+      "path": "src/app/en/projecten/clarke/page.tsx",
+      "sha256": "f1c852bc19adabe7d9c9b81919b20f9960617635fce142642d714b869c712ca5"
+    },
+    {
+      "path": "src/app/en/voorstellen/[slug]/page.tsx",
+      "sha256": "a9b948eb10f62ad9eb9a281c208d77eb62bd7d263dce90c52c55ba21c8f18184"
+    }
+  ]
+}

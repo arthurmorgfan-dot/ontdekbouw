@@ -5,7 +5,7 @@ import { resolve } from 'node:path';
 const root = resolve(import.meta.dirname, '..');
 const sources = [
   ...['loop', 'grow', 'hive', 'rise', 'mend', 'clarke'].map(name => `/images/projects/${name}-hero.png`),
-  ...['river-civilization', 'food', 'movement'].map(name => `/images/future/${name}.webp`),
+  ...['river-civilization', 'food', 'movement', 'hive-next', 'loop-next', 'grow-next', 'rise-next', 'mend-next'].map(name => `/images/future/${name}.webp`),
   ...['polders', 'wonder'].map(name => `/images/homepage/${name}.webp`),
 ];
 const manifest = {};

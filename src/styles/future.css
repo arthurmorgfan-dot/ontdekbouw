@@ -1,0 +1,264 @@
+/* BOUW 3.0: an open atlas of achievable futures. Local design exploration. */
+body.future-site {
+ --paper: #edf3ee; --surface: #e1ebe7; --ink: #142d31; --night: #0b1b23;
+ --muted: #415e60; --gold: #f3cb97; --accent: #a3d5bf; --line: #b6cac5;
+ --text-on-dark: #d4e4df; --label-on-dark: #bdcfcc; --line-dark: #bad9d136;
+ --gutter: clamp(20px, 5vw, 92px); --section-space: clamp(72px, 7.5vw, 120px);
+ --font-system: ui-monospace, SFMono-Regular, Consolas, monospace;
+ background: var(--paper); color: var(--ink);
+}
+.future-site h1, .future-site h2, .future-site h3 { font-weight: 400; letter-spacing: -.045em; }
+.future-site .eyebrow { font-family: var(--font-system); font-size: 12px; letter-spacing: .08em; }
+.future-site .header { min-height: 86px; background: var(--night); border-bottom: 1px solid var(--line-dark); padding-block: 12px; }
+.future-site .header-logo, .future-site .header-logo img { width: 168px; }
+.future-site .header-principle { font-size: 12px; letter-spacing: 0; }
+.future-site .desktop-nav { gap: 24px; }
+.future-site .desktop-nav a { font-size: 13px; }
+.future-site .button { border-radius: 40px; letter-spacing: .02em; font-size: 13px; min-height: 48px; padding: 13px 24px; }
+.future-site .header .button { border-radius: 30px; }
+.future-site .mobile-nav { border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; background: var(--night); }
+.future-site .navigation-links a { font-size: clamp(18px, 2vw, 28px); }
+.future-site .footer { padding-block: 72px; }
+.future-site .image-caption { border-radius: 8px; font-size: 12px; background: #0b1b23ef; padding: 10px 14px; }
+.future-site a:focus-visible, .future-site button:focus-visible, .future-site input:focus-visible, .future-site select:focus-visible { outline: 3px solid #39848a; outline-offset: 5px; }
+.future-site .rediscovery-home em { font-family: var(--font-body); font-style: normal; letter-spacing: -.055em; }
+.future-site .rediscovery-shell { --section-space: clamp(72px, 7.5vw, 120px); }
+.future-site .rediscovery-opening { display: block; min-height: 0; padding: 66px var(--page-gutter) 28px; background: var(--night); color: var(--paper); }
+.future-site .rediscovery-opening::before { display: none; }
+.atlas-opening-heading { display: grid; grid-template-columns: 1.35fr 1fr; gap: 8%; margin-bottom: 48px; align-items: end; }
+.future-site .rediscovery-opening h1 { font-size: clamp(56px, 7.3vw, 120px); line-height: .99; letter-spacing: -.07em; }
+.future-site .rediscovery-opening h1 em { color: var(--accent); }
+.future-site .opening-note { font-family: var(--font-system); font-size: 12px; }
+.atlas-opening-aside { max-width: 490px; }
+.future-site .opening-philosophy { text-align: left; font-size: 20px; line-height: 1.5; margin-bottom: 22px; }
+.atlas-opening-aside > p:not(.opening-philosophy) { font-size: 14px; color: var(--text-on-dark); line-height: 1.7; margin-bottom: 16px; }
+.atlas-opening-aside > p:nth-child(2) { font-family: var(--font-system); font-size: 12px; color: var(--accent); }
+.atlas-opening-aside .button { margin-top: 12px; }
+.atlas-opening-window { position: relative; aspect-ratio: 2.9; margin: 0; border-radius: 20px 20px 6px 6px; overflow: hidden; }
+.future-site .atlas-opening-window .opening-landscape { z-index: 0; }
+.future-site .atlas-opening-window img { object-position: center 45%; }
+.atlas-opening-window figcaption { position: absolute; left: 24px; bottom: 20px; padding: 8px 12px; background: #0b1b23e6; border-radius: 8px; font-size: 12px; }
+.atlas-window-link { position: absolute; right: 24px; bottom: 20px; min-height: 44px; display: inline-flex; align-items: center; gap: 20px; padding: 10px 18px; background: var(--paper); color: var(--ink); border-radius: 40px; font-size: 13px; }
+.future-atlas { background: var(--night); color: var(--paper); padding-top: 70px; border-bottom: 1px solid var(--line-dark); }
+.atlas-intro { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px 12%; align-items: end; margin-bottom: 44px; }
+.atlas-intro .eyebrow { grid-column: 1 / -1; color: var(--accent); margin: 0; }
+.atlas-intro h2 { font-size: clamp(40px, 4.4vw, 72px); line-height: 1.06; }
+.atlas-intro > p:last-child { font-size: 16px; max-width: 480px; color: var(--text-on-dark); }
+.atlas-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.atlas-card { display: flex; flex-direction: column; border: 1px solid var(--line-dark); border-radius: 16px; padding: 12px 12px 20px; background: #122935; transition: border-color .2s ease; }
+.atlas-card:hover { border-color: var(--accent); }
+.atlas-card-image { position: relative; aspect-ratio: 1.55; border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+.atlas-index { font-family: var(--font-system); font-size: 12px; color: var(--accent); padding-inline: 8px; }
+.atlas-card h3 { font-size: 32px; padding: 12px 8px 0; }
+.atlas-card > p { padding: 10px 8px 28px; font-size: 15px; color: var(--text-on-dark); }
+.atlas-card-status { margin-top: auto; border-top: 1px solid var(--line-dark); padding: 16px 8px 0; display: flex; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--accent); }
+.atlas-learning { background: #352e26; }
+.atlas-food { background: #18352e; }
+.atlas-living { background: #162c37; }
+.future-site .inherited-heading h2, .future-site .present-heading h2 { font-size: clamp(40px, 4.5vw, 74px); }
+.future-site .inherited-composition figure { border-radius: 20px; aspect-ratio: 1.75; }
+.future-site .inherited-margin .inherited-question { font-family: var(--font-body); font-style: normal; }
+.future-site .chapter-label { font-family: var(--font-system); font-size: 12px; }
+.future-site .present-chapter { background: #132b34; border-radius: 28px 28px 0 0; }
+.future-site .present-questions article { background: #1a3540; border: 1px solid #a3d5bf42; border-radius: 14px; padding: 24px; }
+.future-site .present-questions article > span { font-family: var(--font-system); }
+.future-site .how-it-works, .future-site .life-story { background: var(--surface); }
+.future-site .life-story blockquote { font-family: var(--font-body); font-style: normal; font-size: clamp(26px, 3.5vw, 48px); }
+.future-site .life-sequence { gap: 14px; }
+.future-site .life-sequence li { padding: 22px; border: 1px solid var(--line); border-radius: 12px; background: #eef5f0; }
+.future-site .life-sequence .eyebrow { color: #3d6b65; }
+.future-site .rediscovery-home .story-feature { padding-top: 100px; padding-bottom: 88px; gap: 7%; }
+.future-site .rediscovery-home .story-feature-art { border-radius: 20px; aspect-ratio: 1; transform: none; }
+.future-site .rediscovery-home .story-loop .story-feature-art { border-radius: 20px; aspect-ratio: 1; }
+.future-site .rediscovery-home .story-loop .image-caption { left: 20px; transform: none; bottom: 20px; width: auto; text-align: left; }
+.future-site .rediscovery-home #bouwjaar .story-feature-art { transform: none; }
+.future-site .story-feature-copy h2 { font-size: clamp(48px, 6vw, 96px); letter-spacing: -.06em; }
+.future-site .story-feature .story-statement { font-family: var(--font-body); font-style: normal; font-size: clamp(26px, 2.8vw, 43px); line-height: 1.22; }
+.future-site .story-feature .story-boundary { font-size: 14px; line-height: 1.8; border-left: 2px solid #518678; padding-left: 18px; }
+.future-site .story-loop { background: #e1ebe0; }
+.future-site .story-hive { background: #132b34; }
+.future-site .projects-compact .project-gateways article { border: 1px solid var(--line); border-radius: 14px; padding: 24px; background: #f4f8f5; }
+.future-site .project-gateways { gap: 14px; }
+.future-site .project-gateways h3 { font-size: 22px; }
+.future-site .project-gateways a { gap: 10px; }
+.future-site .invitation-chapter h2 { font-size: clamp(64px, 8vw, 130px); }
+.future-site .invitation-chapter { background: #0b1b23; }
+/* Research dossiers: a framed scene, then a consistent readable document grid. */
+.future-site .project-blueprint { --project-color: #23666b; }
+.future-site .project-loop { --project-color: #3c6f48; }
+.future-site .project-hive { --project-color: #446c84; }
+.future-site .project-grow { --project-color: #3a705e; }
+.future-site .project-rise { --project-color: #626489; }
+.future-site .project-mend { --project-color: #6e507c; }
+.future-site .project-clarke { --project-color: #7a6242; }
+.future-site .project-blueprint .blueprint-hero { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 40px 6%; padding: 52px var(--page-gutter) 36px; background: var(--night); }
+.future-site .project-blueprint .blueprint-hero-copy { min-height: 0; padding: 0; max-width: none; }
+.future-site .project-blueprint .blueprint-back { margin-bottom: 26px; }
+.future-site .project-blueprint h1 { font-size: clamp(70px, 7.2vw, 116px); line-height: 1; margin-top: 24px; font-weight: 400; }
+.future-site .project-blueprint h1.blueprint-six-letter-title { font-size: clamp(52px, 6.3vw, 96px); }
+.future-site .project-blueprint .blueprint-statement { font-size: clamp(25px, 2.7vw, 41px); line-height: 1.2; margin-top: 24px; }
+.future-site .project-blueprint .blueprint-lead { font-size: 16px; max-width: 560px; }
+.future-site .project-blueprint .blueprint-hero-image { position: relative; inset: auto; min-width: 0; min-height: 540px; border-radius: 24px; overflow: hidden; align-self: stretch; }
+.future-site .project-blueprint .blueprint-hero-image::after { display: none; }
+.future-site .project-blueprint .blueprint-hero-image img { object-position: center; }
+.future-site .project-blueprint .blueprint-hero-image > span { top: auto; left: 20px; right: 20px; bottom: 20px; padding: 10px 14px; width: fit-content; border-radius: 8px; background: #0b1b23ef; font-size: 12px; }
+.future-site .project-blueprint .blueprint-stage-note { grid-column: 1 / -1; position: static; padding: 24px 0 0; background: none; border-top: 1px solid var(--line-dark); font-size: 14px; max-width: none; }
+.future-site .project-blueprint .blueprint-product-bridge .blueprint-small-label { font-size: 12px; }
+.future-site .project-blueprint .blueprint-status { border-radius: 30px; letter-spacing: .05em; line-height: 1.7; }
+.future-site .project-blueprint .blueprint-chapters { padding: 24px var(--page-gutter); gap: 12px 36px; background: var(--paper); border-block: 1px solid var(--line); }
+.future-site .project-blueprint .blueprint-section { padding-block: 80px; border-bottom: 1px solid var(--line); }
+.future-site .project-blueprint .blueprint-section-heading { padding-left: 20px; border-left: 3px solid var(--project-color); }
+.future-site .project-blueprint .blueprint-section h2 { font-size: clamp(30px, 3vw, 48px); letter-spacing: -.04em; }
+.future-site .project-blueprint .blueprint-small-label, .future-site .blueprint-section .eyebrow { font-family: var(--font-system); letter-spacing: .03em; }
+.future-site .project-blueprint .blueprint-flow { padding: 22px; background: #dfebe6; border: 1px solid var(--line); border-radius: 14px; }
+.future-site .project-blueprint .blueprint-system > li, .future-site .project-blueprint .blueprint-framework > div, .future-site .project-blueprint .blueprint-measurements > div { padding: 24px; border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; background: #f4f8f5; }
+.future-site .project-blueprint .blueprint-dark .blueprint-flow { background: #162f36; border-color: var(--line-dark); }
+.future-site .project-blueprint .blueprint-dark .blueprint-section-heading { border-color: var(--accent); }
+.future-site .project-blueprint .blueprint-results .blueprint-result-statement { font-size: clamp(40px, 5vw, 72px); }
+.future-site .projects-index .projects-index-intro { padding-top: 72px; background: #102a34; border-bottom-right-radius: 42px; }
+.future-site .projects-index .projects-index-intro h1 { font-size: clamp(48px, 6.2vw, 96px); font-weight: 400; }
+.future-site .projects-index .project-index-navigation { gap: 14px; }
+.future-site .projects-index .project-index-navigation a { border: 1px solid var(--line-dark); padding: 12px 20px; border-radius: 40px; }
+.future-site .project-card { border: 1px solid var(--line); background: #f5f8f4; border-radius: 20px; overflow: hidden; }
+.future-site .project-card .project-image { aspect-ratio: 1.7; }
+.future-site .project-card .project-body { padding: 30px; }
+.future-site .project-card .project-title h3 { font-size: 42px; }
+/* Supporting pages use the same visual language without altering their functions. */
+.future-site .bouwjaar-hero { background: #312b25; border-bottom-right-radius: 42px; grid-template-columns: 1.1fr 1fr; }
+.future-site .bouwjaar-hero .story-feature-art { border-radius: 20px; aspect-ratio: 1; }
+.future-site .bouwjaar-content .editorial-list > div { border: 1px solid var(--line); padding: 28px; margin-bottom: 14px; border-radius: 16px; background: #f5f8f4; }
+.future-site .bouwjaar-questions { background: #e6e3d9; }
+.future-site .vision-page .vision-hero { background: #102a34; border-bottom-right-radius: 42px; }
+.future-site .vision-page .vision-pillar { border: 1px solid var(--line); border-radius: 16px; padding: 28px; background: #f5f8f4; margin-bottom: 24px; }
+.future-site .vision-page .vision-pillar h3 { font-size: clamp(26px, 2.5vw, 38px); }
+.future-site .positions-page .positions-hero { background: #102a34; border-bottom-right-radius: 42px; }
+.future-site .positions-page details { border-radius: 12px; }
+.future-site .participation-page .participation-hero, .future-site .follow-page .follow-hero { background: #102a34; border-bottom-right-radius: 42px; }
+.future-site .participation-page .participation-hero { color: var(--paper); }
+.future-site .participation-page .participation-hero .eyebrow { color: var(--gold); }
+.future-site .participation-page .participation-hero > p:not(.eyebrow) { color: var(--text-on-dark); }
+.future-site .rediscovery-home .story-feature-copy > .eyebrow { font-size: 12px; }
+.future-site .rediscovery-home .chapter-label { font-size: 12px; }
+.future-site .rediscovery-home .life-story blockquote { font-family: var(--font-body); font-style: normal; }
+.future-site .contribution-form { border: 1px solid var(--line); border-radius: 20px; padding: clamp(20px, 4vw, 48px); background: #f4f8f5; }
+.future-site input:not([type=range]), .future-site select, .future-site textarea { border-radius: 8px; }
+.future-site .proposal-document .plan-hero { background: #102a34; border-bottom-right-radius: 42px; }
+.future-site .proposal-document .plan-flow li { border-radius: 12px; }
+/* HIVE's conceptual interface: isolated local state, no live devices or data. */
+.hive-concept { background: #dfe9e8; color: var(--ink); }
+.hive-concept-intro { display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px 8%; margin-bottom: 48px; align-items: end; }
+.hive-concept-intro .eyebrow { grid-column: 1 / -1; margin: 0; }
+.hive-concept-intro h2 { font-size: clamp(38px, 4.2vw, 66px); line-height: 1.08; }
+.hive-concept-intro > p:not(.eyebrow):not(.hive-concept-status) { font-size: 17px; }
+.hive-concept-status { grid-column: 1 / -1; padding: 14px 20px; border: 1px solid #728e91; border-radius: 30px; font-size: 13px; width: fit-content; }
+.home-os { background: #10262d; color: #edf5f1; border: 1px solid #56797a; border-radius: 24px; padding: 30px; box-shadow: 0 24px 70px #0b1b2315; }
+.os-top { display: flex; justify-content: space-between; gap: 24px; align-items: center; }
+.os-brand { font-size: 20px; letter-spacing: -.02em; }
+.os-top p { font-size: 12px; color: #c7dad4; margin-top: 8px; }
+.os-local { font-family: var(--font-system); font-size: 12px; color: #bce4cf; border: 1px solid #496765; border-radius: 30px; padding: 10px 14px; }
+.os-navigation { display: flex; gap: 8px; flex-wrap: wrap; margin: 28px 0; border-bottom: 1px solid #496765; padding-bottom: 18px; }
+.home-os button, .home-os select { cursor: pointer; min-height: 44px; background: #18373e; border: 1px solid #648888; color: #edf5f1; font-size: 14px; border-radius: 10px; padding: 12px 18px; }
+.home-os button[aria-pressed=true] { background: #c1e1d0; color: #142d31; border-color: #c1e1d0; }
+.os-workspace { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; }
+.os-label { font-family: var(--font-system); font-size: 12px; color: #c7dad4; margin-bottom: 24px; }
+.os-plan { padding: 24px; background: #15323a; border: 1px solid #496765; border-radius: 16px; }
+.os-rooms { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; min-height: 340px; padding: 12px; border: 1px solid #7eaba2; border-radius: 8px; }
+.home-os .os-room { position: relative; display: flex; flex-direction: column; justify-content: space-between; align-items: start; border-radius: 4px; text-align: left; padding: 16px; background: #28454a; border-color: #7eaba2; }
+.home-os .os-room-living { grid-row: 1 / 3; }
+.home-os .os-room[aria-pressed=true] { background: #527967; color: white; border-color: #c1e1d0; }
+.os-room-symbol { border: 2px solid #ccddd4; width: 56%; height: 20px; border-radius: 4px; margin-bottom: 40px; }
+.os-room-kitchen .os-room-symbol { height: 40px; border-radius: 0; border-width: 0 2px 2px 0; }
+.os-room-bedroom .os-room-symbol { height: 50px; border-radius: 3px; }
+.os-room-indicator { width: 8px; height: 8px; border-radius: 50%; background: #e2c293; position: absolute; right: 12px; top: 12px; }
+.os-plan > p:last-child { margin-top: 24px; font-size: 13px; color: #c7dad4; }
+.os-panel { min-width: 0; }
+.os-panel h3 { font-size: 28px; margin: 0 0 28px; }
+.os-panel label { display: block; font-size: 14px; margin-top: 24px; }
+.os-setting { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding-block: 20px; }
+.os-setting output { font-size: 46px; letter-spacing: -.05em; }
+.os-setting > span { font-size: 12px; color: #c7dad4; }
+.home-os input[type=range] { width: 100%; accent-color: #bfe0ce; min-height: 44px; cursor: pointer; }
+.os-readings { margin-top: 28px; }
+.os-readings p { display: flex; justify-content: space-between; gap: 18px; padding: 16px 0; border-top: 1px solid #496765; font-size: 14px; }
+.os-readings span { font-size: 12px; color: #c7dad4; }
+.os-explanation { font-size: 14px; color: #c7dad4; margin-top: 24px; }
+.os-scenes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.home-os .os-toggle { display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; margin-top: 24px; text-align: left; }
+.os-toggle span { font-size: 12px; }
+.os-energy-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; margin-top: 24px; }
+.os-energy-grid > div { background: #18373e; border: 1px solid #496765; border-radius: 10px; padding: 16px; }
+.os-energy-grid span { display: block; font-size: 12px; }
+.os-energy-grid strong { display: block; font-size: 30px; font-weight: 400; padding-block: 10px; }
+.os-energy-grid small { font-size: 12px; color: #c7dad4; }
+.os-history { color: #bfe0ce; padding-top: 24px; }
+.os-history svg { display: block; width: 100%; }
+.os-panel select { width: 100%; margin-top: 12px; }
+.os-panel ul { font-size: 14px; color: #c7dad4; line-height: 1.8; padding-left: 20px; margin: 24px 0; }
+.os-disclaimer { border-top: 1px solid #496765; margin-top: 30px; padding-top: 20px; font-size: 13px; color: #c7dad4; }
+.home-os[data-scene=morning] .os-room-indicator { background: #f2ecd5; }
+.home-os[data-scene=sleep] .os-room-indicator { background: #aab0d9; }
+.hive-capabilities { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin: 64px 0; }
+.hive-capabilities article { border-top: 1px solid #728e91; padding-top: 24px; }
+.hive-capabilities article > span { font-family: var(--font-system); font-size: 12px; color: var(--muted); }
+.hive-capabilities h3 { font-size: 27px; margin: 20px 0; }
+.hive-capabilities p { font-size: 15px; color: var(--muted); margin-bottom: 20px; }
+.hive-community { display: grid; grid-template-columns: 1.2fr 1fr; gap: 7%; align-items: center; }
+.hive-community figure { position: relative; aspect-ratio: 1; border-radius: 20px; overflow: hidden; margin: 0; }
+.hive-community h3 { font-size: 36px; margin-bottom: 24px; }
+.hive-community p:not(.eyebrow) { font-size: 16px; margin-top: 24px; }
+@media (max-width: 1199px) { .future-site .header-principle { display: none; } .future-site .header-actions { gap: 18px; } .future-site .project-gateways { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media (max-width: 1023px) { .future-site .project-blueprint .blueprint-hero { grid-template-columns: 1fr; } .future-site .project-blueprint .blueprint-hero-image { min-height: 420px; } .future-site .project-blueprint .blueprint-hero-copy { max-width: 780px; } .atlas-opening-heading { gap: 5%; } .atlas-cards { gap: 12px; } }
+@media (max-width: 767px) {
+ .future-site .header { min-height: 78px; } .future-site .header-logo, .future-site .header-logo img { width: 132px; }
+ .future-site .header-actions { gap: 12px; }
+ .future-site .rediscovery-opening { padding-top: 42px; padding-bottom: 20px; }
+ .atlas-opening-heading, .atlas-intro, .hive-concept-intro, .os-workspace, .hive-community { grid-template-columns: 1fr; gap: 32px; }
+ .future-site .rediscovery-opening h1 { font-size: clamp(46px, 13vw, 86px); }
+ .future-site .opening-philosophy { font-size: 18px; border: 0; padding: 0; }
+ .atlas-opening-window { aspect-ratio: 1.15; }
+ .atlas-opening-window figcaption { left: 14px; bottom: 14px; right: 14px; font-size: 11px; width: fit-content; }
+ .atlas-window-link { top: 16px; right: 14px; bottom: auto; }
+ .atlas-cards { grid-template-columns: 1fr; gap: 24px; }
+ .atlas-card-image { aspect-ratio: 1.9; }
+ .atlas-intro .eyebrow { grid-column: 1; }
+ .future-site .present-questions article { display: block; padding: 24px; }
+ .future-site .present-questions article > span { display: block; margin-bottom: 16px; }
+ .future-site .life-sequence li { display: grid; padding: 20px; margin-bottom: 10px; }
+ .future-site .rediscovery-home .story-feature-art, .future-site .rediscovery-home .story-hive .story-feature-art { aspect-ratio: 1.3; }
+ .future-site .project-gateways { grid-template-columns: 1fr; }
+ .future-site .projects-compact .project-gateways article { padding: 24px; }
+ .future-site .project-blueprint .blueprint-hero { padding-top: 32px; gap: 32px; }
+ .future-site .project-blueprint h1 { font-size: clamp(64px, 20vw, 100px); }
+ .future-site .project-blueprint h1.blueprint-six-letter-title { font-size: clamp(52px, 16vw, 86px); }
+ .future-site .project-blueprint .blueprint-hero-image { min-height: 0; width: 100%; aspect-ratio: 1.1; }
+ .future-site .project-blueprint .blueprint-stage-note { padding-top: 24px; }
+ .future-site .project-blueprint .blueprint-section { padding-block: 64px; }
+ .future-site .project-blueprint .blueprint-system > li, .future-site .project-blueprint .blueprint-framework > div, .future-site .project-blueprint .blueprint-measurements > div { padding: 20px; }
+ .future-site .project-blueprint .blueprint-system > li { grid-template-columns: 1fr; }
+ .future-site .project-blueprint .blueprint-flow { padding: 18px; }
+ .future-site .projects-index .project-index-navigation { grid-template-columns: 1fr 1fr; }
+ .future-site .projects-index .project-index-navigation a { padding: 10px 14px; gap: 10px; }
+ .future-site .project-card .project-body { padding: 24px; }
+ .future-site .bouwjaar-hero { grid-template-columns: 1fr; }
+ .future-site .bouwjaar-content .editorial-list > div { padding: 22px; }
+ .future-site .vision-page .vision-pillar { padding: 24px; }
+ .home-os { padding: 20px; border-radius: 16px; }
+ .os-top { align-items: start; gap: 12px; flex-direction: column; }
+ .os-navigation { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+ .os-workspace { gap: 28px; }
+ .os-plan { padding: 16px; }
+ .os-rooms { min-height: 300px; gap: 8px; padding: 8px; }
+ .home-os .os-room { padding: 12px; font-size: 13px; }
+ .os-room-symbol { width: 60%; }
+ .os-setting { flex-direction: column; gap: 8px; }
+ .os-energy-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+ .hive-capabilities { grid-template-columns: 1fr; gap: 32px; }
+ .hive-concept-status { border-radius: 12px; }
+ .hive-community figure { aspect-ratio: 1.3; }
+ .hive-community h3 { font-size: 30px; }
+}
+@media (prefers-reduced-motion: reduce) { .future-site *, .future-site *::before, .future-site *::after { animation: none !important; transition-duration: 0s !important; } }
+.os-controls { border: 0; margin: 0; padding: 0; min-width: 0; }
+.home-os[data-exterior=true] .os-rooms { border-color: #f3cb97; box-shadow: 0 0 14px #f3cb9724; }
+.home-os[data-colour=cool] .os-room-indicator { background: #c4e3ed; }
+.home-os[data-colour=neutral] .os-room-indicator { background: #edf5f1; }

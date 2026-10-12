@@ -190,9 +190,119 @@ export const sceneImages: Record<string, { width: number; height: number; varian
       }
     ]
   },
+  "/images/future/hive-next.webp": {
+    "width": 1600,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/images/scenes/hive-next-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/images/scenes/hive-next-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/images/scenes/hive-next-1200.webp",
+        "width": 1200
+      },
+      {
+        "src": "/images/scenes/hive-next-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/images/future/loop-next.webp": {
+    "width": 1600,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/images/scenes/loop-next-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/images/scenes/loop-next-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/images/scenes/loop-next-1200.webp",
+        "width": 1200
+      },
+      {
+        "src": "/images/scenes/loop-next-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/images/future/grow-next.webp": {
+    "width": 1600,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/images/scenes/grow-next-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/images/scenes/grow-next-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/images/scenes/grow-next-1200.webp",
+        "width": 1200
+      },
+      {
+        "src": "/images/scenes/grow-next-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/images/future/rise-next.webp": {
+    "width": 1600,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/images/scenes/rise-next-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/images/scenes/rise-next-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/images/scenes/rise-next-1200.webp",
+        "width": 1200
+      },
+      {
+        "src": "/images/scenes/rise-next-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
+  "/images/future/mend-next.webp": {
+    "width": 1600,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/images/scenes/mend-next-480.webp",
+        "width": 480
+      },
+      {
+        "src": "/images/scenes/mend-next-800.webp",
+        "width": 800
+      },
+      {
+        "src": "/images/scenes/mend-next-1200.webp",
+        "width": 1200
+      },
+      {
+        "src": "/images/scenes/mend-next-1600.webp",
+        "width": 1600
+      }
+    ]
+  },
   "/images/homepage/polders.webp": {
     "width": 1600,
-    "height": 841,
+    "height": 800,
     "variants": [
       {
         "src": "/images/scenes/polders-480.webp",

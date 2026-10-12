@@ -17,7 +17,7 @@ try {
    await page.setViewportSize({ width, height });
    await page.goto(base + (prefix || '/'));
    if (width < 1200) {
-    const brand = page.locator('.hero-brand-line');
+    const brand = page.locator('.opening-note');
     assert(await brand.isVisible());
     const bounds = await brand.boundingBox();
     assert(bounds.y >= 0 && bounds.y + bounds.height <= height, 'Opening brand line ' + prefix + width);

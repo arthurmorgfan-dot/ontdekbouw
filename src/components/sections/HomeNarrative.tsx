@@ -5,11 +5,8 @@ import SceneImage from "@/components/ui/SceneImage";
 export async function OpeningChapter() {
   const { t, l } = await getI18n();
   return <section className="rediscovery-opening" aria-labelledby="hero-heading">
-    <div className="opening-landscape" aria-hidden="true"><SceneImage src="/images/homepage/polders.webp" sizes="100vw" eager /></div>
-    <div className="opening-topline"><p>{t("BOUW / de toekomst herontdekken")}</p><p>{t("Een open horizon. Een praktisch begin.")}</p></div>
-    <div className="opening-title"><p className="opening-note">{t("Geen beloftes. Bouwplannen.")}</p><h1 id="hero-heading">{t("De toekomst begint")}<br /><em>{t("met verwondering.")}</em></h1></div>
-    <div className="opening-bottom"><div><p>{t("BOUW ontwikkelt praktische plannen voor het dagelijks leven. Een gezonde basis. Meer vaardigheden. Meer ruimte om je eigen leven te bouwen.")}</p><Button href={l("#generaties")} variant="light" build>{t("Ontdek het verhaal")}</Button></div><p className="opening-philosophy">{t("We waren allemaal ooit kinderen.")}<br />{t("Misschien zijn we dat nog steeds.")}</p></div>
-    <p className="opening-caption">{t("Illustratief landschap / AI-gegenereerd")}</p>
+    <div className="atlas-opening-heading"><div><p className="opening-note">{t("Geen beloftes. Bouwplannen.")}</p><h1 id="hero-heading">{t("De toekomst")}<br /><em>{t("is mensenwerk.")}</em></h1></div><div className="atlas-opening-aside"><p className="opening-philosophy">{t("We waren allemaal ooit kinderen.")}<br />{t("Misschien zijn we dat nog steeds.")}</p><p>{t("De toekomst begint")} {t("met verwondering.")}</p><p>{t("BOUW ontwikkelt praktische plannen voor het dagelijks leven. Een gezonde basis. Meer vaardigheden. Meer ruimte om je eigen leven te bouwen.")}</p><Button href={l("#toekomstatlas")} variant="light" build>{t("Verken de toekomstatlas")}</Button></div></div>
+    <figure className="atlas-opening-window"><div className="opening-landscape"><SceneImage src="/images/homepage/polders.webp" alt={t("Illustratief beeld van polders, water en dijken in de avondzon")} sizes="100vw" eager /></div><figcaption>{t("Illustratief landschap / AI-gegenereerd")}</figcaption><a className="atlas-window-link" href={l("#generaties")}>{t("Ontdek het verhaal")} <span aria-hidden="true">↓</span></a></figure>
   </section>;
 }
 

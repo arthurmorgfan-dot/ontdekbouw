@@ -1,0 +1,3288 @@
+{
+  "routes": {
+    "report": [
+      {
+        "url": "",
+        "title": "BOUW — Geen beloftes. Bouwplannen.",
+        "description": "Concrete ideeën voor wonen, voedsel, vaardigheden en een sterkere basis voor de toekomst."
+      },
+      {
+        "url": "/bouwjaar",
+        "title": "BOUWJAAR — BOUW",
+        "description": "Een vroeg BOUW-concept voor jongeren: gezondheid, praktische vaardigheden, samenwerken en richting ontdekken. Uitvoering en financiering zijn nog open vragen."
+      },
+      {
+        "url": "/projecten",
+        "title": "Onze projecten — BOUW",
+        "description": "BOUW-projecten in ontwikkeling: systemen om te ontwerpen, onderzoeken en uiteindelijk te testen. Geen bewezen oplossingen of resultaten."
+      },
+      {
+        "url": "/projecten/loop",
+        "title": "LOOP — Vers voedsel voor iedereen — BOUW",
+        "description": "Hoe brengen we betaalbaar, vers en voedzaam voedsel naar mensen toe — zonder dat zij hoeven te verhuizen om er toegang toe te krijgen? Een BOUW-project in ontwikkeling, met een publiek onderzoeksdossier in de fase model → keukentest. Nog geen gemeten of gevalideerd resultaat."
+      },
+      {
+        "url": "/projecten/grow",
+        "title": "GROW — Voedsel dichtbij huis — BOUW",
+        "description": "Hoe produceren we vers voedsel dicht bij steden, door de lokale omgeving als onderdeel van het ontwerp te gebruiken? Een BOUW-project in ontwikkeling, nog niet getest."
+      },
+      {
+        "url": "/projecten/hive",
+        "title": "HIVE — Een complete leefomgeving, vanaf de basis gebouwd. — BOUW",
+        "description": "Hoe bouwen we betaalbare leefgebieden die vrijwel overal ter wereld kunnen worden herhaald — met wonen, voedsel, basiszorg en dagelijkse voorzieningen dichtbij? Een BOUW-project in ontwikkeling, nog niet getest."
+      },
+      {
+        "url": "/projecten/rise",
+        "title": "RISE — Van doel naar volgende stap. — BOUW",
+        "description": "Kan een gesprek iemand helpen een betere volgende stap te vinden — en die ook daadwerkelijk te zetten? Een BOUW-project in ontwikkeling, nog niet getest."
+      },
+      {
+        "url": "/projecten/mend",
+        "title": "MEND — Samenwerken met het herstel van het lichaam. — BOUW",
+        "description": "Hoe kunnen materialen, omgeving en biologie samenwerken met herstelprocessen die het lichaam al bezit? Een BOUW-project in ontwikkeling, nog niet getest."
+      },
+      {
+        "url": "/projecten/clarke",
+        "title": "CLARKE — De laatste lift die we ooit hoeven te bouwen. — BOUW",
+        "description": "Wat zou een permanente fysieke transportverbinding tussen aarde en ruimte vereisen? Een BOUW-project in een extreem vroege onderzoeksfase, nog niet getest."
+      },
+      {
+        "url": "/voorstellen/gezond-eten-als-basis",
+        "title": "BOUW Basis — Gezond eten als basisvoorziening — BOUW",
+        "description": "Wat als Nederland publieke middelen gebruikt om gezond basisvoedsel goedkoper te maken — en ervoor zorgt dat niemand zonder een goede basis hoeft te zitten? Een BOUW-voorstel in onderzoek, geen bewezen oplossing."
+      },
+      {
+        "url": "/voorstellen/vers-eten-moet-goedkoper",
+        "title": "Vers eten moet goedkoper — BOUW",
+        "description": "Waarom is vers en gezond eten vaak duurder dan sterk bewerkt voedsel — en hoeveel daarvan kunnen we daadwerkelijk veranderen? Een BOUW-voorstel in onderzoek, geen bewezen oplossing."
+      },
+      {
+        "url": "/voorstellen/iedere-dag-bewegen",
+        "title": "Iedere dag bewegen — BOUW",
+        "description": "Wat als bewegen voor jongeren net zo vanzelfsprekend wordt als onderwijs? Een BOUW-voorstel in onderzoek, geen bewezen oplossing."
+      },
+      {
+        "url": "/onze-visie",
+        "title": "Onze visie — BOUW",
+        "description": "Nederland hoeft problemen niet alleen te beheren. We kunnen oplossingen bouwen. Ontdek de vier pijlers en twaalf standpunten van BOUW."
+      },
+      {
+        "url": "/standpunten",
+        "title": "Standpunten — BOUW",
+        "description": "Waar staat BOUW voor? Ontdek de richting waarin BOUW Nederland wil bewegen, en de voorstellen die nog onderzoek en toetsing nodig hebben."
+      },
+      {
+        "url": "/doe-mee",
+        "title": "Doe mee — BOUW",
+        "description": "Help BOUW uitzoeken wat werkt. Denk mee, breng expertise mee, deel een bron of help een toekomstige pilot ontwerpen."
+      },
+      {
+        "url": "/volg-bouw",
+        "title": "Volg BOUW — BOUW",
+        "description": "Blijf betrokken bij BOUW: volg voorstellen en projecten op deze website. Onderzoek, bewijs en resultaten worden zichtbaar zodra ze er werkelijk zijn."
+      },
+      {
+        "url": "/en",
+        "title": "BOUW — No promises. Plans to build.",
+        "description": "Concrete ideas for housing, food, skills and a stronger foundation for the future."
+      },
+      {
+        "url": "/en/bouwjaar",
+        "title": "BOUWJAAR — BOUW",
+        "description": "An early BOUW concept for young people: health, practical skills, teamwork and discovering direction. Delivery and funding remain open questions."
+      },
+      {
+        "url": "/en/projecten",
+        "title": "Our projects — BOUW",
+        "description": "BOUW projects in development: systems to design, investigate and eventually test. No proven solutions or results."
+      },
+      {
+        "url": "/en/projecten/loop",
+        "title": "LOOP — Fresh food for everyone — BOUW",
+        "description": "How do we bring affordable, fresh and nutritious food to people — without them having to move to access it? A BOUW project in development, with a public research notebook in the model → kitchen-test phase. No measured or validated result yet."
+      },
+      {
+        "url": "/en/projecten/grow",
+        "title": "GROW — Food close to home — BOUW",
+        "description": "How do we produce fresh food near cities by making the local environment part of the design? A BOUW project in development, not yet tested."
+      },
+      {
+        "url": "/en/projecten/hive",
+        "title": "HIVE — A complete living environment, built from the foundations. — BOUW",
+        "description": "How do we build affordable places to live that could be repeated almost anywhere in the world — with housing, food, primary care and everyday amenities nearby? A BOUW project in development, not yet tested."
+      },
+      {
+        "url": "/en/projecten/rise",
+        "title": "RISE — From goal to next step. — BOUW",
+        "description": "Could a conversation help someone find a better next step — and actually take it? A BOUW project in development, not yet tested."
+      },
+      {
+        "url": "/en/projecten/mend",
+        "title": "MEND — Working with the body's repair processes. — BOUW",
+        "description": "How could materials, environment and biology work with repair processes the body already possesses? A BOUW project in development, not yet tested."
+      },
+      {
+        "url": "/en/projecten/clarke",
+        "title": "CLARKE — The last lift we ever need to build. — BOUW",
+        "description": "What would a permanent physical transport connection between Earth and space require? A BOUW project at an extremely early research stage, not yet tested."
+      },
+      {
+        "url": "/en/voorstellen/gezond-eten-als-basis",
+        "title": "BOUW Basics — Healthy food as a basic provision — BOUW",
+        "description": "What if the Netherlands used public resources to make healthy staples more affordable — and ensured nobody had to go without a good foundation? A BOUW proposal under investigation, not a proven solution."
+      },
+      {
+        "url": "/en/voorstellen/vers-eten-moet-goedkoper",
+        "title": "Fresh food should cost less — BOUW",
+        "description": "Why is fresh, healthy food often more expensive than highly processed food — and how much of that could we actually change? A BOUW proposal under investigation, not a proven solution."
+      },
+      {
+        "url": "/en/voorstellen/iedere-dag-bewegen",
+        "title": "Move every day — BOUW",
+        "description": "What if movement were as natural a part of young people's lives as education? A BOUW proposal under investigation, not a proven solution."
+      },
+      {
+        "url": "/en/onze-visie",
+        "title": "Our vision — BOUW",
+        "description": "The Netherlands can do more than manage problems. We can build solutions. Explore BOUW's four pillars and twelve positions."
+      },
+      {
+        "url": "/en/standpunten",
+        "title": "Positions — BOUW",
+        "description": "What does BOUW stand for? Explore the direction BOUW wants to take the Netherlands and the proposals that still need investigation and testing."
+      },
+      {
+        "url": "/en/doe-mee",
+        "title": "Participate — BOUW",
+        "description": "Help BOUW find out what works. Think with us, contribute expertise, share a source or help design a future pilot."
+      },
+      {
+        "url": "/en/volg-bouw",
+        "title": "Follow BOUW — BOUW",
+        "description": "Stay connected with BOUW: follow proposals and projects on this website. Research, evidence and results become visible when they actually exist."
+      }
+    ],
+    "errors": []
+  },
+  "phase": {
+    "checks": [
+      {
+        "route": "/",
+        "width": 320
+      },
+      {
+        "route": "/",
+        "width": 390
+      },
+      {
+        "route": "/",
+        "width": 768
+      },
+      {
+        "route": "/",
+        "width": 1024
+      },
+      {
+        "route": "/",
+        "width": 1100
+      },
+      {
+        "route": "/",
+        "width": 1200
+      },
+      {
+        "route": "/",
+        "width": 1440
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 320
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 390
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 768
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 1024
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 1100
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 1200
+      },
+      {
+        "route": "/bouwjaar",
+        "width": 1440
+      },
+      {
+        "route": "/projecten",
+        "width": 320
+      },
+      {
+        "route": "/projecten",
+        "width": 390
+      },
+      {
+        "route": "/projecten",
+        "width": 768
+      },
+      {
+        "route": "/projecten",
+        "width": 1024
+      },
+      {
+        "route": "/projecten",
+        "width": 1100
+      },
+      {
+        "route": "/projecten",
+        "width": 1200
+      },
+      {
+        "route": "/projecten",
+        "width": 1440
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 320
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 390
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 768
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1024
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1100
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1200
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1440
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 320
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 390
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 768
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1024
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1100
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1200
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1440
+      },
+      {
+        "route": "/en",
+        "width": 320
+      },
+      {
+        "route": "/en",
+        "width": 390
+      },
+      {
+        "route": "/en",
+        "width": 768
+      },
+      {
+        "route": "/en",
+        "width": 1024
+      },
+      {
+        "route": "/en",
+        "width": 1100
+      },
+      {
+        "route": "/en",
+        "width": 1200
+      },
+      {
+        "route": "/en",
+        "width": 1440
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 320
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 390
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 768
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 1024
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 1100
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 1200
+      },
+      {
+        "route": "/en/bouwjaar",
+        "width": 1440
+      },
+      {
+        "route": "/en/projecten",
+        "width": 320
+      },
+      {
+        "route": "/en/projecten",
+        "width": 390
+      },
+      {
+        "route": "/en/projecten",
+        "width": 768
+      },
+      {
+        "route": "/en/projecten",
+        "width": 1024
+      },
+      {
+        "route": "/en/projecten",
+        "width": 1100
+      },
+      {
+        "route": "/en/projecten",
+        "width": 1200
+      },
+      {
+        "route": "/en/projecten",
+        "width": 1440
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 320
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 390
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 768
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 1024
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 1100
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 1200
+      },
+      {
+        "route": "/en/projecten/loop",
+        "width": 1440
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 320
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 390
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 768
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 1024
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 1100
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 1200
+      },
+      {
+        "route": "/en/projecten/hive",
+        "width": 1440
+      }
+    ],
+    "errors": [],
+    "story": "Rediscovery narrative; nine framework themes; equivalent routes; contextual contribution; preserved anchors and notebook"
+  },
+  "polish": [
+    {
+      "locale": "nl",
+      "width": 1440,
+      "height": 900,
+      "total": 10505,
+      "loop": 6453.15625,
+      "journey": 1070.71875,
+      "method": 893.984375,
+      "householdLeadBottom": 539.5
+    },
+    {
+      "locale": "nl",
+      "width": 768,
+      "height": 1024,
+      "total": 10632,
+      "loop": 6520.390625,
+      "journey": 1225.234375,
+      "method": 971.390625,
+      "householdLeadBottom": 489.171875
+    },
+    {
+      "locale": "nl",
+      "width": 390,
+      "height": 844,
+      "total": 14762,
+      "loop": 9443.734375,
+      "journey": 1656.5625,
+      "method": 1568.328125,
+      "householdLeadBottom": 518.765625
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "total": 10499,
+      "loop": 6557.21875,
+      "journey": 1070.71875,
+      "method": 893.984375,
+      "householdLeadBottom": 539.5
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "height": 1024,
+      "total": 10319,
+      "loop": 6285.796875,
+      "journey": 1172.734375,
+      "method": 969.640625,
+      "householdLeadBottom": 489.171875
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "total": 14565,
+      "loop": 9371.046875,
+      "journey": 1628.5625,
+      "method": 1493.78125,
+      "householdLeadBottom": 518.765625
+    }
+  ],
+  "interactions": {
+    "checks": [
+      "Mobile menu exposes all destinations without overflow",
+      "Escape closes menu and returns focus",
+      "Menu links navigate and close",
+      "Vision disclosures open",
+      "Standpoint research disclosures open",
+      "Context-aware contribution download contains the prepared source and message",
+      "CLARKE contribution context remains discreet",
+      "Follow page retains honest observation-only behavior",
+      "Reduced motion disables smooth scrolling",
+      "Skip link works with keyboard",
+      "All four permanent redirects remain",
+      "Unpublished results and unknown slugs stay unavailable",
+      "Five flagship projects and separate CLARKE discovery preserved",
+      "Cross-page navigation preserves homepage styling/content",
+      "JavaScript-disabled contribution fallback remains honest",
+      "Core navigation and imagery remain accessible without JavaScript"
+    ]
+  },
+  "accessibility": {
+    "results": [
+      {
+        "route": "/",
+        "violations": []
+      },
+      {
+        "route": "/bouwjaar",
+        "violations": []
+      },
+      {
+        "route": "/projecten",
+        "violations": []
+      },
+      {
+        "route": "/projecten/loop",
+        "violations": []
+      },
+      {
+        "route": "/projecten/hive",
+        "violations": []
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "violations": []
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "violations": []
+      },
+      {
+        "route": "/onze-visie",
+        "violations": []
+      },
+      {
+        "route": "/standpunten",
+        "violations": []
+      },
+      {
+        "route": "/doe-mee",
+        "violations": []
+      },
+      {
+        "route": "/volg-bouw",
+        "violations": []
+      },
+      {
+        "route": "/projecten/clarke",
+        "violations": []
+      },
+      {
+        "route": "/en",
+        "violations": []
+      },
+      {
+        "route": "/en/bouwjaar",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten/loop",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten/hive",
+        "violations": []
+      },
+      {
+        "route": "/en/voorstellen/gezond-eten-als-basis",
+        "violations": []
+      },
+      {
+        "route": "/en/voorstellen/iedere-dag-bewegen",
+        "violations": []
+      },
+      {
+        "route": "/en/onze-visie",
+        "violations": []
+      },
+      {
+        "route": "/en/standpunten",
+        "violations": []
+      },
+      {
+        "route": "/en/doe-mee",
+        "violations": []
+      },
+      {
+        "route": "/en/volg-bouw",
+        "violations": []
+      },
+      {
+        "route": "/en/projecten/clarke",
+        "violations": []
+      }
+    ],
+    "checks": [
+      "Touch disclosures",
+      "Localized required validation",
+      "Discreet CLARKE context",
+      "No-JavaScript content/fallbacks",
+      "Skip link",
+      "Scroll header",
+      "Underline/focus"
+    ]
+  },
+  "home": {
+    "results": [
+      {
+        "locale": "nl",
+        "width": 320,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "nl",
+        "width": 390,
+        "violations": [],
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "nl",
+        "width": 768,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "nl",
+        "width": 1024,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "nl",
+        "width": 1200,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "nl",
+        "width": 1440,
+        "violations": [],
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "nl",
+        "width": 1920,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "en",
+        "width": 320,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "en",
+        "width": 390,
+        "violations": [],
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "en",
+        "width": 768,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "en",
+        "width": 1024,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "en",
+        "width": 1200,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "en",
+        "width": 1440,
+        "violations": [],
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      },
+      {
+        "locale": "en",
+        "width": 1920,
+        "overflow": false,
+        "duplicateIDs": [],
+        "brokenImages": [],
+        "clippedHeadings": []
+      }
+    ],
+    "errors": []
+  },
+  "visual": {
+    "checks": [
+      {
+        "route": "/",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/loop",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/loop",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/loop",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/loop",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/loop",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/loop",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/loop",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/loop",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/grow",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/grow",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/grow",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/grow",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/grow",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/grow",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/grow",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/grow",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/hive",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/hive",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/hive",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/hive",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/hive",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/hive",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/hive",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/hive",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/rise",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/rise",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/rise",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/rise",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/rise",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/rise",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/rise",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/rise",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/mend",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/mend",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/mend",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/mend",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/mend",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/mend",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/mend",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/mend",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/clarke",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/clarke",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/clarke",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/clarke",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/clarke",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/clarke",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/clarke",
+        "lang": "nl"
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/projecten/clarke",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/vers-eten-moet-goedkoper",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/vers-eten-moet-goedkoper",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/vers-eten-moet-goedkoper",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/vers-eten-moet-goedkoper",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/vers-eten-moet-goedkoper",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/vers-eten-moet-goedkoper",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/vers-eten-moet-goedkoper",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/vers-eten-moet-goedkoper",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/gezond-eten-als-basis",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/gezond-eten-als-basis",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/gezond-eten-als-basis",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/gezond-eten-als-basis",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/gezond-eten-als-basis",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/gezond-eten-als-basis",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/gezond-eten-als-basis",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/gezond-eten-als-basis",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/iedere-dag-bewegen",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/iedere-dag-bewegen",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/iedere-dag-bewegen",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/iedere-dag-bewegen",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/iedere-dag-bewegen",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/iedere-dag-bewegen",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/iedere-dag-bewegen",
+        "lang": "nl"
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/voorstellen/iedere-dag-bewegen",
+        "lang": "nl"
+      },
+      {
+        "route": "/onze-visie",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/onze-visie",
+        "lang": "nl"
+      },
+      {
+        "route": "/onze-visie",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/onze-visie",
+        "lang": "nl"
+      },
+      {
+        "route": "/onze-visie",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/onze-visie",
+        "lang": "nl"
+      },
+      {
+        "route": "/onze-visie",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/onze-visie",
+        "lang": "nl"
+      },
+      {
+        "route": "/onze-visie",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/onze-visie",
+        "lang": "nl"
+      },
+      {
+        "route": "/onze-visie",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/onze-visie",
+        "lang": "nl"
+      },
+      {
+        "route": "/onze-visie",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/onze-visie",
+        "lang": "nl"
+      },
+      {
+        "route": "/onze-visie",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/onze-visie",
+        "lang": "nl"
+      },
+      {
+        "route": "/standpunten",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/standpunten",
+        "lang": "nl"
+      },
+      {
+        "route": "/standpunten",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/standpunten",
+        "lang": "nl"
+      },
+      {
+        "route": "/standpunten",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/standpunten",
+        "lang": "nl"
+      },
+      {
+        "route": "/standpunten",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/standpunten",
+        "lang": "nl"
+      },
+      {
+        "route": "/standpunten",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/standpunten",
+        "lang": "nl"
+      },
+      {
+        "route": "/standpunten",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/standpunten",
+        "lang": "nl"
+      },
+      {
+        "route": "/standpunten",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/standpunten",
+        "lang": "nl"
+      },
+      {
+        "route": "/standpunten",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/standpunten",
+        "lang": "nl"
+      },
+      {
+        "route": "/doe-mee",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/doe-mee",
+        "lang": "nl"
+      },
+      {
+        "route": "/doe-mee",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/doe-mee",
+        "lang": "nl"
+      },
+      {
+        "route": "/doe-mee",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/doe-mee",
+        "lang": "nl"
+      },
+      {
+        "route": "/doe-mee",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/doe-mee",
+        "lang": "nl"
+      },
+      {
+        "route": "/doe-mee",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/doe-mee",
+        "lang": "nl"
+      },
+      {
+        "route": "/doe-mee",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/doe-mee",
+        "lang": "nl"
+      },
+      {
+        "route": "/doe-mee",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/doe-mee",
+        "lang": "nl"
+      },
+      {
+        "route": "/doe-mee",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/doe-mee",
+        "lang": "nl"
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 320,
+        "status": 200,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/volg-bouw",
+        "lang": "nl"
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 375,
+        "status": 200,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/volg-bouw",
+        "lang": "nl"
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 390,
+        "status": 200,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/volg-bouw",
+        "lang": "nl"
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 430,
+        "status": 200,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/volg-bouw",
+        "lang": "nl"
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 768,
+        "status": 200,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/volg-bouw",
+        "lang": "nl"
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 1024,
+        "status": 200,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/volg-bouw",
+        "lang": "nl"
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 1440,
+        "status": 200,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/volg-bouw",
+        "lang": "nl"
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 1920,
+        "status": 200,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/volg-bouw",
+        "lang": "nl"
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 320,
+        "status": 404,
+        "viewport": 320,
+        "scrollWidth": 320,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 375,
+        "status": 404,
+        "viewport": 375,
+        "scrollWidth": 375,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 390,
+        "status": 404,
+        "viewport": 390,
+        "scrollWidth": 390,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 430,
+        "status": 404,
+        "viewport": 430,
+        "scrollWidth": 430,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 768,
+        "status": 404,
+        "viewport": 768,
+        "scrollWidth": 768,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 1024,
+        "status": 404,
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 1440,
+        "status": 404,
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 1920,
+        "status": 404,
+        "viewport": 1920,
+        "scrollWidth": 1920,
+        "overflow": [],
+        "clippedText": [],
+        "tiny": [],
+        "brokenImages": [],
+        "h1": 1,
+        "main": 1,
+        "canonical": "https://www.ontdekbouw.nl/",
+        "lang": "nl"
+      }
+    ],
+    "accessibility": [
+      {
+        "route": "/",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 25
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 26
+          }
+        ]
+      },
+      {
+        "route": "/projecten",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "route": "/projecten",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "route": "/projecten/loop",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/projecten/grow",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "count": 1
+          },
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/projecten/hive",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "count": 1
+          },
+          {
+            "id": "color-contrast",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/projecten/rise",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/projecten/mend",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/projecten/clarke",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/voorstellen/vers-eten-moet-goedkoper",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/voorstellen/gezond-eten-als-basis",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/voorstellen/iedere-dag-bewegen",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "route": "/onze-visie",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "count": 1
+          },
+          {
+            "id": "color-contrast",
+            "count": 10
+          }
+        ]
+      },
+      {
+        "route": "/onze-visie",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "count": 1
+          },
+          {
+            "id": "color-contrast",
+            "count": 11
+          }
+        ]
+      },
+      {
+        "route": "/standpunten",
+        "width": 390,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "route": "/standpunten",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/doe-mee",
+        "width": 390,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "route": "/doe-mee",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 390,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "route": "/volg-bouw",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 390,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "route": "/pagina-bestaat-niet",
+        "width": 1440,
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "count": 1
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  "bouw3": {
+    "content": [
+      {
+        "path": "/",
+        "retained": true
+      },
+      {
+        "path": "/bouwjaar",
+        "retained": true
+      },
+      {
+        "path": "/projecten",
+        "retained": true
+      },
+      {
+        "path": "/projecten/loop",
+        "retained": true
+      },
+      {
+        "path": "/projecten/grow",
+        "retained": true
+      },
+      {
+        "path": "/projecten/hive",
+        "retained": true
+      },
+      {
+        "path": "/projecten/rise",
+        "retained": true
+      },
+      {
+        "path": "/projecten/mend",
+        "retained": true
+      },
+      {
+        "path": "/projecten/clarke",
+        "retained": true
+      },
+      {
+        "path": "/voorstellen/gezond-eten-als-basis",
+        "retained": true
+      },
+      {
+        "path": "/voorstellen/vers-eten-moet-goedkoper",
+        "retained": true
+      },
+      {
+        "path": "/voorstellen/iedere-dag-bewegen",
+        "retained": true
+      },
+      {
+        "path": "/onze-visie",
+        "retained": true
+      },
+      {
+        "path": "/standpunten",
+        "retained": true
+      },
+      {
+        "path": "/doe-mee",
+        "retained": true
+      },
+      {
+        "path": "/volg-bouw",
+        "retained": true
+      },
+      {
+        "path": "/en",
+        "retained": true
+      },
+      {
+        "path": "/en/bouwjaar",
+        "retained": true
+      },
+      {
+        "path": "/en/projecten",
+        "retained": true
+      },
+      {
+        "path": "/en/projecten/loop",
+        "retained": true
+      },
+      {
+        "path": "/en/projecten/grow",
+        "retained": true
+      },
+      {
+        "path": "/en/projecten/hive",
+        "retained": true
+      },
+      {
+        "path": "/en/projecten/rise",
+        "retained": true
+      },
+      {
+        "path": "/en/projecten/mend",
+        "retained": true
+      },
+      {
+        "path": "/en/projecten/clarke",
+        "retained": true
+      },
+      {
+        "path": "/en/voorstellen/gezond-eten-als-basis",
+        "retained": true
+      },
+      {
+        "path": "/en/voorstellen/vers-eten-moet-goedkoper",
+        "retained": true
+      },
+      {
+        "path": "/en/voorstellen/iedere-dag-bewegen",
+        "retained": true
+      },
+      {
+        "path": "/en/onze-visie",
+        "retained": true
+      },
+      {
+        "path": "/en/standpunten",
+        "retained": true
+      },
+      {
+        "path": "/en/doe-mee",
+        "retained": true
+      },
+      {
+        "path": "/en/volg-bouw",
+        "retained": true
+      }
+    ],
+    "social": [
+      {
+        "url": "/",
+        "image": "https://www.ontdekbouw.nl/og-image.jpg",
+        "status": 200,
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "url": "/bouwjaar",
+        "image": "https://www.ontdekbouw.nl/social/bouwjaar-nl.jpg",
+        "status": 200,
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "url": "/projecten/loop",
+        "image": "https://www.ontdekbouw.nl/social/loop-nl.jpg",
+        "status": 200,
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "url": "/projecten/hive",
+        "image": "https://www.ontdekbouw.nl/social/hive-nl.jpg",
+        "status": 200,
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "url": "/en",
+        "image": "https://www.ontdekbouw.nl/og-image.jpg",
+        "status": 200,
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "url": "/en/bouwjaar",
+        "image": "https://www.ontdekbouw.nl/social/bouwjaar-en.jpg",
+        "status": 200,
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "url": "/en/projecten/loop",
+        "image": "https://www.ontdekbouw.nl/social/loop-en.jpg",
+        "status": 200,
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "url": "/en/projecten/hive",
+        "image": "https://www.ontdekbouw.nl/social/hive-en.jpg",
+        "status": 200,
+        "width": 1200,
+        "height": 630
+      }
+    ],
+    "screenshots": [
+      "nl-home-mobile.png",
+      "nl-home-desktop.png",
+      "nl-bouwjaar-mobile.png",
+      "nl-bouwjaar-desktop.png",
+      "nl-loop-mobile.png",
+      "nl-loop-desktop.png",
+      "nl-hive-mobile.png",
+      "nl-hive-desktop.png",
+      "nl-projects-mobile.png",
+      "nl-projects-desktop.png",
+      "en-home-mobile.png",
+      "en-home-desktop.png",
+      "en-bouwjaar-mobile.png",
+      "en-bouwjaar-desktop.png",
+      "en-loop-mobile.png",
+      "en-loop-desktop.png",
+      "en-hive-mobile.png",
+      "en-hive-desktop.png",
+      "en-projects-mobile.png",
+      "en-projects-desktop.png"
+    ],
+    "os": [
+      {
+        "locale": "nl",
+        "independentRoomSettings": true,
+        "lightingAndExterior": true,
+        "noLiveEnergyData": true,
+        "resetAndNoPersistence": true,
+        "allPanelsAxe": true
+      },
+      {
+        "locale": "en",
+        "independentRoomSettings": true,
+        "lightingAndExterior": true,
+        "noLiveEnergyData": true,
+        "resetAndNoPersistence": true,
+        "allPanelsAxe": true
+      }
+    ],
+    "errors": []
+  },
+  "build": {
+    "passed": true,
+    "next": "16.3.8",
+    "routesUnchanged": true
+  },
+  "staticChecks": {
+    "typescript": true,
+    "eslint": true,
+    "localizationStrings": 2246,
+    "publicationGuard": true,
+    "contentSourceAndRouteHashChanges": 0
+  }
+}
