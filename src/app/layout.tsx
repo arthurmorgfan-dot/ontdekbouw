@@ -8,7 +8,7 @@ import "./globals.css";
 import "@/styles/documents.css";
 const bouwFont = localFont({ src: "./fonts/Manrope-Variable.ttf", variable: "--font-bouw", display: "swap", weight: "200 800" });
 export async function generateMetadata(): Promise<Metadata> {
-  return { metadataBase: new URL("https://ontdekbouw.nl"), ...await pageMetadata(site.title, site.description, "/") };
+  return { metadataBase: new URL("https://www.ontdekbouw.nl"), ...await pageMetadata(site.title, "Concrete ideeën voor wonen, voedsel, vaardigheden en een sterkere basis voor de toekomst.", "/") };
 }
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const { locale } = await getI18n();
